@@ -295,3 +295,23 @@
         </div>
     </div>
 </footer>
+
+     <div class="floating-call-button" onclick="location.href='tel:07375303124'">Call Now</div>
+  <script>
+        // Function to toggle email display
+        function toggleEmail() {
+            var email = document.getElementById("email-address");
+            if (email.style.display === "none") {
+                email.style.display = "block";
+            } else {
+                email.style.display = "none";
+            }
+        }
+
+        // Function to open email client
+        function sendEmail() {
+            window.location.href = "mailto:info@welshtownandcountry.co.uk";
+        }
+    </script>
+</body>
+</html>
