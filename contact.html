@@ -13,7 +13,7 @@
     <meta property="og:description" content="Reach out to Welsh Town And Country Pest Services for expert pest control services, including wasp removal, mole catching, and dog sitting." />
     <meta property="og:image" content="https://brecon.welshtownandcountry.co.uk/breconimages/logo.png" />
     <meta property="og:url" content="https://brecon.welshtownandcountry.co.uk/contact" />
-    <meta name="keywords" content="pest control, Brecon pest control, mole catching, wasp removal, insect control, " />
+    <meta name="keywords" content="pest control, Brecon pest control, mole catching, wasp removal, insect control" />
 
     <!-- JSON-LD Structured Data for Geotags -->
     <script type="application/ld+json">
@@ -91,13 +91,9 @@
         .centered-image {
             display: block;
             margin: 20px auto;
-            /* Centers the image horizontally */
             max-width: 100%;
-            /* Ensures the image is responsive */
             height: auto;
-            /* Maintains the aspect ratio */
             max-height: 300px;
-            /* Limits the maximum height */
         }
     </style>
 </head>
@@ -154,20 +150,18 @@
             </form>
         </section>
 
-        <!-- Chatbot iframe embed -->
+        <!-- Chatbot iframe embed WITHOUT sandbox attribute so you can type -->
         <section>
             <h3>Chat with Pest Pal</h3>
             <p>Need quick help or to book a service? Chat live with Pest Pal, our friendly pest control assistant.</p>
             <iframe
-    src="http://banwen.duckdns.org:80"
-    width="100%"
-    height="600"
-    style="border:1px solid #ccc; border-radius: 8px;"
-    title="Pest Pal Chatbot"
-    loading="lazy"
-    /*sandbox="allow-scripts allow-same-origin allow-forms"*/ <!-- Remove this -->
-></iframe>
-
+                src="http://banwen.duckdns.org:80"
+                width="100%"
+                height="600"
+                style="border:1px solid #ccc; border-radius: 8px;"
+                title="Pest Pal Chatbot"
+                loading="lazy"
+            ></iframe>
         </section>
 
         <!-- Centered Image Section -->
@@ -222,16 +216,16 @@
 
     <script>
         function toggleEmail() {
-            const email = document.getElementById('email-address');
-            if (email.style.display === 'inline') {
-                email.style.display = 'none';
+            var email = document.getElementById("email-address");
+            if (email.style.display === "none" || email.style.display === "") {
+                email.style.display = "inline-block";
             } else {
-                email.style.display = 'inline';
+                email.style.display = "none";
             }
         }
 
         function sendEmail() {
-            window.location.href = 'mailto:daihill2010@gmail.com';
+            window.location.href = "mailto:info@welshtownandcountry.co.uk";
         }
     </script>
 </body>
