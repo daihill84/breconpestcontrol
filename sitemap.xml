@@ -12,6 +12,10 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://brecon.welshtownandcountry.co.uk/llandeilo-mole-catching.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://brecon.welshtownandcountry.co.uk/brecon-rodent-control.html</loc>
         <priority>0.8</priority>
     </url>
@@ -58,3 +62,4 @@
         <priority>0.5</priority>
     </url>
 </urlset>
+
