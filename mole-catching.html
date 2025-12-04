@@ -80,7 +80,6 @@
     </script>
 
     <style>
-        /* Existing styles */
         body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f9f9f9;color:#222;line-height:1.6}
         header{background:#0b3240;color:#fff;padding:20px;text-align:center}
         .logo{width:80px;height:auto;vertical-align:middle}
@@ -118,6 +117,12 @@
         .locations-list li {
             margin-bottom: 5px;
             break-inside: avoid; /* Ensures entries don't split across columns */
+        }
+        .trust-list {
+            list-style: none; 
+            padding-left: 0;
+            font-size: 1.15rem;
+            line-height: 1.9;
         }
         .trust-list li {
             display: flex; /* Better alignment for list items */
@@ -190,7 +195,7 @@
         </div>
 
         <h2>Why Farmers & Landowners Choose Our Top-Rated Service</h2>
-                <ul class="trust-list" style="font-size:1.15rem;line-height:1.9; list-style: none; padding-left: 0;">
+        <ul class="trust-list">
             <li>**Top-Notch Service Guaranteed:** We promise professionalism and quality on every visit.</li>
             <li>**Returning Customer Discount:** Clients always receive a special discount on future follow-up services.</li>
             <li>Only traditional Duffus traps – the most effective and humane method known</li>
@@ -204,7 +209,7 @@
         </div>
 
         <h2>Full Coverage – Every Town & Village in the Circle</h2>
-        <ul class="locations-list">
+        <ul class="locations-list">
             <li>Brecon</li>
             <li>Builth Wells</li>
             <li>Llandovery</li>
