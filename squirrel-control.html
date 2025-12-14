@@ -56,6 +56,38 @@
         nav a:hover{background:var(--green)}
         main{max-width:1100px;margin:2rem auto;padding:0 1rem}
         .hero{background:var(--light);padding:2.5rem;border-left:10px solid var(--red);border-radius:12px;text-align:center;margin-bottom:2rem}
+        
+        /* Floating Call Button Styles */
+        .sticky-call-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--red);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            z-index: 2000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .sticky-call-btn:hover {
+            transform: scale(1.05);
+            background-color: #b71c1c;
+        }
+
+        /* Hide the text on very small screens to keep it as a circular icon */
+        @media (max-width: 480px) {
+            .sticky-call-btn span { display: none; }
+            .sticky-call-btn { padding: 15px; border-radius: 50%; }
+        }
+
         .big-btn{display:inline-block;background:var(--red);color:#fff;padding:18px 45px;border-radius:50px;font-size:1.4rem;font-weight:bold;text-decoration:none;margin:1.5rem 0;animation:pulse 2s infinite}
         @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(211,47,47,0.7)}70%{box-shadow:0 0 0 15px rgba(211,47,47,0)}100%{box-shadow:0 0 0 0 rgba(211,47,47,0)}}
         .hotspot-box{background:#fff3f3;padding:30px;border:2px solid var(--red);border-radius:12px;margin:40px 0;}
@@ -66,6 +98,11 @@
     </style>
 </head>
 <body>
+
+<a href="tel:+447375303124" class="sticky-call-btn">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.924.025-.013 2.034-1.023 2.034-1.023l-3.526-6.89s-2.003 1.01-2.023 1.022c-5.435 2.751 3.447 20.607 8.91 17.766.079-.041 4.799-2.167 4.799-2.167z"/></svg>
+    <span>Call Now</span>
+</a>
 
 <header>
     <img src="merthyrimages/logo.png" alt="Welsh Town & Country Pest Services" class="logo">
@@ -120,8 +157,6 @@
         </div>
     </section>
 
-    
-
     <h2>UK Law & Humane Dispatch</h2>
     <p>In the UK, it is <strong>strictly illegal</strong> to relocate and release a trapped grey squirrel. Under the Wildlife and Countryside Act 1981, they are classified as an invasive species; once caught, they must be humanely dispatched on-site.</p>
     <ul style="font-size:1.2rem;line-height:2.2">
@@ -139,10 +174,6 @@
     <div style="background:#f8f9fa;padding:20px;border-radius:12px;margin:2rem 0;">
         <strong>Merthyr Town Centre</strong> • <strong>Dowlais</strong> • <strong>Penydarren</strong> • <strong>Gurnos</strong> • <strong>Galon Uchaf</strong> • <strong>Heolgerrig</strong> • <strong>Cefn Coed</strong> • <strong>Vaynor</strong> • <strong>Troedyrhiw</strong> • <strong>Treharris</strong> • <strong>Quaker's Yard</strong> • <strong>Aberfan</strong> • <strong>Pant</strong> • <strong>Pontsticill</strong>
     </div>
-
-    <p style="text-align:center;margin-top:3rem;">
-        <a href="tel:+447375303124" class="big-btn" style="background:var(--dark);">07375 303124 – Tap to Call Your Merthyr Expert</a>
-    </p>
 
 </main>
 
