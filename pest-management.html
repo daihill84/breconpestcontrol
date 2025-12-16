@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Pest Control Contracts & Subscriptions | Brecon & Powys | Welsh Town & Country</title>
+    
+    <title>Pest Control Contracts Brecon | Audit-Ready Service Plans</title>
     
     <link rel="icon" href="breconimages/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="breconstyles/desktop.css">
     <link rel="stylesheet" href="breconstyles/mobile.css" media="only screen and (max-width: 900px)">
     
-    <meta name="description" content="Fixed-price pest management for farms, holiday lets, and businesses in Brecon. Audit-ready farm retainers, monthly Airbnb protection, and commercial contracts.">
+    <meta name="description" content="Bespoke pest management for Brecon farms, holiday lets & businesses. Different packages available for Red Tractor audits & 24/7 priority cover. Call 07375 303124.">
     <meta name="keywords" content="Farm Pest Contract Brecon, Red Tractor Pest Control, Holiday Let Pest Management, Commercial Pest Control Powys, Monthly Rat Control">
+
+    <link rel="canonical" href="https://brecon.welshtownandcountry.co.uk/pest-management.html">
 
     <script type="application/ld+json">
     {
@@ -18,28 +21,64 @@
         "@type": "PestControlService",
         "name": "Welsh Town And Country Pest Services",
         "telephone": "07375 303124",
-        "areaServed": ["Brecon", "Powys", "Merthyr Tydfil", "Sennybridge", "Hay-on-Wye"],
-        "description": "Specialist agricultural and commercial pest management. Farm assurance compliant rodent and mole control contracts.",
-        "offers": {
-            "@type": "AggregateOffer",
-            "priceCurrency": "GBP",
-            "lowPrice": "60",
-            "highPrice": "169"
+        "url": "https://brecon.welshtownandcountry.co.uk/pest-management.html",
+        "areaServed": ["Brecon", "Powys", "Sennybridge", "Hay-on-Wye", "Crickhowell"],
+        "description": "Specialist agricultural and commercial pest management. Different packages available for farm assurance and holiday let protection.",
+        "priceRange": "££"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What pest control packages are available for farms?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer different packages available for farms, including Red Tractor compliant rodent and mole control with full audit-ready documentation and livestock-safe methods."
         }
+      }, {
+        "@type": "Question",
+        "name": "Do you offer emergency call-outs for contract customers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Our bespoke subscription plans include priority response and 24/7 emergency support to ensure your property or business stays pest-free."
+        }
+      }]
     }
     </script>
 
     <style>
-        :root { --farm-green: #0b6623; --business-blue: #2c3e50; --danger-red: #d32f2f; }
+        :root { --farm-green: #0b6623; --business-blue: #2c3e50; --danger-red: #d32f2f; --gold: #fff8e1; }
+        body{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin:0;color:#222;line-height:1.7;background:#fff}
+        .header{background:var(--farm-green);color:#fff;padding:2rem;text-align:center;border-bottom:5px solid #ffcc00}
+        .logo{max-height:80px;border-radius:10px}
+        .phone-number a{color:#ffcc00;font-size:2.2rem;font-weight:900;text-decoration:none}
+        
+        nav{background:#083d14;padding:.8rem;position:sticky;top:0;z-index:1000}
+        nav ul{display:flex;flex-wrap:wrap;justify-content:center;list-style:none;padding:0;margin:0}
+        nav a{color:#fff;padding:12px 20px;font-weight:600;text-decoration:none}
+        nav a:hover{color:#ffcc00}
+
+        main{max-width:1100px;margin:2rem auto;padding:0 1.5rem}
+        .package-intro{background:var(--gold);padding:2.5rem;border-radius:12px;border:1px solid #ffe58f;text-align:center;margin-bottom:2rem}
+        
         .package-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 2rem; }
-        .package { border: 1px solid #ddd; border-top: 8px solid var(--farm-green); border-radius: 8px; padding: 25px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .package { border: 1px solid #ddd; border-top: 8px solid var(--farm-green); border-radius: 8px; padding: 25px; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
         .package.commercial { border-top-color: var(--business-blue); }
-        .price { font-size: 1.8rem; font-weight: 900; color: var(--farm-green); margin: 10px 0; }
-        .features { list-style: none; padding: 0; }
-        .features li { padding: 8px 0; border-bottom: 1px dotted #eee; }
-        .features li::before { content: "✓ "; color: var(--farm-green); font-weight: bold; }
+        
+        .features { list-style: none; padding: 0; text-align: left; margin: 1.5rem 0; }
+        .features li { padding: 8px 0; border-bottom: 1px dotted #eee; padding-left: 25px; position: relative; }
+        .features li::before { content: "✓"; color: var(--farm-green); font-weight: bold; position: absolute; left: 0; }
+        
         .audit-badge { background: #e8f5e9; color: #2e7d32; padding: 5px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; display: inline-block; margin-bottom: 10px; }
+        .big-btn { display: inline-block; background: var(--danger-red); color: #fff; padding: 18px 45px; border-radius: 50px; font-size: 1.4rem; font-weight: 900; text-decoration: none; margin: 1rem 0; transition: 0.3s; box-shadow: 0 4px 15px rgba(211,47,47,0.3); }
+        .big-btn:hover { transform: translateY(-3px); background: #b71c1c; }
+        
         .floating-call-button { position: fixed; bottom: 20px; right: 20px; background-color: var(--danger-red); color: white; border-radius: 50%; width: 65px; height: 65px; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 9999; text-decoration: none; }
+        footer{background:#083d14;color:#fff;text-align:center;padding:3rem 1rem}
     </style>
 </head>
 
@@ -49,91 +88,76 @@
     <div class="logo-container">
         <img src="breconimages/logo.png" alt="Welsh Town And Country Pest Services" class="logo">
         <h1 class="company-name">Welsh Town And Country</h1>
-        <h2>Professional Pest Management & Retainer Contracts</h2>
-    </div>
-    <div class="contact-info">
-        <div>Direct Line: <a href="tel:07375303124">07375 303124</a></div>
-        <p>Audit-Ready • Livestock Safe • Local Support</p>
+        <div class="phone-number"><a href="tel:07375303124">07375 303124</a></div>
     </div>
 </header>
 
 <nav class="navigation">
     <ul>
-        <li><a href="index">Home</a></li>
-        <li><a href="brecon-rodent-control">Rodents</a></li>
-        <li><a href="mole-catching">Farms & Moles</a></li>
-        <li><a href="pest-management" aria-current="page">Subscription Plans</a></li>
-        <li><a href="contact">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/brecon-rodent-control.html">Rodents</a></li>
+        <li><a href="/mole-catching.html">Farms & Moles</a></li>
+        <li><a href="/pest-management.html" aria-current="page">Subscription Plans</a></li>
+        <li><a href="/contact.html">Contact</a></li>
     </ul>
 </nav>
 
 <main>
-    <section class="hero-text" style="text-align: center; padding: 2rem 0;">
-        <h1>Fixed-Price Pest Protection</h1>
-        <p>Don't wait for an infestation. Our subscription plans provide year-round security for farms, businesses, and holiday homes across Mid and South Wales.</p>
-    </section>
+    <div class="package-intro">
+        <h2>Bespoke Year-Round Protection</h2>
+        <p>Prevention is cheaper than a cure. Our fixed-price subscription plans ensure your property is protected 365 days a year from rats, moles, and insects.</p>
+        <strong>Different Packages Available – Tailored to Your Specific Needs</strong>
+    </div>
 
     <div class="package-grid">
         <div class="package">
             <div class="audit-badge">AUDIT & RED TRACTOR READY</div>
             <h4>Agricultural Retainer</h4>
-            <div class="price">£169 <small>/month</small></div>
-            <p>Complete peace of mind for working farms and smallholdings.</p>
+            <p>Peace of mind for working farms and smallholdings.</p>
             <ul class="features">
-                <li>Regular Rodent & Mole monitoring</li>
-                <li>Livestock-safe, non-toxic options</li>
-                <li>Full documentation for Farm Assurance</li>
-                <li>Emergency call-outs included</li>
-                <li>Grain store & Silage pit protection</li>
+                <li>Audit-ready treatment logs & site maps</li>
+                <li>Livestock-safe, poison-free trapping</li>
+                <li>Grain store & silage pit protection</li>
+                <li>Regular preventative monitoring</li>
+                <li>Priority emergency response</li>
             </ul>
+            <a href="tel:07375303124" class="big-btn">Enquire Today</a>
         </div>
 
         <div class="package commercial">
             <div class="audit-badge" style="background:#e3f2fd; color:#1565c0;">REVIEW PROTECTION</div>
-            <h4>Holiday Let Monthly</h4>
-            <div class="price">£60 <small>/month</small></div>
-            <p>Designed for Airbnb and Holiday Cottage owners in the Beacons.</p>
+            <h4>Holiday Let Support</h4>
+            <p>Protecting your reputation and guest ratings.</p>
             <ul class="features">
-                <li>Monthly "Zero-Pest" inspections</li>
-                <li>Preventative insect treatments</li>
-                <li>Discrete service (no marked vans on request)</li>
-                <li>Priority 24hr Wasp Nest removal</li>
-                <li>Guest-safety focused methods</li>
+                <li>Monthly preventative inspections</li>
+                <li>Free insect treatment checkups</li>
+                <li>Discrete service (Unmarked vehicles)</li>
+                <li>24/7 Priority Guest Emergency response</li>
+                <li>Safe for guests and pets</li>
             </ul>
-        </div>
-
-        <div class="package commercial">
-            <div class="audit-badge" style="background:#fff3e0; color:#e65100;">BUSINESS COMPLIANCE</div>
-            <h4>Commercial Basic</h4>
-            <div class="price">From £80 <small>/month</small></div>
-            <p>Essential cover for Pubs, Shops, and Warehouses.</p>
-            <ul class="features">
-                <li>Monthly site visits & monitoring</li>
-                <li>Legal compliance documentation</li>
-                <li>Fly and crawling insect control</li>
-                <li>Multi-site discounts available</li>
-                <li>Rapid response for sightings</li>
-            </ul>
+            <a href="tel:07375303124" class="big-btn">Get a Quote</a>
         </div>
     </div>
 
-    <section style="margin-top: 4rem; background: #f4f4f4; padding: 2rem; border-radius: 8px;">
-        <h3>Why move to a Retainer?</h3>
-        <p>Emergency one-off calls are expensive and only solve the problem <em>after</em> damage is done. Our subscribers benefit from:</p>
+    <section style="margin-top: 4rem; background: #f4f4f4; padding: 2.5rem; border-radius: 12px; border: 1px solid #eee;">
+        <h3>Why Move to a Service Contract?</h3>
+        <p>One-off calls often happen after the damage is done. Our subscribers in <strong>Brecon and Powys</strong> benefit from a proactive approach:</p>
         <ul>
-            <li><strong>Lower Costs:</strong> Fixed monthly fees help your cash flow.</li>
-            <li><strong>Priority Response:</strong> Our contract customers always go to the front of the queue.</li>
-            <li><strong>Prevention First:</strong> We stop the rats before they chew the wires or ruin the silage.</li>
+            <li><strong>Fixed Costs:</strong> No surprise bills; just simple monthly or quarterly protection.</li>
+            <li><strong>Audit Ready:</strong> We handle the documentation for farm and business assurance.</li>
+            <li><strong>Rapid Response:</strong> Contract customers always get priority in our daily schedule.</li>
         </ul>
+        <p style="text-align:center; margin-top:20px;">
+            <strong>Different packages are available to suit every budget.</strong>
+        </p>
     </section>
 </main>
 
 <footer>
     <p>&copy; 2025 Welsh Town And Country Pest Services.</p>
-    <p>Serving Brecon, Merthyr Tydfil, Ebbw Vale, and the South Wales Valleys.</p>
+    <p>Serving Brecon, Sennybridge, Crickhowell, and the Beacons.</p>
     <div class="social-icons">
-        <a href="https://www.facebook.com/profile.php?id=61564861332160" target="_blank">Facebook</a> | 
-        <a href="https://www.instagram.com/welshtownandcountry.co.uk/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61564861332160" target="_blank" style="color:#fff">Facebook</a>
     </div>
 </footer>
 
