@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pest Control Llandeilo & Ammanford | David: Ex-Pestokil Specialist</title>
-    <meta name="description" content="Emergency pest control in Llandeilo, Ammanford & the A40 corridor. David (Ex-Pestokil) offers poison-free rat and mole control for homes and farms. Call 07375 303124.">
+    <meta name="description" content="Emergency 24/7 pest control in Llandeilo, Ammanford & A40. David (Ex-Pestokil) offers poison-free rat & mole control with CCTV drain proofing. Call 07375 303124.">
+    <meta name="keywords" content="pest control Llandeilo, rat catcher Ammanford, mole trapping Tywi Valley, drain rat proofing SA19, wasp nest removal SA18, farm pest control Llandovery">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control.html">
 
@@ -12,38 +13,58 @@
     {
       "@context": "https://schema.org",
       "@type": "PestControlService",
-      "name": "Welsh Town & Country Pest Services (Llandeilo Hub)",
+      "name": "Welsh Town & Country Pest Services (Llandeilo & Ammanford Hub)",
       "telephone": "+447375303124",
       "url": "https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control.html",
-      "description": "Ex-Pestokil specialist providing same-day emergency pest control along the A40 and A483 corridors, including Llandeilo, Ammanford and Llandovery.",
+      "image": "https://brecon.welshtownandcountry.co.uk/breconimages/logo.png",
+      "description": "Ex-Pestokil specialist providing same-day emergency pest control, poison-free rat control, and mole trapping in Llandeilo, Ammanford, and the Tywi Valley.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Llandeilo",
         "addressRegion": "Carmarthenshire",
         "addressCountry": "GB"
       },
-      "areaServed": ["Llandeilo SA19", "Ammanford SA18", "Llandovery", "Ffairfach", "Llandybie", "Glanaman", "Tycroes"],
-      "openingHours": "Mo-Su 00:00-23:59"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.8820,
+        "longitude": -3.9926
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Llandeilo"},
+        {"@type": "City", "name": "Ammanford"},
+        {"@type": "City", "name": "Llandovery"},
+        {"@type": "City", "name": "Ffairfach"},
+        {"@type": "City", "name": "Llandybie"},
+        {"@type": "City", "name": "Glanaman"},
+        {"@type": "City", "name": "Salem"},
+        {"@type": "City", "name": "Tycroes"}
+      ],
+      "openingHours": "Mo-Su 00:00-23:59",
+      "priceRange": "££"
     }
     </script>
 
     <style>
         :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00;--bg:#ffffff}
-        body{font-family:system-ui,-apple-system,sans-serif;margin:0;color:#222;line-height:1.6}
-        header{background:var(--green);color:#fff;text-align:center;padding:3rem 1rem;border-bottom:5px solid var(--gold)}
-        .logo{max-height:80px;width:auto;aspect-ratio:3/1;margin-bottom:1rem}
-        h1{font-size:2.5rem;margin:0 0 1rem;line-height:1.1}
-        .phone-box{background:var(--gold);color:#000;padding:15px 30px;display:inline-block;border-radius:8px;font-weight:900;font-size:1.8rem;text-decoration:none}
-        nav{background:var(--dark);padding:10px;text-align:center}
-        nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:600;font-size:0.9rem}
-        .hero{max-width:900px;margin:2rem auto;padding:2rem;background:var(--light);border-left:10px solid var(--red);border-radius:10px}
-        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;max-width:1100px;margin:2rem auto;padding:0 20px}
-        .card{padding:2rem;background:#fff;border:1px solid #eee;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.05);border-top:5px solid var(--green)}
-        .village-list{background:var(--dark);color:#fff;padding:3rem 1rem;text-align:center;margin-top:3rem}
+        body{font-family:system-ui,-apple-system,sans-serif;margin:0;color:#222;line-height:1.6;background:#fff}
+        header{background:var(--green);color:#fff;text-align:center;padding:2.5rem 1.2rem;border-bottom:5px solid var(--gold)}
+        .logo{max-height:80px;width:auto;margin-bottom:1rem;border-radius:5px}
+        h1{font-size:2.4rem;margin:0 0 1rem;line-height:1.1}
+        .phone-box{background:var(--gold);color:#000;padding:15px 30px;display:inline-block;border-radius:8px;font-weight:900;font-size:1.8rem;text-decoration:none;box-shadow: 0 4px 6px rgba(0,0,0,0.2)}
+        nav{background:var(--dark);padding:12px;text-align:center;position:sticky;top:0;z-index:1000}
+        nav a{color:#fff;margin:0 12px;text-decoration:none;font-weight:600;font-size:0.95rem}
+        nav a:hover{color:var(--gold)}
+        .hero{max-width:950px;margin:2rem auto;padding:2.5rem;background:var(--light);border-left:10px solid var(--red);border-radius:10px}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;max-width:1100px;margin:2rem auto;padding:0 20px}
+        .card{padding:2rem;background:#fff;border:1px solid #eee;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.05);border-top:5px solid var(--green);transition: 0.3s ease}
+        .card:hover{transform:translateY(-5px)}
+        .drain-cta{background:#e1f5fe;border:2px solid #0288d1;padding:2rem;border-radius:10px;max-width:900px;margin:2rem auto;text-align:center}
+        .village-list{background:var(--dark);color:#fff;padding:3.5rem 1.2rem;text-align:center;margin-top:3rem}
         .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;padding:15px 30px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 15px rgba(0,0,0,0.3);z-index:9999;animation:pulse 2s infinite}
         @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(211,47,47,0.7)}70%{box-shadow:0 0 0 15px rgba(211,47,47,0)}100%{box-shadow:0 0 0 0 rgba(211,47,47,0)}}
-        footer{background:#111;color:#fff;text-align:center;padding:2rem;font-size:0.8rem}
-        @media(max-width:600px){h1{font-size:1.8rem}.phone-box{font-size:1.4rem;padding:12px 20px}}
+        footer{background:#111;color:#fff;text-align:center;padding:3rem 1.2rem;font-size:0.9rem}
+        footer a{color:var(--gold);text-decoration:none}
+        @media(max-width:600px){h1{font-size:1.8rem}.phone-box{font-size:1.4rem;padding:12px 20px}nav a{display:block;margin:10px 0}}
     </style>
 </head>
 <body>
@@ -51,55 +72,59 @@
 <header>
     <img src="/breconimages/logo.png" alt="Welsh Town & Country Pest Control Llandeilo" class="logo" width="240" height="80">
     <h1>Pest Control Llandeilo & Ammanford</h1>
-    <p>Ex-Pestokil Specialist • Poison-Free Rodent & Mole Control</p>
+    <p style="font-size:1.2rem;font-weight:bold;">Independent Ex-Pestokil Specialist • 24/7 Support</p>
     <a href="tel:07375303124" class="phone-box">07375 303124</a>
 </header>
 
 <nav>
     <a href="index.html">Brecon Hub</a>
-    <a href="rat-control.html">Rat Control</a>
+    <a href="rat-catcher.html">Rat Control</a>
     <a href="mole-catching.html">Mole Trapping</a>
+    <a href="rats-in-drains.html">Rats in Drains</a>
     <a href="contact.html">Contact</a>
 </nav>
 
 <main>
     <div class="hero">
-        <span style="color:var(--red);font-weight:bold;text-transform:uppercase;letter-spacing:1px;">🚨 Emergency Same-Day Response</span>
-        <h2>Reliable Local Pest Control in West Wales</h2>
-        <p>David provides a dedicated daily service loop covering <strong>Llandeilo, Ammanford, and the A40 corridor</strong>. As an independent Ex-Pestokil specialist, he offers a faster, more thorough alternative to Carmarthenshire council services, specializing in <strong>permanent rodent proofing</strong> and traditional mole trapping.</p>
+        <span style="color:var(--red);font-weight:bold;text-transform:uppercase;letter-spacing:1px;">🚨 Faster Than Council Response</span>
+        <h2>Professional Pest Clearance in Carmarthenshire</h2>
+        <p>Don't wait weeks for a council appointment. David provides a <strong>same-day emergency service</strong> for Llandeilo and Ammanford. As a former senior technician for Pestokil, he brings industrial-grade expertise to local homes and farms, specializing in <strong>poison-free rodent clearance</strong> and traditional mole trapping.</p>
     </div>
 
     <div class="grid">
         <div class="card">
-            <h3>Rat & Mouse Control</h3>
-            <p>Targeted clearance for homes in <strong>Ffairfach</strong> and <strong>Llandybie</strong>. David uses mechanical trapping and HD CCTV drain surveys to find entry points, ensuring rats don't return once the job is done.</p>
+            <h3>Rodent Extermination</h3>
+            <p>We solve rat and mouse issues in <strong>Ammanford, Llandybie, and Tycroes</strong>. We don't just leave bait boxes; we provide a full forensic survey to identify how they are getting in and seal the gaps permanently.</p>
+            <a href="rat-catcher.html" style="color:var(--red);font-weight:bold;">Rat Control Services →</a>
         </div>
         <div class="card">
-            <h3>Specialist Mole Catching</h3>
-            <p>Traditional, poison-free trapping for the large gardens and estates of the <strong>Tywi Valley</strong>. David offers a 100% success guarantee—no mole, no fee service for paddocks and lawns.</p>
+            <h3>Tywi Valley Mole Trapping</h3>
+            <p>Poison-free, traditional trapping for the gardens and estates of <strong>Llandeilo, Salem, and Ffairfach</strong>. "No Mole, No Fee" guarantee. Ideal for lawns, paddocks, and equestrian properties.</p>
+            <a href="mole-catching.html" style="color:var(--red);font-weight:bold;">Mole Catching Info →</a>
         </div>
         <div class="card">
-            <h3>Agricultural Assurance</h3>
-            <p>Red Tractor compliant pest management for farms near <strong>Llandovery and Bethlehem</strong>. Full audit documentation provided for rodent and bird management programs.</p>
+            <h3>Farm Compliance</h3>
+            <p>Supporting the agricultural community in <strong>Llandovery and Bethlehem</strong> with Red Tractor audit-ready pest management. Full documentation for rodent and bird control programs.</p>
+            <a href="farm-pest-control.html" style="color:var(--red);font-weight:bold;">Agricultural Services →</a>
         </div>
     </div>
 
-    <section style="max-width:900px;margin:3rem auto;padding:0 20px;">
-        <div style="background:var(--gold);padding:2rem;border-radius:10px;color:#000;">
-            <h3>The A40 & A483 Service Route</h3>
-            <p>By operating a mobile hub along the A40, David is able to reach emergency call-outs in <strong>Llandeilo and Ammanford</strong> within hours. Whether it's rats in a terrace loft or a mole destroying a manicured lawn, you get senior-level expertise without the "national franchise" price tag.</p>
-        </div>
-    </section>
+    <div class="drain-cta">
+        <h3 style="color:#01579b;margin-top:0;">Stop Rats at the Source: CCTV Drain Surveys</h3>
+        <p>Many homes in the Llandeilo area suffer from recurring rat problems due to faulty Victorian or clay drainage. David uses <strong>HD CCTV Drain Cameras</strong> to find the exact break in your pipes and installs professional **Rat Blockers** to stop them forever.</p>
+        <a href="rats-in-drains.html" style="background:#0288d1;color:#fff;padding:10px 20px;text-decoration:none;border-radius:5px;font-weight:bold;">Learn About Drain Proofing</a>
+    </div>
 
     <div class="village-list">
-        <h3>Areas We Cover Daily:</h3>
+        <h3>Local Villages Served Daily:</h3>
         <p>Llandeilo • Ammanford • Llandovery • Ffairfach • Salem • Bethlehem • Trapp • Llandybie • Tycroes • Glanaman • Brynamman • Sennybridge • Trecastle • Capel Hendre • Penygroes</p>
     </div>
 </main>
 
 <footer>
-    <p>© 2026 Welsh Town & Country Pest Services | <a href="https://www.google.com/search?q=my+business" style="color:var(--gold)">Manage Google Business Profile</a></p>
-    <p>Independent Ex-Pestokil Field Technician | Fully Insured</p>
+    <p>© 2026 Welsh Town & Country Pest Services | Serving SA18, SA19 & SA20</p>
+    <p>Local Independent Expert | Fully Insured | <strong><a href="https://www.google.com/search?q=my+business" target="_blank">View Our 5-Star Reviews</a></strong></p>
+    <p><a href="index.html">Brecon Hub</a> | <a href="rat-catcher.html">Rat Control</a> | <a href="mole-catching.html">Mole Trapping</a></p>
 </footer>
 
 <a href="tel:07375303124" class="floating-call">📞 Call David Now</a>
