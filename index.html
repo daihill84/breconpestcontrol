@@ -50,7 +50,9 @@
         {"@type":"City","name":"Hay-on-Wye"},
         {"@type":"City","name":"Libanus"}
       ],
-      "sameAs": ["https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services"]
+      "sameAs": [
+        "https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services"
+      ]
     }
     </script>
 
@@ -68,10 +70,12 @@
         .pulse-call{background:var(--red);color:#fff;padding:20px 45px;border-radius:50px;display:inline-block;text-decoration:none;font-size:1.8rem;font-weight:bold;animation:pulse 2s infinite;margin:20px 0}
         @keyframes pulse{0%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(211,47,47,0.7)}70%{transform:scale(1);box-shadow:0 0 0 20px rgba(211,47,47,0)}100%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(211,47,47,0)}}
         .technical-box{background:#fff5f5;border:3px solid var(--red);padding:20px;border-radius:10px;margin:2rem 0}
-        .service-card{background:#fff;padding:1.5rem;border-radius:8px;border-top:5px solid var(--green);box-shadow:0 4px 10px rgba(0,0,0,0.05)}
+        .service-card{background:#fff;padding:1.5rem;border-radius:8px;border-top:5px solid var(--green);box-shadow:0 4px 10px rgba(0,0,0,0.05);display:flex;flex-direction:column;justify-content:space-between;}
         .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px}
         .village-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:15px;text-align:center;font-size:0.9rem}
         footer{background:var(--dark);color:#fff;padding:3rem 1rem;text-align:center;border-top:5px solid var(--gold)}
+        .gbp-link{display:inline-block;margin-top:10px;color:var(--gold);text-decoration:none;font-weight:bold;border:1px solid var(--gold);padding:5px 15px;border-radius:5px;}
+        .gbp-link:hover{background:var(--gold);color:var(--dark);}
         .mobile-bar{position:fixed;bottom:0;width:100%;background:var(--red);color:#fff;text-align:center;height:60px;line-height:60px;font-size:1.4rem;font-weight:bold;text-decoration:none;z-index:1000}
         @media (min-width:769px){.mobile-bar{display:none}}
     </style>
@@ -88,10 +92,10 @@
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="brecon-pest-control.html" style="color:var(--gold);">Brecon Hub</a></li>
         <li><a href="rat-catcher.html">Rat & Mouse Control</a></li>
         <li><a href="mole-catching.html">Mole Trapping</a></li>
         <li><a href="rats-in-drains.html">CCTV Drain Surveys</a></li>
-        <li><a href="llandeilo-pest-control.html">Llandeilo Hub</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
@@ -123,18 +127,24 @@
 
     <div class="grid">
         <div class="service-card">
-            <h3>Specialist Mole Catcher</h3>
-            <p>Traditional, poison-free trapping for lawns and paddocks. <strong>No Mole, No Fee</strong> guarantee for residential clients across Brecon and Sennybridge.</p>
+            <div>
+                <h3>Specialist Mole Catcher</h3>
+                <p>Traditional, poison-free trapping for lawns and paddocks. <strong>No Mole, No Fee</strong> guarantee for residential clients across Brecon and Sennybridge.</p>
+            </div>
             <a href="mole-catching.html" style="color:var(--red);font-weight:bold;">Mole Services →</a>
         </div>
-        <div class="service-card">
-            <h3>Farm Compliance (SA18/LD3)</h3>
-            <p>Red Tractor and CRRU audit-ready pest management. David provides full documentation for agricultural estates and silage stores.</p>
-            <a href="farm-pest-control.html" style="color:var(--red);font-weight:bold;">Farm Services →</a>
+        <div class="service-card" style="border-top:5px solid var(--gold);">
+            <div>
+                <h3>Brecon Hub Services</h3>
+                <p>Dedicated local support for the LD3 area. From domestic wasp nests to large agricultural rodent contracts, David is your local lead.</p>
+            </div>
+            <a href="brecon-pest-control.html" style="color:var(--green);font-weight:bold;">Visit Brecon Hub →</a>
         </div>
         <div class="service-card">
-            <h3>Emergency Exterminator</h3>
-            <p>Wasp nest removal, hornet control, and urgent mouse infestations. Available 24/7 across the <strong>A40 Corridor</strong> and Brecon Beacons.</p>
+            <div>
+                <h3>Emergency Exterminator</h3>
+                <p>Wasp nest removal, hornet control, and urgent mouse infestations. Available 24/7 across the <strong>A40 Corridor</strong> and Brecon Beacons.</p>
+            </div>
             <a href="rat-catcher.html" style="color:var(--red);font-weight:bold;">Emergency Help →</a>
         </div>
     </div>
@@ -155,7 +165,7 @@
 
 <footer>
     <p><strong>Welsh Town & Country Pest Services</strong></p>
-    <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" style="color:var(--gold);">Read Our Google Reviews</a></p>
+    <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" class="gbp-link">View our Google Business Profile & Reviews</a></p>
     <p>© 2026 David: Ex-Pestokil Specialist | Serving Brecon, Ammanford & Neath 24/7</p>
 </footer>
 
