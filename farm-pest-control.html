@@ -6,7 +6,7 @@
 
 <title>Farm Pest Control Brecon | Red Tractor Audit Ready | David: Ex-Pestokil</title>
 
-<meta name="description" content="Professional farm pest control in Brecon (LD3). Specialist in Red Tractor audits, poison-free mole catching for silage, and rodent management. David: Ex-Pestokil specialist.">
+<meta name="description" content="Professional farm pest control in Brecon (LD3). Specialist in Red Tractor audits, poison-free mole catching for silage, and rodent management. Call David: 07375 303124.">
 <meta name="keywords" content="farm mole control Brecon, Red Tractor pest control Powys, mole catcher LD3, silage listeria prevention, agricultural rat control, farm pest subscriptions">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://brecon.welshtownandcountry.co.uk/farm-pest-control.html">
@@ -20,6 +20,13 @@
   "url": "https://brecon.welshtownandcountry.co.uk/farm-pest-control.html",
   "image": "https://merthyr.welshtownandcountry.co.uk/merthyrimages/logo.png",
   "priceRange": "££",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Brecon",
+    "addressRegion": "Powys",
+    "postalCode": "LD3",
+    "addressCountry": "GB"
+  },
   "sameAs": ["https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services"],
   "description": "David: Ex-Pestokil farm specialist. Expert fly, rodent, and mole management for the agricultural sector in LD3. Red Tractor compliance expert."
 }
@@ -27,7 +34,7 @@
 
 <style>
     :root { --farm-green: #0b6623; --safety-red: #d32f2f; --gold: #ffcc00; --light-bg: #f9fbf9; }
-    body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; margin: 0; color: #333; background: var(--light-bg); padding-bottom: 70px; }
+    body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; margin: 0; color: #333; background: var(--light-bg); padding-bottom: 80px; }
     .container { width: 92%; max-width: 1100px; margin: auto; padding: 20px 0; }
     
     nav { background: #064016; padding: 12px 0; text-align: center; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid var(--gold); }
@@ -39,24 +46,30 @@
     
     .hero { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; margin: 20px 0; border-top: 5px solid var(--safety-red); }
     
-    .cta-button { display: inline-block; padding: 18px 35px; background: var(--safety-red); color: white; text-decoration: none; font-size: 1.3em; font-weight: bold; border-radius: 50px; margin: 10px; transition: 0.3s; box-shadow: 0 4px 15px rgba(211,47,47,0.3); border: none; cursor: pointer; }
+    .cta-button { display: inline-block; padding: 18px 35px; background: var(--safety-red); color: white; text-decoration: none; font-size: 1.3em; font-weight: bold; border-radius: 50px; margin: 10px; transition: 0.3s; box-shadow: 0 4px 15px rgba(211,47,47,0.3); border: none; }
     .cta-button.secondary { background: var(--farm-green); }
-    
+    .cta-button:hover { transform: scale(1.03); filter: brightness(1.1); }
+
     .gbp-trust { background: #083d14; color: white; padding: 15px; text-align: center; border-radius: 8px; margin: 20px 0; border-left: 5px solid var(--gold); }
-    .gbp-trust a { color: var(--gold); font-weight: bold; }
+    .gbp-trust a { color: var(--gold); font-weight: bold; text-decoration: none; }
 
     .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0; }
-    .service-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid var(--farm-green); }
-    .service-card h3 { margin-top: 0; color: var(--farm-green); display: flex; align-items: center; gap: 10px; }
+    .service-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid var(--farm-green); display: flex; flex-direction: column; justify-content: space-between; }
+    .service-card h3 { margin-top: 0; color: var(--farm-green); }
+    .card-link { color: var(--safety-red); font-weight: bold; text-decoration: none; font-size: 0.9em; margin-top: 10px; display: block; }
 
-    .subscription-box { background: #e8f5e9; padding: 30px; border-radius: 15px; border: 2px dashed var(--farm-green); margin: 40px 0; }
-    .subscription-box h2 { color: var(--farm-green); text-align: center; }
+    .subscription-box { background: #e8f5e9; padding: 30px; border-radius: 15px; border: 2px dashed var(--farm-green); margin: 40px 0; text-align: center; }
 
     .postcode-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; font-size: 0.85em; color: #666; background: white; padding: 20px; border-radius: 12px; border: 1px solid #ddd; }
     
     .message-box { background: var(--gold); padding: 30px; border-radius: 12px; text-align: center; margin: 40px 0; color: #000; }
 
-    .floating-call { position: fixed; bottom: 25px; right: 25px; background: var(--safety-red); color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 5px 20px rgba(0,0,0,0.3); z-index: 9999; animation: pulse 2s infinite; border: 2px solid white; }
+    /* Floating & Sticky Contact Elements */
+    .floating-call { position: fixed; bottom: 85px; right: 20px; background: var(--safety-red); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; text-decoration: none; box-shadow: 0 5px 20px rgba(0,0,0,0.3); z-index: 9999; border: 2px solid white; animation: pulse 2s infinite; }
+    .mobile-sticky-bar { position: fixed; bottom: 0; width: 100%; background: #064016; display: flex; z-index: 9998; border-top: 3px solid var(--gold); }
+    .sticky-item { flex: 1; text-align: center; padding: 15px; color: white; text-decoration: none; font-weight: bold; font-size: 0.9em; border-right: 1px solid rgba(255,255,255,0.1); }
+    .sticky-item:last-child { border-right: none; background: var(--safety-red); }
+
     @keyframes pulse { 0% {box-shadow: 0 0 0 0 rgba(211,47,47,0.7);} 70% {box-shadow: 0 0 0 15px rgba(211,47,47,0);} 100% {box-shadow: 0 0 0 0 rgba(211,47,47,0);} }
 
     footer { background: var(--farm-green); color: white; text-align: center; padding: 40px 0; border-top: 5px solid var(--gold); }
@@ -78,81 +91,94 @@
 <header>
     <div class="container">
         <h1>Farm Pest Control Brecon Beacons</h1>
-        <p>David: Ex-Pestokil Farm Specialist • Red Tractor Audit Documentation</p>
+        <p>David: Ex-Pestokil Specialist • 📞 <a href="tel:07375303124" style="color:white; text-decoration:none;">07375 303124</a></p>
     </div>
 </header>
 
 <a href="tel:07375303124" class="floating-call" title="Call David Now">📞</a>
 
+<div class="mobile-sticky-bar">
+    <a href="/contact.html" class="sticky-item">📩 MESSAGE</a>
+    <a href="tel:07375303124" class="sticky-item">📞 CALL DAVID</a>
+</div>
+
 <div class="container">
     <div class="gbp-trust">
-        🛡️ <strong>Official Google Business Profile:</strong> 
-        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank">View 5-Star Farm Reviews →</a>
+        🛡️ <strong>Verified Local Specialist:</strong> 
+        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank">View David's Google Business Profile & Reviews →</a>
     </div>
 
     <div class="hero">
         <h2>Audit-Ready, Poison-Free Management</h2>
-        <p>Specialist pest management for dairy, arable, and livestock farms across LD3. We provide the professional logs and site maps required for farm assurance.</p>
-        <a href="tel:07375303124" class="cta-button">📞 Call David: 07375 303124</a>
+        <p>Providing professional logs and site maps for Red Tractor audits across LD3.</p>
+        <a href="tel:07375303124" class="cta-button">📞 Call Now: 07375 303124</a>
+        <p style="margin-top:15px;"><a href="/contact.html" style="color:var(--farm-green); font-weight:bold;">Or Click Here to Book a Survey Online</a></p>
     </div>
 
     <div class="service-grid">
         <div class="service-card">
-            <h3>🦡 Mole Control (Farms)</h3>
-            <p>Traditional trapping to protect silage fields and grazing land. Preventing soil-taint and listeria is our priority for livestock health.</p>
+            <div>
+                <h3>🦡 Mole Control (Farms)</h3>
+                <p>Trapping for silage/grazing land. Prevent listeria and soil-taint.</p>
+            </div>
+            <a href="tel:07375303124" class="card-link">Call for Mole Quote →</a>
         </div>
         
         <div class="service-card">
-            <h3>🐀 Rodent Control</h3>
-            <p>Rat and mouse management for barns, grain stores, and yards. We use livestock-safe methods to protect feed and infrastructure.</p>
+            <div>
+                <h3>🐀 Rodent Management</h3>
+                <p>Barns, grain stores, and yards. Livestock-safe methods only.</p>
+            </div>
+            <a href="/rat-control.html" class="card-link">Rat Control Details →</a>
         </div>
         <div class="service-card">
-            <h3>🐝 Wasp & Bee Services</h3>
-            <p>Quick clearance of nests in farm outbuildings. We offer a bee-friendly approach and can refer to local LD3 beekeepers.</p>
+            <div>
+                <h3>🐝 Wasp & Bee Services</h3>
+                <p>Safe nest removal from farm outbuildings. Local LD3 response.</p>
+            </div>
+            <a href="/wasp-nest-removal.html" class="card-link">Wasp Removal →</a>
         </div>
         <div class="service-card">
-            <h3>🐿️ Squirrel Control</h3>
-            <p>Protecting feed stores and equipment from grey squirrel damage. Full legal compliance and ongoing monitoring packages available.</p>
+            <div>
+                <h3>🐿️ Squirrel Control</h3>
+                <p>Protecting feed stores and equipment. Full legal compliance.</p>
+            </div>
+            <a href="tel:07375303124" class="card-link">Book Survey →</a>
         </div>
     </div>
 
-    <section style="background: white; padding: 30px; border-radius: 12px; margin: 30px 0; border: 1px solid #ddd;">
+    <section style="background: white; padding: 30px; border-radius: 12px; margin: 30px 0; border: 1px solid #ddd; text-align:center;">
         <h2>Red Tractor & Audit Compliance</h2>
-        <p>As an <strong>Ex-Pestokil specialist</strong>, David understands the strict requirements of agricultural audits. We provide:</p>
-        <ul>
-            <li>Detailed Site Maps & Trap Locations</li>
-            <li>Non-Toxic Monitoring Logs</li>
-            <li>COSHH Assessments & Safety Data</li>
-            <li>Red Tractor Assured Documentation</li>
-        </ul>
+        <p>Full documentation, site maps, and non-toxic monitoring provided. <strong>Ex-Pestokil expertise.</strong></p>
+        <a href="tel:07375303124" class="cta-button secondary">Speak to David About an Audit</a>
         
     </section>
 
     <div class="subscription-box">
         <h2>🌱 Farm Subscription Packages</h2>
-        <p>Our tailored subscriptions offer long-term protection rather than quick fixes. Packages include regular inspections, priority response, and full audit trails.</p>
-        <div style="text-align: center;">
-            <a href="/contact.html" class="cta-button secondary">Inquire About Farm Subscriptions</a>
-        </div>
+        <p>Long-term protection with priority response and full audit trails.</p>
+        <a href="/contact.html" class="cta-button secondary">Request Subscription Info</a>
     </div>
 
     <h2>LD3 Agricultural Service Area</h2>
     <div class="postcode-columns">
-        <div><strong>🚜 Sennybridge & West (LD3 0):</strong><br>LD3 0PA LD3 0PB LD3 0PD LD3 0PE LD3 0PH LD3 0PJ LD3 0PL LD3 0PN LD3 0PP LD3 0PR...</div>
-        <div><strong>🌾 Talgarth & Felinach (LD3 7/9):</strong><br>LD3 7AA LD3 7AB LD3 7AD LD3 7AE LD3 7AF LD3 7AG LD3 7AH LD3 7AJ LD3 7AL...</div>
-        <div><strong>⛰️ Libanus & Cantref (LD3 8):</strong><br>LD3 8AD LD3 8AE LD3 8AF LD3 8AG LD3 8AH LD3 8AJ LD3 8AL LD3 8AN LD3 8AP...</div>
+        <div><strong>🚜 Sennybridge (LD3 0):</strong><br>LD3 0PA... <a href="tel:07375303124">Call Now</a></div>
+        <div><strong>🌾 Talgarth (LD3 7/9):</strong><br>LD3 7AA... <a href="tel:07375303124">Call Now</a></div>
+        <div><strong>⛰️ Libanus (LD3 8):</strong><br>LD3 8AD... <a href="tel:07375303124">Call Now</a></div>
     </div>
 
     <div class="message-box">
-        <h3>Request a Site Survey</h3>
-        <p>David is often out on farms with limited signal. Please leave a message or book a callback online.</p>
-        <a href="/contact.html" class="cta-button secondary">📩 Request Callback</a>
+        <h3>Need a Fast Response?</h3>
+        <p>If David is working in a barn, signal might be low. Use the form for a guaranteed callback.</p>
+        <a href="/contact.html" class="cta-button secondary">📩 Send David a Message</a>
+        <p style="margin-top:10px; font-weight:bold;">Mobile: 07375 303124</p>
     </div>
 </div>
 
 <footer>
     <div class="container">
-        <p><strong>Welsh Town & Country Pest Services – David: Brecon Farm Hub</strong></p>
+        <p><strong>Welsh Town & Country Pest Services</strong></p>
+        <p>David: Brecon Farm Hub • LD3 Specialist</p>
         <div class="footer-links">
             <a href="/">Home</a> | <a href="/mole-control.html">Mole Catching</a> | <a href="/rat-control.html">Rat Removal</a> | <a href="/contact.html">Contact David</a>
         </div>
