@@ -27,22 +27,35 @@
 
 <style>
     :root { --farm-green: #0b6623; --safety-red: #d32f2f; --gold: #ffcc00; --light-bg: #f9fbf9; }
-    body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; margin: 0; color: #333; background: var(--light-bg); }
+    body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; margin: 0; color: #333; background: var(--light-bg); padding-bottom: 70px; }
     .container { width: 92%; max-width: 1100px; margin: auto; padding: 20px 0; }
     header { background: var(--farm-green); color: white; padding: 30px 0; text-align: center; border-bottom: 5px solid var(--gold); }
-    h1 { font-size: 2.4em; margin: 0; }
+    h1 { font-size: 2.2em; margin: 0; }
     .hero { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; margin: 20px 0; border-top: 5px solid var(--safety-red); }
-    .cta-button { display: inline-block; padding: 20px 40px; background: var(--safety-red); color: white; text-decoration: none; font-size: 1.4em; font-weight: bold; border-radius: 50px; margin-top: 20px; transition: 0.3s; }
-    .gbp-trust { background: #083d14; color: white; padding: 15px; text-align: center; border-radius: 8px; margin: 20px 0; }
+    
+    /* CTA Buttons */
+    .cta-button { display: inline-block; padding: 18px 35px; background: var(--safety-red); color: white; text-decoration: none; font-size: 1.3em; font-weight: bold; border-radius: 50px; margin: 10px; transition: 0.3s; box-shadow: 0 4px 15px rgba(211,47,47,0.3); }
+    .cta-button.secondary { background: var(--farm-green); }
+    .cta-button:hover { transform: scale(1.05); filter: brightness(1.1); }
+
+    .gbp-trust { background: #083d14; color: white; padding: 15px; text-align: center; border-radius: 8px; margin: 20px 0; border-left: 5px solid var(--gold); }
     .gbp-trust a { color: var(--gold); font-weight: bold; }
     
+    /* Floating Call Button */
+    .floating-call { position: fixed; bottom: 25px; right: 25px; background: var(--safety-red); color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 5px 20px rgba(0,0,0,0.3); z-index: 9999; animation: pulse 2s infinite; border: 2px solid white; }
+    @keyframes pulse { 0% {box-shadow: 0 0 0 0 rgba(211,47,47,0.7);} 70% {box-shadow: 0 0 0 15px rgba(211,47,47,0);} 100% {box-shadow: 0 0 0 0 rgba(211,47,47,0);} }
+
     /* Postcode Targeting Section */
     .service-area-grid { background: white; padding: 30px; border-radius: 12px; border: 1px solid #ddd; margin: 30px 0; }
     .postcode-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; font-size: 0.85em; color: #666; }
     .postcode-group h3 { color: var(--farm-green); font-size: 1.1em; border-bottom: 2px solid var(--gold); padding-bottom: 5px; }
     .postcode-list { line-height: 1.8; word-spacing: 5px; }
     
+    .message-box { background: var(--gold); padding: 30px; border-radius: 12px; text-align: center; margin: 40px 0; color: #000; }
+
     footer { background: var(--farm-green); color: white; text-align: center; padding: 40px 0; border-top: 5px solid var(--gold); }
+    
+    @media (max-width: 600px) { h1 { font-size: 1.8em; } .cta-button { width: 85%; font-size: 1.1em; } }
 </style>
 </head>
 <body>
@@ -54,67 +67,65 @@
     </div>
 </header>
 
+<a href="tel:07375303124" class="floating-call" title="Call David Now">📞</a>
+
 <div class="container">
     <div class="gbp-trust">
         🛡️ <strong>Official Google Business Profile:</strong> 
-        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank">Read David's Farm Reviews & View Services →</a>
+        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank">Read David's 5-Star Farm Reviews →</a>
     </div>
 
     <div class="hero">
-        <h2>Specialist No-Poison Rat & Mole Management</h2>
-        <p>Protecting silage quality and livestock safety with traditional trapping methods across Powys and the Mid-Wales valleys.</p>
+        <h2>Traditional No-Poison Rat & Mole Trapping</h2>
+        <p>Expert clearance for dairy farms, equine paddocks, and silage stores. Safe for livestock, dogs, and owls.</p>
         <a href="tel:07375303124" class="cta-button">📞 Call David: 07375 303124</a>
+        <br>
+        <a href="/contact.html" style="color: var(--farm-green); font-weight: bold; text-decoration: underline;">Or click here to book a farm survey online</a>
     </div>
 
-    <h2>Red Tractor Compliance & Audit Reporting</h2>
-    <p>David provides the professional documentation and site maps required for farm assurance schemes. We ensure your pest management is proactive, effective, and completely free of toxic risks to your livestock or wildlife.</p>
+    <h2>Red Tractor Compliance & Audit Documentation</h2>
+    <p>David provides the specific site maps and non-toxic monitoring reports required for <strong>Red Tractor</strong> and <strong>Assured Food Standards</strong> audits. Ensure your farm is compliant without risking secondary poisoning to wildlife.</p>
     
     
 
+    <div style="text-align: center; margin: 30px 0;">
+        <a href="tel:07375303124" class="cta-button secondary">Speak to David About an Audit</a>
+    </div>
+
     <section class="service-area-grid">
-        <h2>David's Agricultural Service Map (LD3)</h2>
-        <p>Providing daily farm pest management and mole catching across these specific Brecon Beacons sectors:</p>
-        
+        <h2>LD3 Agricultural Service Area</h2>
+        <p>David serves farms and smallholdings daily across the following postcodes:</p>
         <div class="postcode-columns">
             <div class="postcode-group">
                 <h3>🚜 Sennybridge & West (LD3 0)</h3>
-                <div class="postcode-list">
-                    LD3 0PA LD3 0PB LD3 0PD LD3 0PE LD3 0PH LD3 0PJ LD3 0PL LD3 0PN LD3 0PP LD3 0PR LD3 0PS LD3 0PT LD3 0PU LD3 0PW LD3 0PY LD3 0PZ LD3 0RA LD3 0RB LD3 0RD LD3 0RE LD3 0RF LD3 0RG LD3 0RH LD3 0RJ LD3 0RL LD3 0RN LD3 0RP LD3 0RR LD3 0RS LD3 0RT LD3 0RU LD3 0RW LD3 0RY LD3 0RZ LD3 0SA LD3 0SB LD3 0SD LD3 0SE LD3 0SF LD3 0SG
-                </div>
+                <div class="postcode-list">LD3 0PA LD3 0PB LD3 0PD LD3 0PE LD3 0PH LD3 0PJ LD3 0PL LD3 0PN LD3 0PP LD3 0PR LD3 0PS LD3 0PT LD3 0PU LD3 0PW LD3 0PY LD3 0PZ LD3 0RA LD3 0RB LD3 0RD LD3 0RE LD3 0RF LD3 0RG LD3 0RH LD3 0RJ LD3 0RL LD3 0RN LD3 0RP LD3 0RR LD3 0RS LD3 0RT LD3 0RU LD3 0RW LD3 0RY LD3 0RZ LD3 0SA LD3 0SB LD3 0SD LD3 0SE LD3 0SF LD3 0SG</div>
             </div>
-
             <div class="postcode-group">
-                <h3>🌾 Felinach & Llanddew (LD3 7)</h3>
-                <div class="postcode-list">
-                    LD3 7AA LD3 7AB LD3 7AD LD3 7AE LD3 7AF LD3 7AG LD3 7AH LD3 7AJ LD3 7AL LD3 7AN LD3 7AP LD3 7AR LD3 7AS LD3 7AT LD3 7AU LD3 7AW LD3 7AX LD3 7AY LD3 7AZ LD3 7BA LD3 7BB LD3 7BD LD3 7BE LD3 7BG LD3 7BH LD3 7BJ LD3 7BL LD3 7BN LD3 7BP LD3 7BR LD3 7BS LD3 7BT LD3 7BU LD3 7BW LD3 7BX LD3 7BY LD3 7BZ LD3 7DA LD3 7DB LD3 7DD
-                </div>
+                <h3>🌾 Felinach & Talgarth (LD3 7/9)</h3>
+                <div class="postcode-list">LD3 7AA LD3 7AB LD3 7AD LD3 7AE LD3 7AF LD3 7AG LD3 7AH LD3 7AJ LD3 7AL LD3 7AN LD3 7AP LD3 7AR LD3 7AS LD3 7AT LD3 7AU LD3 7AW LD3 7AX LD3 7AY LD3 7AZ LD3 7BA LD3 7BB LD3 7BD LD3 7BE LD3 9AA LD3 9AB LD3 9AD LD3 9AE LD3 9AF LD3 9AG LD3 9AH LD3 9AJ LD3 9AL LD3 9AN LD3 9AP LD3 9AR LD3 9AS LD3 9AT LD3 9AU LD3 9AW LD3 9AX LD3 9AY LD3 9AZ</div>
             </div>
-
             <div class="postcode-group">
                 <h3>⛰️ Libanus & Cantref (LD3 8)</h3>
-                <div class="postcode-list">
-                    LD3 8AD LD3 8AE LD3 8AF LD3 8AG LD3 8AH LD3 8AJ LD3 8AL LD3 8AN LD3 8AP LD3 8AR LD3 8AS LD3 8AT LD3 8AU LD3 8AW LD3 8AX LD3 8AY LD3 8AZ LD3 8BA LD3 8BB LD3 8BD LD3 8BE LD3 8BF LD3 8BG LD3 8BH LD3 8BJ LD3 8BL LD3 8BN LD3 8BP LD3 8BR LD3 8BS LD3 8BT LD3 8BU LD3 8BW LD3 8BX LD3 8BY LD3 8BZ LD3 8DA LD3 8DB LD3 8DD LD3 8DE
-                </div>
-            </div>
-
-            <div class="postcode-group">
-                <h3>🏘️ Talgarth & Llangorse (LD3 9)</h3>
-                <div class="postcode-list">
-                    LD3 9AA LD3 9AB LD3 9AD LD3 9AE LD3 9AF LD3 9AG LD3 9AH LD3 9AJ LD3 9AL LD3 9AN LD3 9AP LD3 9AR LD3 9AS LD3 9AT LD3 9AU LD3 9AW LD3 9AX LD3 9AY LD3 9AZ LD3 9BA LD3 9BB LD3 9BD LD3 9BE LD3 9BG LD3 9BH LD3 9BJ LD3 9BL LD3 9BN LD3 9BP LD3 9BR LD3 9BS LD3 9BT LD3 9BU LD3 9BW LD3 9BX LD3 9BY LD3 9BZ LD3 9DA LD3 9DB LD3 9DD
-                </div>
+                <div class="postcode-list">LD3 8AD LD3 8AE LD3 8AF LD3 8AG LD3 8AH LD3 8AJ LD3 8AL LD3 8AN LD3 8AP LD3 8AR LD3 8AS LD3 8AT LD3 8AU LD3 8AW LD3 8AX LD3 8AY LD3 8AZ LD3 8BA LD3 8BB LD3 8BD LD3 8BE LD3 8BF LD3 8BG LD3 8BH LD3 8BJ LD3 8BL LD3 8BN LD3 8BP LD3 8BR LD3 8BS LD3 8BT LD3 8BU LD3 8BW LD3 8BX LD3 8BY LD3 8BZ</div>
             </div>
         </div>
     </section>
 
+    <div class="message-box">
+        <h3>Need a Quote for a Farm Pest Contract?</h3>
+        <p>If David is out on a farm and can't answer, please leave a message or use our contact form for a same-day response.</p>
+        <a href="/contact.html" class="cta-button secondary">📩 Leave a Message / Request Callback</a>
+    </div>
+
     <h2>Why David's Service Works for Powys Farms</h2>
-    <p>Using an independent specialist like David means you get a technician who knows the terrain of the Brecon Beacons. Whether it's clearing a dairy farm of rats or protecting hay meadows from mole damage, our poison-free approach is the safest for your livestock and your livelihood.</p>
+    <p>Using an independent specialist means you get a technician who knows the terrain of the Brecon Beacons. From clearing dairy farms of rats to protecting silage crops from mole-tainted soil, our poison-free approach is the safest and most effective choice for the local agricultural community.</p>
 </div>
 
 <footer>
     <div class="container">
         <p><strong>Welsh Town & Country Pest Services – David: Brecon Farm Hub</strong></p>
         <p>LD3 Specialist | Red Tractor Documentation | Traditional Mole Catching</p>
-        <p>© 2026 | <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" style="color: var(--gold);">Visit our Google Profile</a></p>
+        <p>© 2026 | <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" style="color: var(--gold);">Visit our Google Business Profile</a></p>
     </div>
 </footer>
 
