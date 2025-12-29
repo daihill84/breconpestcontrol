@@ -47,6 +47,7 @@ h1 { font-size:2.2em; margin:0; }
 .hero { background:white; padding:40px; border-radius:15px; box-shadow:0 4px 15px rgba(0,0,0,0.1); text-align:center; margin:20px 0; border-top:5px solid var(--safety-red); }
 
 .experience-badge { background: #fffde7; border: 2px solid var(--gold); padding: 10px; border-radius: 8px; display: inline-block; margin-bottom: 20px; font-weight: bold; color: #444; }
+.safety-alert { background: #e3f2fd; color: #0d47a1; padding: 15px; border-radius: 8px; font-size: 0.95em; border-left: 5px solid #2196f3; margin: 15px 0; text-align: left; }
 
 .cta-button { display:inline-block; padding:18px 35px; background:var(--safety-red); color:white; text-decoration:none; font-size:1.3em; font-weight:bold; border-radius:50px; margin:10px; transition:0.3s; box-shadow:0 4px 15px rgba(211,47,47,0.3); border:none; cursor:pointer; }
 .cta-button.secondary { background:var(--farm-green); }
@@ -55,7 +56,8 @@ h1 { font-size:2.2em; margin:0; }
 .gbp-trust a { color:var(--gold); text-decoration:none; font-weight:bold; }
 
 .service-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px; margin:30px 0; }
-.service-card { background:white; padding:25px; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.05); border-left:5px solid var(--farm-green); }
+.service-card { background:white; padding:25px; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.05); border-left:5px solid var(--farm-green); overflow: hidden; }
+.service-card img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; border: 1px solid #eee; }
 .service-card h3 { color:var(--farm-green); margin-top:0; }
 
 .subscription-box { background:#e8f5e9; padding:35px; border-radius:15px; border:2px dashed var(--farm-green); margin:40px 0; text-align:center; }
@@ -113,7 +115,11 @@ footer { background:var(--farm-green); color:white; text-align:center; padding:4
 <div class="experience-badge">📜 30+ Years Country-Born Expertise</div>
 <h2>Audit-Ready Farm Pest Control in LD3</h2>
 <p>Specialist pest management for dairy, arable, and livestock farms. With a background rooted in lifelong fieldcraft, I offer a level of animal behavior knowledge that goes far beyond standard technician training.</p>
-<p><strong>As a dog and horse owner myself, I understand the vital importance of livestock safety and farm etiquette.</strong> I work with the utmost respect for your animals, ensuring all methods are secure and gates are always left as found.</p>
+
+<div class="safety-alert">
+🐴 <strong>Livestock Safety First:</strong> As a dog and horse owner myself, I understand farm etiquette. I work with total respect for your animals, ensuring methods are secure and gates are always left as found.
+</div>
+
 <p>All work is carried out to meet **Red Tractor** and **Farm Assurance** standards.</p>
 <a href="tel:07375303124" class="cta-button">📞 Speak Directly to David</a>
 </div>
@@ -121,12 +127,14 @@ footer { background:var(--farm-green); color:white; text-align:center; padding:4
 <div class="service-grid">
 
 <div class="service-card">
+<img src="breconimages/moleintrap.jpg" alt="Mole caught in traditional trap Brecon">
 <h3>🦡 Mole Control (Farms)</h3>
 <p>Traditional poison-free trapping built on 30 years of experience. Protecting silage fields and grazing land by preventing soil contamination and listeria risk.</p>
 <p><a href="tel:07375303124" style="color:var(--safety-red); font-weight:bold;">Call for Farm Rates →</a></p>
 </div>
 
 <div class="service-card">
+<img src="brecon-farm-pest-control.png" alt="Rat management on Brecon farm">
 <h3>🐀 Rodent Management</h3>
 <p>Advanced control of rats and mice in grain stores and barns. Using livestock-safe baiting and trapping strategies tailored to busy working yards.</p>
 <p><a href="/rat-control.html" style="color:var(--safety-red); font-weight:bold;">View Rat Services →</a></p>
@@ -145,8 +153,6 @@ footer { background:var(--farm-green); color:white; text-align:center; padding:4
 </div>
 
 </div>
-
-
 
 <div class="subscription-box">
 <h2>🌱 Farm Pest Control Subscription Packages</h2>
