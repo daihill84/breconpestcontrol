@@ -92,6 +92,11 @@
         .gbp-box{background:var(--gold);padding:2rem;border-radius:12px;text-align:center;margin:3rem 0}
         .gbp-btn{background:var(--dark);color:var(--gold);padding:15px 30px;border-radius:8px;text-decoration:none;font-weight:bold}
         .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;text-decoration:none;z-index:9999;box-shadow:0 6px 20px rgba(0,0,0,0.3);animation:pulse 2s infinite}
+        .hub-links{background:var(--light);padding:1.5rem;border-radius:12px;margin:2rem 0;text-align:center;border:1px solid #ddd}
+        .hub-links a{color:var(--green);font-weight:bold;text-decoration:none;margin:0 10px}
+        .local-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:15px;}
+        .local-grid a{display:block;background:var(--green);color:#fff;padding:12px;border-radius:8px;font-weight:bold;text-decoration:none;transition:0.3s}
+        .local-grid a:hover{background:var(--dark);transform:translateY(-3px)}
         footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem}
         footer a{color:var(--gold);text-decoration:none}
         @media(max-width:768px){h1{font-size:2.2rem}.phone-box{font-size:1.6rem}}
@@ -119,6 +124,12 @@
 </nav>
 
 <main>
+    <div class="hub-links">
+        <strong>Our Network:</strong> 
+        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a> | 
+        <a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a>
+    </div>
+
     <section class="hero">
         <h2>Fast, Local Pest Control Across Brecon LD3 & Powys</h2>
         <p>David provides <strong>24/7 emergency response</strong> with poison-free solutions, CCTV drain surveys & Red Tractor compliant farm services. Covering the full corridor from Brecon to Ammanford & Llandeilo.</p>
@@ -164,6 +175,15 @@
             <a href="/pest-control-ammanford.html">Ammanford Details →</a>
         </div>
     </div>
+
+    <!-- Additional Local Links Grid -->
+    <section class="local-grid">
+        <h3 style="text-align:center;">More Areas & Services</h3>
+        <a href="/talgarth_rodent_control.html">Talgarth Rodents</a>
+        <a href="/rats-in-drains">Rats in Drains</a>
+        <a href="/holiday-lets">Holiday Lets</a>
+        <a href="/squirrel-control">Squirrel Control</a>
+    </section>
 
     <section style="text-align:center;margin:4rem 0;">
         <p><strong>Same-day response across Powys & Carmarthenshire – direct to technician</strong></p>
