@@ -23,7 +23,7 @@
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Home",
+          "name": "Brecon Hub Home",
           "item": "https://brecon.welshtownandcountry.co.uk/"
         },
         {
@@ -36,12 +36,46 @@
     }
     </script>
 
-    <!-- Enhanced LocalBusiness / PestControlService Schema -->
+    <!-- FAQPage Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["LocalBusiness", "PestControlService"],
-      "@id": "https://brecon.welshtownandcountry.co.uk/#business",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How fast can you respond in Llandeilo SA19?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "David offers same-day or next-day emergency response across Llandeilo SA19, Ammanford SA18 and the Tywi Valley."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are your treatments safe for farms and livestock?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes – 100% poison-free methods are used, fully compliant with Red Tractor standards and safe for livestock, pets and wildlife."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you cover Ammanford and surrounding villages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Full coverage includes Ammanford SA18, Llandybie, Tycroes, Glanamman, Brynamman and all surrounding Carmarthenshire areas."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Enhanced PestControlService Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PestControlService",
+      "@id": "https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control#business",
       "name": "Welsh Town & Country Pest Services – Llandeilo & Ammanford",
       "url": "https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control",
       "image": "https://brecon.welshtownandcountry.co.uk/breconimages/logo.png",
@@ -70,14 +104,28 @@
         {"@type": "City", "name": "Bethlehem"},
         {"@type": "City", "name": "Trapp"},
         {"@type": "City", "name": "Glanamman"},
-        {"@type": "City", "name": "Brynamman"}
+        {"@type": "City", "name": "Brynamman"},
+        {"@type": "City", "name": "Tycroes"},
+        {"@type": "City", "name": "Penygroes"},
+        {"@type": "City", "name": "Llangadog"},
+        {"@type": "City", "name": "Manordeilo"},
+        {"@type": "City", "name": "Golden Grove"},
+        {"@type": "City", "name": "Cwmamman"},
+        {"@type": "AdministrativeArea", "name": "Tywi Valley"},
+        {"@type": "AdministrativeArea", "name": "Carmarthenshire"}
       ],
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
         "opens": "00:00",
         "closes": "23:59"
-      }
+      },
+      "serviceType": ["Poison-Free Pest Control","Rat Control","Mole Trapping","CCTV Drain Surveys","Red Tractor Compliance","Farm Pest Management"],
+      "sameAs": [
+        "https://brecon.welshtownandcountry.co.uk/",
+        "https://merthyr.welshtownandcountry.co.uk/",
+        "https://neath.welshtownandcountry.co.uk/"
+      ]
     }
     </script>
 
@@ -104,6 +152,9 @@
         .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:1.8rem;box-shadow:0 6px 20px rgba(0,0,0,0.3);z-index:9999}
         .hub-links{background:var(--light);padding:1.5rem;border-radius:12px;margin:2rem 0;text-align:center;border:1px solid #ddd}
         .hub-links a{color:var(--green);font-weight:bold;text-decoration:none;margin:0 10px}
+        .big-btn{background:var(--red);color:#fff;padding:20px 60px;border-radius:50px;font-size:1.6rem;font-weight:900;text-decoration:none;display:inline-block;margin:2rem 0;transition:0.3s;box-shadow:0 4px 15px rgba(211,47,47,0.3);animation: pulse 2s infinite;}
+        .big-btn:hover{transform:translateY(-3px);background:#b71c1c}
+        @keyframes pulse {0% {transform:scale(0.95);box-shadow:0 0 0 0 rgba(211,47,47,0.7)}70% {transform:scale(1);box-shadow:0 0 0 15px rgba(211,47,47,0)}100% {transform:scale(0.95);box-shadow:0 0 0 0 rgba(211,47,47,0)}}
         @media(max-width:600px){h1{font-size:1.9rem}.phone-box{font-size:1.3rem}}
     </style>
 </head>
@@ -145,7 +196,7 @@
         <h2>Rural Pest Protection for Llandeilo & Tywi Valley</h2>
         <p>Emergency or routine pest issues in <strong>Llandeilo SA19</strong> or <strong>Ammanford SA18</strong>? David provides fast, local service focused on <strong>permanent source elimination</strong> – no toxic baits, safe for Red Kites, pets & livestock.</p>
         <p>Specialising in <strong>Red Tractor compliant farm audits</strong>, <strong>CCTV drain surveys</strong> & <strong>traditional mole trapping</strong>.</p>
-        <a href="tel:+447375303124" style="color:var(--red);font-weight:bold;text-decoration:none;font-size:1.2rem;">Book Free Assessment →</a>
+        <a href="tel:+447375303124" class="big-btn">📞 Call David Now – 07375 303124</a>
     </div>
 
     <div class="grid">
@@ -166,7 +217,7 @@
     <div class="drain-cta">
         <h3 style="color:var(--dark);margin-top:0;">Recurring Rats? Check Your Drains</h3>
         <p>90% of repeat infestations start in sewers. David offers <strong>HD CCTV surveys</strong> & <strong>316-grade rat valve installation</strong> for lifetime protection.</p>
-        <a href="tel:+447375303124" style="background:var(--green);color:#fff;padding:15px 35px;text-decoration:none;border-radius:50px;font-weight:bold;display:inline-block;margin-top:15px;">Schedule CCTV Survey</a>
+        <a href="tel:+447375303124" class="big-btn">📞 Schedule CCTV Survey – 07375 303124</a>
     </div>
 
     <div class="village-list">
@@ -190,15 +241,26 @@
             <div>Cwmamman</div>
         </div>
     </div>
+
+    <section style="text-align:center;margin:3rem 0;">
+        <p><strong>Same-day response available – no call-out fee for SA19/SA18</strong></p>
+        <a href="tel:+447375303124" class="big-btn">📞 Call David: 07375 303124</a>
+    </section>
 </main>
 
+<a href="tel:+447375303124" class="floating-call" aria-label="Call David">📞</a>
+
 <footer>
+    <div style="margin-bottom: 20px;">
+        <strong>Our Network Hubs:</strong>
+        <a href="https://brecon.welshtownandcountry.co.uk/">Brecon & Powys Hub</a> |
+        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Tydfil Hub</a> |
+        <a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a>
+    </div>
     <p><strong>Welsh Town & Country Pest Services – Brecon & Powys Hub</strong></p>
     <p>© 2026 David | Ex-Pestokil Field Technician | Fully Insured | 24/7 Response</p>
-    <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">Read Our 5-Star Google Reviews</a></p>
+    <p><a href="https://g.page/r/your-google-business-profile-link" target="_blank" rel="noopener">Read Our 5-Star Google Reviews</a></p>
 </footer>
-
-<a href="tel:+447375303124" class="floating-call" aria-label="Call David">📞</a>
 
 </body>
 </html>
