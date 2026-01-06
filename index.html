@@ -14,7 +14,7 @@
     <link rel="canonical" href="https://brecon.welshtownandcountry.co.uk/">
     <link rel="icon" href="/breconimages/favicon.ico" type="image/x-icon">
 
-    <!-- BreadcrumbList Schema -->
+    <!-- BreadcrumbList Schema (Home only) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -25,18 +25,6 @@
           "position": 1,
           "name": "Brecon Pest Control Hub",
           "item": "https://brecon.welshtownandcountry.co.uk/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Llandeilo Pest Control",
-          "item": "https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Ammanford Pest Control",
-          "item": "https://brecon.welshtownandcountry.co.uk/pest-control-ammanford.html"
         }
       ]
     }
@@ -102,8 +90,13 @@
         .areas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin:3rem 0}
         .area-card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.1);border-top:5px solid var(--green);text-align:center}
         .area-card a{color:var(--green);font-weight:bold;text-decoration:none}
+        .hypa-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:3rem 0;}
+        .hypa-card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.1);border-top:5px solid var(--dark);text-align:center}
+        .hypa-card a{color:var(--dark);font-weight:bold;text-decoration:none}
+        .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;text-decoration:none;z-index:9999;box-shadow:0 4px 20px rgba(0,0,0,0.3);}
         footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem}
         footer a{color:var(--gold);text-decoration:none}
+        @media(max-width:768px){h1{font-size:2.2rem}.phone-box{font-size:1.6rem}}
     </style>
 </head>
 <body>
@@ -128,7 +121,6 @@
 </nav>
 
 <main>
-
     <!-- A40 SERVICE CHAIN -->
     <div class="hub-links">
         <strong>A40 Pest Control Service Chain:</strong><br>
@@ -164,9 +156,30 @@
         </div>
     </div>
 
+    <!-- NEW: Hyper-Local Pages Grid (hypapages) -->
+    <section class="hypa-grid">
+        <h3 style="grid-column:1/-1;text-align:center;">Hyper-Local Areas</h3>
+        <div class="hypa-card">
+            <h3>A40 Corridor</h3>
+            <a href="/hypapages/ammanford-llandeilo-a40.html">Ammanford to Llandeilo A40 →</a>
+        </div>
+        <div class="hypa-card">
+            <h3>Brecon Town Centre</h3>
+            <a href="/hypapages/brecon-town-centre-ld3.html">Brecon Town Centre LD3 →</a>
+        </div>
+        <div class="hypa-card">
+            <h3>Libanus & Talybont-on-Usk</h3>
+            <a href="/hypapages/libanus-talybont-ld3.html">Libanus & Talybont LD3 →</a>
+        </div>
+        <div class="hypa-card">
+            <h3>Sennybridge & Defynnog</h3>
+            <a href="/hypapages/sennybridge-defynnog-ld3.html">Sennybridge & Defynnog LD3 →</a>
+        </div>
+    </section>
+
 </main>
 
-<a href="tel:+447375303124" style="position:fixed;bottom:20px;right:20px;background:#d32f2f;color:#fff;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;text-decoration:none;">📞</a>
+<a href="tel:+447375303124" class="floating-call">📞</a>
 
 <footer>
     <p><strong>Welsh Town & Country Pest Services – Brecon Hub</strong></p>
