@@ -30,11 +30,11 @@
     }
     </script>
 
-    <!-- Enhanced LocalBusiness / PestControlService Schema -->
+    <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "PestControlService",
+      "@type": "LocalBusiness",
       "@id": "https://brecon.welshtownandcountry.co.uk/#business",
       "name": "Welsh Town & Country Pest Services – Brecon & Powys Hub",
       "url": "https://brecon.welshtownandcountry.co.uk/",
@@ -54,21 +54,21 @@
         "latitude": 51.9465,
         "longitude": -3.3883
       },
-      "areaServed": [
-        {"@type": "City", "name": "Brecon"},
-        {"@type": "City", "name": "Talgarth"},
-        {"@type": "City", "name": "Crickhowell"},
-        {"@type": "City", "name": "Llandeilo"},
-        {"@type": "City", "name": "Ammanford"},
-        {"@type": "City", "name": "Ystradgynlais"},
-        {"@type": "City", "name": "Powys"}
-      ],
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
         "opens": "00:00",
         "closes": "23:59"
-      }
+      },
+      "areaServed": [
+        {"@type": "AdministrativeArea", "name": "Brecon"},
+        {"@type": "AdministrativeArea", "name": "Talgarth"},
+        {"@type": "AdministrativeArea", "name": "Crickhowell"},
+        {"@type": "AdministrativeArea", "name": "Llandeilo"},
+        {"@type": "AdministrativeArea", "name": "Ammanford"},
+        {"@type": "AdministrativeArea", "name": "Ystradgynlais"},
+        {"@type": "AdministrativeArea", "name": "Powys"}
+      ]
     }
     </script>
 
@@ -97,6 +97,9 @@
         .local-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:15px;}
         .local-grid a{display:block;background:var(--green);color:#fff;padding:12px;border-radius:8px;font-weight:bold;text-decoration:none;transition:0.3s}
         .local-grid a:hover{background:var(--dark);transform:translateY(-3px)}
+        .squirrel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin:3rem 0;}
+        .squirrel-grid a{display:block;background:var(--dark);color:var(--gold);padding:15px;border-radius:8px;font-weight:bold;text-decoration:none;transition:0.3s}
+        .squirrel-grid a:hover{background:var(--green);transform:translateY(-3px)}
         footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem}
         footer a{color:var(--gold);text-decoration:none}
         @media(max-width:768px){h1{font-size:2.2rem}.phone-box{font-size:1.6rem}}
@@ -125,8 +128,8 @@
 
 <main>
     <div class="hub-links">
-        <strong>Our Network:</strong> 
-        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a> | 
+        <strong>Our Network:</strong>
+        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a> |
         <a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a>
     </div>
 
@@ -176,6 +179,15 @@
         </div>
     </div>
 
+    <!-- NEW: Squirrel Control Village Pages Grid -->
+    <section class="squirrel-grid">
+        <h3 style="grid-column:1/-1;text-align:center;">Humane Squirrel Control – Village Pages</h3>
+        <a href="/squirrel-control">Main Squirrel Control Brecon</a>
+        <a href="/squirrelpages/talgarth-squirrel-control.html">Talgarth Squirrel Control</a>
+        <a href="/squirrelpages/bwlch-squirrel-control.html">Bwlch Squirrel Control</a>
+        <a href="/squirrelpages/sennybridge-squirrel-control.html">Sennybridge Squirrel Control</a>
+    </section>
+
     <!-- Additional Local Links Grid -->
     <section class="local-grid">
         <h3 style="text-align:center;">More Areas & Services</h3>
@@ -198,7 +210,7 @@
     <p>© 2026 David | Ex-Pestokil Field Technician | Fully Insured | 24/7 Emergency Response</p>
     <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">Read Our 5-Star Google Reviews</a></p>
     <p>
-        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a> | 
+        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a> |
         <a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a>
     </p>
 </footer>
