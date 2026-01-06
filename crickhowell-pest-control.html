@@ -36,12 +36,12 @@
     }
     </script>
 
-    <!-- Enhanced LocalBusiness / PestControlService Schema -->
+    <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["LocalBusiness", "PestControlService"],
-      "@id": "https://brecon.welshtownandcountry.co.uk/#business",
+      "@type": "LocalBusiness",
+      "@id": "https://brecon.welshtownandcountry.co.uk/crickhowell-pest-control#business",
       "name": "Welsh Town & Country Pest Services – Crickhowell NP8",
       "url": "https://brecon.welshtownandcountry.co.uk/crickhowell-pest-control",
       "image": "https://brecon.welshtownandcountry.co.uk/breconimages/logo.png",
@@ -60,27 +60,27 @@
         "latitude": 51.858,
         "longitude": -3.138
       },
-      "areaServed": [
-        {"@type": "City", "name": "Crickhowell"},
-        {"@type": "City", "name": "Llangattock"},
-        {"@type": "City", "name": "Bwlch"},
-        {"@type": "City", "name": "Llangynidr"},
-        {"@type": "City", "name": "Glangrwyney"},
-        {"@type": "City", "name": "Llanbedr"},
-        {"@type": "City", "name": "Cwmdu"}
-      ],
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
         "opens": "00:00",
         "closes": "23:59"
-      }
+      },
+      "areaServed": [
+        {"@type": "AdministrativeArea", "name": "Crickhowell"},
+        {"@type": "AdministrativeArea", "name": "Llangattock"},
+        {"@type": "AdministrativeArea", "name": "Bwlch"},
+        {"@type": "AdministrativeArea", "name": "Llangynidr"},
+        {"@type": "AdministrativeArea", "name": "Glangrwyney"},
+        {"@type": "AdministrativeArea", "name": "Llanbedr"},
+        {"@type": "AdministrativeArea", "name": "Cwmdu"}
+      ]
     }
     </script>
 
     <style>
         :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00}
-        body{font-family:'Segoe UI', Tahoma, sans-serif;margin:0;color:#222;background:#fff;line-height:1.7;padding-bottom:80px}
+        body{font-family:'Segoe UI',Tahoma,sans-serif;margin:0;color:#222;background:#fff;line-height:1.7;padding-bottom:80px}
         header{background:var(--green);color:#fff;text-align:center;padding:2rem;border-bottom:4px solid var(--gold)}
         .logo{max-height:90px;width:auto}
         h1{font-size:2.4rem;margin:.8rem 0;line-height:1.2}
@@ -109,12 +109,13 @@
         .local-grid a:hover{background:var(--dark);transform:translateY(-3px)}
         .gbp-trust{background:var(--gold);padding:2rem;border-radius:12px;text-align:center;margin:3rem 0;color:#000;}
         .gbp-trust a{background:var(--dark);color:var(--gold);padding:15px 30px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:10px;font-weight:bold;}
+        .river-section{background:#fff3f3;padding:30px;border:2px solid var(--red);border-radius:12px;margin:40px 0;text-align:left;}
         @media(max-width:600px){h1{font-size:1.8rem}.phone{font-size:1.5rem}.big-btn{font-size:1.4rem;padding:18px 30px}}
     </style>
 </head>
 <body>
 
-<div class="sticky-bar">24/7 EMERGENCY PEST CONTROL CRICKHOWELL NP8 – SAME-DAY RESPONSE Call David: 07375 303124</div>
+<div class="sticky-bar">🚨 24/7 EMERGENCY PEST CONTROL CRICKHOWELL NP8 – SAME-DAY RESPONSE 🚨 Call David: 07375 303124</div>
 
 <header>
     <img src="/breconimages/logo.png" alt="Welsh Town & Country Pest Services Logo" class="logo">
@@ -133,10 +134,11 @@
         <li><a href="/rats-in-drains">Rats in Drains</a></li>
         <li><a href="/holiday-lets">Holiday Lets</a></li>
         <li><a href="/squirrel-control">Squirrel Control</a></li>
-        <li><a href="/pest-control-ystradgynlais">Ystradgynlais SA9</a></li>
-        <li><a href="/pest-control-ammanford">Ammanford SA18</a></li>
-        <li><a href="/llandeilo-pest-control">Llandeilo SA19</a></li>
+        <li><a href="/pest-control-ystradgynlais.html">Ystradgynlais SA9</a></li>
+        <li><a href="/pest-control-ammanford.html">Ammanford SA18</a></li>
+        <li><a href="/llandeilo-pest-control.html">Llandeilo SA19</a></li>
         <li><a href="/talgarth_rodent_control.html">Talgarth LD3</a></li>
+        <li><a href="/bwlch-pest-control.html">Bwlch LD3</a></li>
         <li><a href="/crickhowell-pest-control" style="background:var(--green);color:var(--gold)">Crickhowell NP8</a></li>
         <li><a href="/contact.html">Contact</a></li>
     </ul>
@@ -144,8 +146,8 @@
 
 <main>
     <div class="hub-links">
-        <strong>Our Network:</strong> 
-        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a> | 
+        <strong>Our Network:</strong>
+        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a> |
         <a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a>
     </div>
 
@@ -160,6 +162,14 @@
         <p>See reviews from homeowners & farms across Powys.</p>
         <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">View Google Reviews →</a>
     </div>
+
+    <!-- NEW: River Usk & Local Landmark Rat Source Section -->
+    <section class="river-section">
+        <h3>🐀 Rats from the River Usk & Monmouthshire Canal</h3>
+        <p>The <strong>River Usk</strong> flows right through Crickhowell and Llangattock, while the historic <strong>Monmouthshire & Brecon Canal</strong> runs alongside. These waterways are prime rat corridors – brown rats burrow along the banks and move into nearby properties, especially after flooding or high water levels.</p>
+        <p>David specialises in tracing river/canal-linked entry points with HD CCTV drain surveys and installing permanent 316-grade stainless steel non-return valves to block access at the source.</p>
+        <p>Discreet service – ideal for homes near <strong>Crickhowell Bridge</strong>, <strong>Llangattock Wharf</strong> and the canal towpath.</p>
+    </section>
 
     <div class="grid">
         <div class="card">
@@ -189,14 +199,23 @@
         </div>
     </section>
 
-    <!-- NEW: Local Areas Links Grid -->
+    <!-- MAXIMUM INTERNAL LINKING GRID – Pulls power from all pest control pages -->
     <section class="local-grid">
-        <h3 style="text-align:center;">Other Areas We Cover</h3>
+        <h3 style="text-align:center;">All Brecon Beacons Pest Control Services</h3>
+        <a href="/rat-catcher">Rat Control</a>
+        <a href="/mole-catching">Mole Catcher</a>
+        <a href="/wasp-nest-removal">Wasp Nest Removal</a>
+        <a href="/farm-pest-control">Farm & Red Tractor</a>
+        <a href="/rats-in-drains">Rats in Drains & CCTV</a>
+        <a href="/holiday-lets">Holiday Let Pest Control</a>
+        <a href="/squirrel-control">Squirrel Control</a>
         <a href="/talgarth_rodent_control.html">Talgarth LD3</a>
+        <a href="/bwlch-pest-control.html">Bwlch LD3</a>
         <a href="/pest-control-ystradgynlais.html">Ystradgynlais SA9</a>
         <a href="/llandeilo-pest-control.html">Llandeilo SA19</a>
         <a href="/pest-control-ammanford.html">Ammanford SA18</a>
-        <a href="/farm-pest-control">Farm Services</a>
+        <a href="/">Brecon Main Hub</a>
+        <a href="/contact.html">Contact David</a>
     </section>
 
     <section style="text-align:center;margin:3rem 0;">
