@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+    <!-- CORE HUB -->
     <url>
         <loc>https://brecon.welshtownandcountry.co.uk/</loc>
         <lastmod>2026-01-01</lastmod>
@@ -57,6 +58,7 @@
         <priority>0.90</priority>
     </url>
 
+    <!-- AREA PAGES -->
     <url>
         <loc>https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control.html</loc>
         <lastmod>2026-01-01</lastmod>
@@ -99,7 +101,7 @@
         <priority>0.95</priority>
     </url>
 
-    <!-- A40 CORRIDOR -->
+    <!-- A40 -->
     <url>
         <loc>https://brecon.welshtownandcountry.co.uk/a40-areas.html</loc>
         <lastmod>2026-01-01</lastmod>
@@ -107,62 +109,33 @@
         <priority>0.85</priority>
     </url>
 
-    <!-- SQUIRREL CONTROL PAGES -->
+    <!-- HYPA PAGES -->
     <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/squirrel-control.html</loc>
+        <loc>https://brecon.welshtownandcountry.co.uk/hypapages/brecon-town-centre-ld3.html</loc>
         <lastmod>2026-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
+        <changefreq>daily</changefreq>
+        <priority>0.90</priority>
     </url>
 
     <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/squirrelpages/talgarth-squirrel-control.html</loc>
+        <loc>https://brecon.welshtownandcountry.co.uk/hypapages/libanus-talybont-ld3.html</loc>
         <lastmod>2026-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.88</priority>
     </url>
 
     <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/squirrelpages/bwlch-squirrel-control.html</loc>
+        <loc>https://brecon.welshtownandcountry.co.uk/hypapages/sennybridge-defynnog-ld3.html</loc>
         <lastmod>2026-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.88</priority>
     </url>
 
     <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/squirrelpages/sennybridge-squirrel-control.html</loc>
+        <loc>https://brecon.welshtownandcountry.co.uk/hypapages/ammanford-llandeilo-a40.html</loc>
         <lastmod>2026-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
-    </url>
-
-    <!-- TAKEAWAY & KEBAB SHOP PEST CONTROL -->
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/windsor-road-pest-control</loc>
-        <lastmod>2026-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.75</priority>
-    </url>
-
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/briton-ferry-road-pest-control</loc>
-        <lastmod>2026-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.75</priority>
-    </url>
-
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/takeaway-pest-control-tawe-valley</loc>
-        <lastmod>2026-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.75</priority>
-    </url>
-
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/quay-street-ammanford-pest-control</loc>
-        <lastmod>2026-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.75</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.88</priority>
     </url>
 
     <!-- GENERAL -->
