@@ -23,7 +23,7 @@
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Brecon Hub Home",
+          "name": "Home",
           "item": "https://brecon.welshtownandcountry.co.uk/"
         },
         {
@@ -70,11 +70,11 @@
     }
     </script>
 
-    <!-- Enhanced PestControlService Schema -->
+    <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "PestControlService",
+      "@type": "LocalBusiness",
       "@id": "https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control#business",
       "name": "Welsh Town & Country Pest Services – Llandeilo & Ammanford",
       "url": "https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control",
@@ -94,37 +94,31 @@
         "latitude": 51.8820,
         "longitude": -3.9926
       },
-      "areaServed": [
-        {"@type": "City", "name": "Llandeilo"},
-        {"@type": "City", "name": "Ammanford"},
-        {"@type": "City", "name": "Llandovery"},
-        {"@type": "City", "name": "Ffairfach"},
-        {"@type": "City", "name": "Llandybie"},
-        {"@type": "City", "name": "Salem"},
-        {"@type": "City", "name": "Bethlehem"},
-        {"@type": "City", "name": "Trapp"},
-        {"@type": "City", "name": "Glanamman"},
-        {"@type": "City", "name": "Brynamman"},
-        {"@type": "City", "name": "Tycroes"},
-        {"@type": "City", "name": "Penygroes"},
-        {"@type": "City", "name": "Llangadog"},
-        {"@type": "City", "name": "Manordeilo"},
-        {"@type": "City", "name": "Golden Grove"},
-        {"@type": "City", "name": "Cwmamman"},
-        {"@type": "AdministrativeArea", "name": "Tywi Valley"},
-        {"@type": "AdministrativeArea", "name": "Carmarthenshire"}
-      ],
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
         "opens": "00:00",
         "closes": "23:59"
       },
-      "serviceType": ["Poison-Free Pest Control","Rat Control","Mole Trapping","CCTV Drain Surveys","Red Tractor Compliance","Farm Pest Management"],
-      "sameAs": [
-        "https://brecon.welshtownandcountry.co.uk/",
-        "https://merthyr.welshtownandcountry.co.uk/",
-        "https://neath.welshtownandcountry.co.uk/"
+      "areaServed": [
+        {"@type": "AdministrativeArea", "name": "Llandeilo"},
+        {"@type": "AdministrativeArea", "name": "Ammanford"},
+        {"@type": "AdministrativeArea", "name": "Llandovery"},
+        {"@type": "AdministrativeArea", "name": "Ffairfach"},
+        {"@type": "AdministrativeArea", "name": "Llandybie"},
+        {"@type": "AdministrativeArea", "name": "Salem"},
+        {"@type": "AdministrativeArea", "name": "Bethlehem"},
+        {"@type": "AdministrativeArea", "name": "Trapp"},
+        {"@type": "AdministrativeArea", "name": "Glanamman"},
+        {"@type": "AdministrativeArea", "name": "Brynamman"},
+        {"@type": "AdministrativeArea", "name": "Tycroes"},
+        {"@type": "AdministrativeArea", "name": "Penygroes"},
+        {"@type": "AdministrativeArea", "name": "Llangadog"},
+        {"@type": "AdministrativeArea", "name": "Manordeilo"},
+        {"@type": "AdministrativeArea", "name": "Golden Grove"},
+        {"@type": "AdministrativeArea", "name": "Cwmamman"},
+        {"@type": "AdministrativeArea", "name": "Tywi Valley"},
+        {"@type": "AdministrativeArea", "name": "Carmarthenshire"}
       ]
     }
     </script>
@@ -155,18 +149,18 @@
         .big-btn{background:var(--red);color:#fff;padding:20px 60px;border-radius:50px;font-size:1.6rem;font-weight:900;text-decoration:none;display:inline-block;margin:2rem 0;transition:0.3s;box-shadow:0 4px 15px rgba(211,47,47,0.3);animation: pulse 2s infinite;}
         .big-btn:hover{transform:translateY(-3px);background:#b71c1c}
         @keyframes pulse {0% {transform:scale(0.95);box-shadow:0 0 0 0 rgba(211,47,47,0.7)}70% {transform:scale(1);box-shadow:0 0 0 15px rgba(211,47,47,0)}100% {transform:scale(0.95);box-shadow:0 0 0 0 rgba(211,47,47,0)}}
+        .river-section{background:#fff3f3;padding:30px;border:2px solid var(--red);border-radius:12px;margin:40px 0;text-align:left;}
+        .fields-section{background:#e8f5e9;padding:30px;border:2px solid var(--green);border-radius:12px;margin:40px 0;text-align:left;}
         @media(max-width:600px){h1{font-size:1.9rem}.phone-box{font-size:1.3rem}}
     </style>
 </head>
 <body>
-
 <header>
     <img src="/breconimages/logo.png" alt="Welsh Town & Country Pest Services Logo" class="logo">
     <h1>Pest Control Llandeilo & Ammanford SA19/SA18</h1>
     <p style="font-size:1.3rem;margin-top:10px;">David: Ex-Pestokil Field Technician • 30+ Years Experience</p>
     <a href="tel:+447375303124" class="phone-box">07375 303124</a>
 </header>
-
 <nav>
     <ul>
         <li><a href="/">Brecon Home</a></li>
@@ -183,11 +177,10 @@
         <li><a href="/contact.html">Contact</a></li>
     </ul>
 </nav>
-
 <main>
     <div class="hub-links">
-        <strong>Our Network:</strong> 
-        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a> | 
+        <strong>Our Network:</strong>
+        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a> |
         <a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a>
     </div>
 
@@ -198,6 +191,22 @@
         <p>Specialising in <strong>Red Tractor compliant farm audits</strong>, <strong>CCTV drain surveys</strong> & <strong>traditional mole trapping</strong>.</p>
         <a href="tel:+447375303124" class="big-btn">📞 Call David Now – 07375 303124</a>
     </div>
+
+    <!-- River Tywi Rat Source Section -->
+    <section class="river-section">
+        <h3>🐀 Rats from the River Tywi & Flood Plains</h3>
+        <p>The <strong>River Tywi (Afon Tywi)</strong> flows directly through Llandeilo and the valley floor. Brown rats thrive along the riverbanks and flood plains, using them as corridors to move into nearby properties – especially after heavy rainfall or flooding.</p>
+        <p>David specialises in tracing these river-linked entry points with HD CCTV drain surveys and installing permanent 316-grade stainless steel non-return valves to block access at the source.</p>
+        <p>Discreet service – ideal for homes and businesses near <strong>Dinefwr Park</strong> and the river in Llandeilo & Ffairfach.</p>
+    </section>
+
+    <!-- Fields & Farmland Mice Section -->
+    <section class="fields-section">
+        <h3>🐁 Mice from Nearby Fields & Farmland</h3>
+        <p>The Tywi Valley is surrounded by rich pasture and arable farmland. Field mice frequently migrate into homes and outbuildings as weather cools or crops are harvested.</p>
+        <p>David uses targeted, poison-free trapping and structural proofing to prevent ongoing issues – safe for pets and livestock.</p>
+        <p>Fast response for rural properties around <strong>Golden Grove</strong>, <strong>Manordeilo</strong> and the surrounding Carmarthenshire countryside.</p>
+    </section>
 
     <div class="grid">
         <div class="card">
