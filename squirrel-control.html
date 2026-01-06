@@ -13,6 +13,7 @@
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="GB-POW">
     <meta name="geo.placename" content="Brecon">
+
     <link rel="canonical" href="https://brecon.welshtownandcountry.co.uk/squirrel-control">
     <link rel="icon" href="/breconimages/favicon.ico" type="image/x-icon">
 
@@ -38,12 +39,12 @@
     }
     </script>
 
-    <!-- Enhanced PestControlService Schema -->
+    <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "PestControlService",
-      "@id": "https://brecon.welshtownandcountry.co.uk/#business",
+      "@type": "LocalBusiness",
+      "@id": "https://brecon.welshtownandcountry.co.uk/squirrel-control#business",
       "name": "Welsh Town & Country Pest Services – Squirrel Control Brecon & Powys",
       "url": "https://brecon.welshtownandcountry.co.uk/squirrel-control",
       "image": "https://brecon.welshtownandcountry.co.uk/breconimages/logo.png",
@@ -62,33 +63,32 @@
         "latitude": 51.9467,
         "longitude": -3.3886
       },
-      "areaServed": [
-        {"@type": "City", "name": "Brecon"},
-        {"@type": "City", "name": "Crickhowell"},
-        {"@type": "City", "name": "Llangorse"},
-        {"@type": "City", "name": "Talybont-on-Usk"},
-        {"@type": "City", "name": "Bwlch"},
-        {"@type": "City", "name": "Talgarth"},
-        {"@type": "City", "name": "Hay-on-Wye"},
-        {"@type": "City", "name": "Libanus"},
-        {"@type": "City", "name": "Sennybridge"},
-        {"@type": "City", "name": "Pencelli"},
-        {"@type": "City", "name": "Groesffordd"},
-        {"@type": "City", "name": "Bronllys"}
-      ],
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
         "opens": "00:00",
         "closes": "23:59"
       },
-      "serviceType": "Humane Grey Squirrel Trapping & Control"
+      "areaServed": [
+        {"@type": "AdministrativeArea", "name": "Brecon"},
+        {"@type": "AdministrativeArea", "name": "Crickhowell"},
+        {"@type": "AdministrativeArea", "name": "Llangorse"},
+        {"@type": "AdministrativeArea", "name": "Talybont-on-Usk"},
+        {"@type": "AdministrativeArea", "name": "Bwlch"},
+        {"@type": "AdministrativeArea", "name": "Talgarth"},
+        {"@type": "AdministrativeArea", "name": "Hay-on-Wye"},
+        {"@type": "AdministrativeArea", "name": "Libanus"},
+        {"@type": "AdministrativeArea", "name": "Sennybridge"},
+        {"@type": "AdministrativeArea", "name": "Pencelli"},
+        {"@type": "AdministrativeArea", "name": "Groesffordd"},
+        {"@type": "AdministrativeArea", "name": "Bronllys"}
+      ]
     }
     </script>
 
     <style>
         :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00}
-        body{font-family:'Segoe UI', Tahoma, sans-serif;margin:0;color:#222;line-height:1.7;background:#fff;padding-bottom:80px}
+        body{font-family:'Segoe UI',Tahoma,sans-serif;margin:0;color:#222;background:#fff;line-height:1.7;padding-bottom:80px}
         header{background:var(--green);color:#fff;text-align:center;padding:2rem;border-bottom:4px solid var(--gold)}
         .logo{max-height:90px;width:auto}
         h1{font-size:2.4rem;margin:.8rem 0;line-height:1.2}
@@ -106,18 +106,17 @@
         .card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.1);border-top:5px solid var(--green)}
         .village-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:15px;text-align:center}
         .village-grid div{background:#fff;padding:10px;border-left:4px solid var(--green);border-radius:6px;font-weight:600}
-        .internal-links{background:var(--light);padding:2rem;border-radius:12px;margin:2rem 0;text-align:center}
-        .internal-links a{display:inline-block;background:var(--green);color:#fff;padding:12px 25px;margin:10px;border-radius:8px;font-weight:bold;text-decoration:none;transition:0.3s}
-        .internal-links a:hover{background:var(--dark);transform:translateY(-3px)}
-        .gbp-box{background:var(--gold);padding:2rem;border-radius:12px;margin:3rem 0;border:1px solid #ffe58f;text-align:center;}
-        .gbp-btn{background:var(--dark);color:var(--gold);padding:15px 30px;border-radius:8px;text-decoration:none;font-weight:bold;display:inline-block;}
         .sticky-bar{position:sticky;top:0;background:var(--red);color:#fff;text-align:center;padding:12px;font-weight:bold;z-index:999;}
         footer{background:var(--green);color:#fff;text-align:center;padding:2.5rem}
         .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.8rem;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,0.3);z-index:9999;animation:pulse 2s infinite}
         .specialist-tag{background:var(--dark);color:var(--gold);padding:5px 15px;display:inline-block;border-radius:5px;font-size:0.9rem;margin-bottom:10px}
         .hub-links{background:var(--light);padding:1.5rem;border-radius:12px;margin:2rem 0;text-align:center;border:1px solid #ddd}
-        .hub-links a{display:inline-block;background:var(--green);color:#fff;padding:12px 25px;margin:10px;border-radius:8px;font-weight:bold;text-decoration:none;transition:0.3s}
-        .hub-links a:hover{background:var(--dark);transform:translateY(-3px)}
+        .hub-links a{color:var(--green);font-weight:bold;text-decoration:none;margin:0 10px}
+        .local-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:15px;}
+        .local-grid a{display:block;background:var(--green);color:#fff;padding:12px;border-radius:8px;font-weight:bold;text-decoration:none;transition:0.3s}
+        .local-grid a:hover{background:var(--dark);transform:translateY(-3px)}
+        .gbp-trust{background:var(--gold);padding:2rem;border-radius:12px;text-align:center;margin:3rem 0;color:#000;}
+        .gbp-trust a{background:var(--dark);color:var(--gold);padding:15px 30px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:10px;font-weight:bold;}
         @media(max-width:600px){h1{font-size:1.8rem}.phone{font-size:1.5rem}.big-btn{font-size:1.4rem;padding:18px 30px}}
     </style>
 </head>
@@ -141,19 +140,21 @@
         <li><a href="/farm-pest-control">Farm Pests</a></li>
         <li><a href="/rats-in-drains">Rats in Drains</a></li>
         <li><a href="/holiday-lets">Holiday Lets</a></li>
-        <li><a href="/squirrel-control" style="color:var(--gold)">Squirrel Control</a></li>
+        <li><a href="/squirrel-control" style="background:var(--green);color:var(--gold)">Squirrel Control</a></li>
+        <li><a href="/pest-control-ystradgynlais">Ystradgynlais SA9</a></li>
+        <li><a href="/pest-control-ammanford">Ammanford SA18</a></li>
+        <li><a href="/llandeilo-pest-control">Llandeilo SA19</a></li>
+        <li><a href="/crickhowell-pest-control">Crickhowell NP8</a></li>
+        <li><a href="/bwlch-pest-control.html">Bwlch LD3</a></li>
         <li><a href="/contact.html">Contact</a></li>
     </ul>
 </nav>
 
 <main>
     <div class="hub-links">
-        <strong>Related Brecon & Powys Services:</strong>
-        <a href="/">Brecon Main Hub</a>
-        <a href="/holiday-lets">Holiday Let Pest Control</a>
-        <a href="/rat-catcher">Rat Catcher</a>
-        <a href="/mole-catching">Mole Catcher</a>
-        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a>
+        <strong>Our Network:</strong> 
+        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a> | 
+        <a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a>
     </div>
 
     <div class="hero">
@@ -162,10 +163,10 @@
         <a href="tel:+447375303124" class="big-btn">📞 Call David Now: 07375 303124</a>
     </div>
 
-    <div class="gbp-box">
+    <div class="gbp-trust">
         <h3>Trusted Local 5-Star Service</h3>
         <p>See recent jobs & feedback from Brecon Beacons property owners.</p>
-        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener" class="gbp-btn">View Google Reviews →</a>
+        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">View Google Reviews →</a>
     </div>
 
     <div class="grid">
@@ -202,19 +203,34 @@
         </div>
     </section>
 
-    <p style="text-align:center;margin:4rem 0;">
-        <a href="tel:+447375303124" class="big-btn">📞 24/7 Discreet Service – Call David: 07375 303124</a>
-    </p>
+    <!-- MAXIMUM INTERNAL LINKING GRID – Pulls power from all pest control pages -->
+    <section class="local-grid">
+        <h3 style="text-align:center;">All Brecon Beacons Pest Control Services</h3>
+        <a href="/rat-catcher">Rat Control Brecon</a>
+        <a href="/mole-catching">Mole Catcher Brecon</a>
+        <a href="/wasp-nest-removal">Wasp Nest Removal</a>
+        <a href="/farm-pest-control">Farm & Red Tractor</a>
+        <a href="/rats-in-drains">Rats in Drains & CCTV</a>
+        <a href="/holiday-lets">Holiday Let Pest Control</a>
+        <a href="/crickhowell-pest-control">Crickhowell NP8</a>
+        <a href="/bwlch-pest-control.html">Bwlch LD3</a>
+        <a href="/talgarth_rodent_control.html">Talgarth Rodents</a>
+        <a href="/pest-control-ystradgynlais.html">Ystradgynlais SA9</a>
+        <a href="/llandeilo-pest-control">Llandeilo SA19</a>
+        <a href="/pest-control-ammanford.html">Ammanford SA18</a>
+        <a href="/">Brecon Main Hub</a>
+        <a href="/contact.html">Contact David</a>
+    </section>
+
+    <section style="text-align:center;margin:3rem 0;">
+        <p><strong>Same-day discreet response – no call-out fee for LD3</strong></p>
+        <a href="tel:+447375303124" class="big-btn">📞 Call David: 07375 303124</a>
+    </section>
 </main>
 
 <a href="tel:+447375303124" class="floating-call" aria-label="Call David">📞</a>
 
 <footer>
-    <div style="margin-bottom:20px;">
-        <a href="https://brecon.welshtownandcountry.co.uk/" style="color:var(--gold);margin:0 10px;">Brecon Home</a> |
-        <a href="https://merthyr.welshtownandcountry.co.uk/" style="color:var(--gold);margin:0 10px;">Merthyr Hub</a> |
-        <a href="https://neath.welshtownandcountry.co.uk/" style="color:var(--gold);margin:0 10px;">Neath Hub</a>
-    </div>
     <p><strong>Welsh Town & Country Pest Services – Brecon & Powys Hub</strong></p>
     <p>© 2026 David | Ex-Pestokil Field Technician | Fully Insured | 24/7 Response</p>
     <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">Read Our 5-Star Google Reviews</a></p>
