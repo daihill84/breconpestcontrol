@@ -38,7 +38,7 @@
     }
     </script>
 
-    <!-- LocalBusiness Schema – Enhanced for #1 push -->
+    <!-- LocalBusiness Schema – Enhanced for GBP & Map Pack -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -52,6 +52,7 @@
       "description": "24/7 emergency pest control Ystradgynlais SA9 & Upper Tawe Valley. Ex-Pestokil technician David provides poison-free rat control, CCTV drain surveys, stainless valves & traditional mole trapping across Ystalyfera, Abercrave, Coelbren & surrounding villages.",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Welsh Town & Country Pest Services",
         "addressLocality": "Ystradgynlais",
         "addressRegion": "Powys",
         "postalCode": "SA9",
@@ -59,9 +60,10 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 51.7778,
-        "longitude": -3.7594
+        "latitude": 51.847361546336245,
+        "longitude": -4.222843842479814
       },
+      "hasMap": "https://maps.app.goo.gl/nFpxT4E1cvhrKKLGA",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
@@ -115,6 +117,9 @@
         .river-section{background:#fff3f3;padding:30px;border:2px solid var(--red);border-radius:12px;margin:40px 0;text-align:left;}
         .hs-form-section{background:var(--light);padding:3rem;border-radius:12px;margin:3rem 0;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,0.05);}
         .hs-form-section h3{color:var(--dark);}
+        /* Responsive Google Map */
+        .map-container{width:100%;height:0;padding-bottom:56%;position:relative;margin:3rem 0;}
+        .map-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
         @media(max-width:600px){h1{font-size:1.8rem}.phone{font-size:1.5rem}.big-btn{font-size:1.4rem;padding:18px 30px}}
     </style>
 </head>
@@ -205,6 +210,14 @@
         <a href="/llandeilo-pest-control.html">Llandeilo SA19</a>
         <a href="/">Brecon Main Hub</a>
         <a href="/contact.html">Contact David</a>
+    </section>
+
+    <!-- Google Maps Embed for GBP -->
+    <section class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455156.15330485906!2d-4.222843842479814!3d51.847361546336245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa316942cc26fc9bf%3A0x141ca663679e0707!2sWelsh%20town%20and%20country%20pest%20services!5e1!3m2!1sen!2suk!4v1767752610315!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p style="text-align:center;margin-top:10px;">
+            <a href="https://maps.app.goo.gl/nFpxT4E1cvhrKKLGA" target="_blank" rel="noopener">Open in Google Maps</a>
+        </p>
     </section>
 
     <!-- HubSpot Form – Conversion boost for #1 -->
