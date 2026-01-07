@@ -1,0 +1,18 @@
+# Robots.txt for https://brecon.welshtownandcountry.co.uk/
+# Optimized for Pest Control SEO 2026
+
+User-agent: *
+Allow: /
+
+# Disallow system files and empty documents
+Disallow: /New Text Document.txt
+Disallow: /CNAME
+Disallow: /.htaccess
+
+# Disallow asset folders to focus crawl budget on content pages
+Disallow: /breconimages/
+Disallow: /breconvideos/
+Disallow: /neathimages/
+
+# Sitemap location
+Sitemap: https://brecon.welshtownandcountry.co.uk/sitemap.xml
