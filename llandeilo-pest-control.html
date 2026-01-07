@@ -20,18 +20,8 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://brecon.welshtownandcountry.co.uk/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Pest Control Llandeilo SA19",
-          "item": "https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control"
-        }
+        {"@type": "ListItem","position":1,"name":"Home","item":"https://brecon.welshtownandcountry.co.uk/"},
+        {"@type": "ListItem","position":2,"name":"Pest Control Llandeilo SA19","item":"https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control"}
       ]
     }
     </script>
@@ -55,22 +45,18 @@
         "postalCode": "SA19",
         "addressCountry": "GB"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 51.8820,
-        "longitude": -3.9926
-      },
+      "geo": {"@type": "GeoCoordinates","latitude":51.8820,"longitude":-3.9926},
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
+        "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens":"00:00",
+        "closes":"23:59"
       },
-      "areaServed": [
-        {"@type": "AdministrativeArea", "name": "Llandeilo"},
-        {"@type": "AdministrativeArea", "name": "Ammanford"},
-        {"@type": "AdministrativeArea", "name": "Tywi Valley"},
-        {"@type": "AdministrativeArea", "name": "Carmarthenshire"}
+      "areaServed":[
+        {"@type":"AdministrativeArea","name":"Llandeilo"},
+        {"@type":"AdministrativeArea","name":"Ammanford"},
+        {"@type":"AdministrativeArea","name":"Tywi Valley"},
+        {"@type":"AdministrativeArea","name":"Carmarthenshire"}
       ]
     }
     </script>
@@ -109,6 +95,8 @@
         .river-section{background:#fff3f3;padding:30px;border:2px solid var(--red);border-radius:12px;margin:40px 0;text-align:left;}
         .hs-form-section{background:var(--light);padding:3rem;border-radius:12px;margin:3rem 0;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,0.05);}
         .hs-form-section h3{color:var(--dark);}
+        .map-container{position:relative;width:100%;padding-bottom:56.25%;margin:3rem 0;}
+        .map-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
         @media(max-width:600px){h1{font-size:1.8rem}.phone{font-size:1.5rem}.big-btn{font-size:1.4rem;padding:18px 30px}}
     </style>
 </head>
@@ -158,7 +146,12 @@
     <div class="gbp-trust">
         <h3>Trusted 5-Star Local Service</h3>
         <p>See reviews from homeowners & farms across Carmarthenshire.</p>
-        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">View Google Reviews →</a>
+        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">View Google Business Profile →</a>
+    </div>
+
+    <!-- Responsive Google Map -->
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455156.15330485906!2d-4.222843842479814!3d51.847361546336245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa316942cc26fc9bf%3A0x141ca663679e0707!2sWelsh%20town%20and%20country%20pest%20services!5e1!3m2!1sen!2suk!4v1767752610315!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <!-- Enhanced River Tywi Section – Hyper-local for #1 push -->
