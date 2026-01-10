@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>24/7 Emergency Pest Control Sennybridge LD3 | David Ex-Pestokil | Rats, Moles, Wasps Powys</title>
-    <meta name="description" content="24/7 emergency pest control Sennybridge LD3 & surrounding Powys villages. David (ex-Pestokil) specialises in Red Tractor compliant farm pest control, poison-free rat trapping, and CCTV drain surveys. Same-day response. Call 07375 303124.">
-    <meta name="keywords" content="pest control Sennybridge, pest control LD3, emergency pest control Sennybridge, rat catcher Sennybridge, mole catcher Sennybridge, wasp nest removal Sennybridge, poison free pest control Powys, farm pest control Sennybridge, CCTV drain survey rats Sennybridge, Red Tractor audit pest control, pest control Defynnog, pest control Libanus">
+    <title>24/7 Emergency Pest Control Sennybridge LD3 | David Ex-Pestokil | Rats & Farms</title>
+    
+    <meta name="description" content="24/7 emergency pest control Sennybridge LD3 & surrounding Powys villages. David (ex-Pestokil) specialises in Red Tractor farm audits, poison-free rat control, and CCTV drain surveys. Same-day response. Call 07375 303124.">
+    
+    <meta name="keywords" content="pest control Sennybridge, rat catcher Sennybridge, mole catcher Defynnog, farm pest control LD3, Red Tractor audit Powys, wasp nest removal Sennybridge, poison free rat control Libanus, CCTV drain survey Sennybridge, pest control Trecastle">
+    
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://brecon.welshtownandcountry.co.uk/sennybridge-pest-control.html">
-    
+    <link rel="icon" href="/breconimages/favicon.ico" type="image/x-icon">
+
+    <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -29,104 +34,126 @@
         "addressRegion": "Powys",
         "postalCode": "LD3",
         "addressCountry": "GB"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "5"
-      },
-      "areaServed": [
-        {"@type":"City","name":"Sennybridge"},
-        {"@type":"City","name":"Defynnog"},
-        {"@type":"City","name":"Libanus"},
-        {"@type":"City","name":"Talybont-on-Usk"},
-        {"@type":"City","name":"Trallong"},
-        {"@type":"City","name":"Llanddew"},
-        {"@type":"City","name":"Llanfrynach"},
-        {"@type":"City","name":"Llanspyddid"}
-      ]
+      }
     }
     </script>
 
     <style>
         :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--gold:#ffcc00;--light:#f8f9fa}
         body{font-family:'Segoe UI', Tahoma, sans-serif;margin:0;color:#222;line-height:1.7;background:#fff;padding-bottom:80px}
-        header{background:var(--green);color:#fff;text-align:center;padding:2.5rem 1rem;border-bottom:5px solid var(--gold)}
-        .logo{max-height:100px;width:auto;margin-bottom:15px}
-        h1{font-size:2.4rem;margin:.5rem 0;line-height:1.2}
-        .phone{font-size:2.2rem;font-weight:900;color:#fff;margin-top:15px}
+        
+        .sticky-bar{position:sticky;top:0;background:var(--red);color:#fff;text-align:center;padding:12px;font-weight:bold;z-index:9999;font-size:0.95rem;box-shadow:0 2px 10px rgba(0,0,0,0.2)}
+        
+        header{background:var(--green);color:#fff;text-align:center;padding:2rem 1rem;border-bottom:5px solid var(--gold)}
+        .header-logos{display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap; margin-bottom:15px;}
+        .logo{max-height:90px;width:auto}
+        .rsph-badge{max-height:75px; background:#fff; padding:5px; border-radius:5px;}
+        
+        .phone{font-size:2.2rem;font-weight:900;margin-top:10px}
         .phone a{color:var(--gold);text-decoration:none}
+        
         nav{background:var(--dark);padding:.8rem;position:sticky;top:45px;z-index:998}
         nav ul{display:flex;flex-wrap:wrap;justify-content:center;list-style:none;padding:0;margin:0}
         nav a{color:#fff;padding:12px 20px;font-weight:600;text-decoration:none;font-size:0.9rem}
         nav a:hover{color:var(--gold)}
+        
         main{max-width:1100px;margin:2rem auto;padding:0 1.5rem}
         .hero{background:white;padding:3rem;border-top:8px solid var(--red);text-align:center;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.1);margin-bottom:40px}
-        .council-tag{background:var(--gold);padding:10px 20px;border-radius:5px;font-weight:bold;margin-bottom:15px;display:inline-block}
-        .big-btn{background:var(--red);color:#fff;padding:22px 45px;border-radius:50px;font-size:1.6rem;font-weight:900;text-decoration:none;display:inline-block;margin:1.5rem 0;transition:0.3s;box-shadow:0 5px 15px rgba(211,47,47,0.4)}
-        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;margin:3rem 0}
-        .card{background:var(--light);padding:2rem;border-radius:12px;border-bottom:5px solid var(--green)}
-        .card h3{color:var(--dark);margin-top:0}
+        
+        .council-tag{background:var(--gold);padding:10px 20px;border-radius:5px;font-weight:bold;margin-bottom:15px;display:inline-block;color:#000;}
+        .big-btn{background:var(--red);color:#fff;padding:22px 45px;border-radius:50px;font-size:1.6rem;font-weight:900;text-decoration:none;display:inline-block;margin:1.5rem 0;transition:0.3s;animation:pulse 2s infinite}
+        @keyframes pulse{0%{transform:scale(0.98)}70%{transform:scale(1)}100%{transform:scale(0.98)}}
+        
+        .feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;margin:3rem 0}
+        .feature-card{background:var(--light);padding:1.5rem;border-radius:12px;border-bottom:6px solid var(--green);text-align:center;box-shadow:0 4px 6px rgba(0,0,0,0.05)}
+        .feature-card img{width:100%; height:220px; object-fit:cover; border-radius:8px; margin-bottom:15px;}
+        
+        .farm-section{background:#f0f7f1;padding:30px;border:2px solid var(--green);border-radius:12px;margin:40px 0;}
+        
+        .gbp-box{background:var(--gold); padding:2rem; border-radius:12px; margin:3rem 0; text-align:center; color:#000;}
+        .gbp-box a{background:var(--dark); color:var(--gold); padding:15px 30px; border-radius:8px; text-decoration:none; font-weight:bold; display:inline-block; margin-top:10px;}
+        
         .village-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:20px}
         .village-grid div{background:#fff;padding:12px;border:1px solid #ddd;border-radius:6px;font-weight:600;font-size:0.85rem;text-align:center}
-        .map-container{width:100%;height:350px;background:#eee;border-radius:12px;margin:30px 0;overflow:hidden;border:2px solid var(--green)}
-        .sticky-bar{position:sticky;top:0;background:var(--red);color:#fff;text-align:center;padding:12px;font-weight:bold;z-index:999;font-size:0.95rem}
+        
+        .map-container{width:100%;height:450px;border-radius:12px;margin:30px 0;overflow:hidden;border:2px solid var(--green)}
+        
         footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem}
-        .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,0.3);z-index:9999}
-        @media(max-width:600px){h1{font-size:1.8rem}.phone{font-size:1.6rem}.big-btn{font-size:1.2rem;width:90%}}
+        .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,0.3);z-index:9999}
+        
+        @media(max-width:600px){h1{font-size:1.8rem}.phone{font-size:1.6rem}.map-container{height:300px}}
     </style>
 </head>
 <body>
 
-<div class="sticky-bar">🚨 SENNYBRIDGE EMERGENCY: 07375 303124 (DIRECT TO DAVID)</div>
+<div class="sticky-bar">🚨 SENNYBRIDGE EMERGENCY: 07375 303124 (DIRECT TO DAVID - EX-PESTOKIL)</div>
 
 <header>
-    <img src="/breconimages/logo.png" alt="Welsh Town & Country Pest Control Sennybridge" class="logo">
-    <h1>Pest Control Sennybridge & Defynnog</h1>
-    <p style="font-size:1.2rem; margin:0;">David: Ex-Pestokil Senior Technician • 30 Years Experience</p>
-    <div class="phone">Call: <a href="tel:+447375303124">07375 303124</a></div>
+    <div class="header-logos">
+        <img src="/breconimages/logo.png" alt="Welsh Town & Country Logo" class="logo">
+        <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Certified Level 2" class="rsph-badge">
+    </div>
+    <h1>Pest Control Sennybridge & Defynnog LD3</h1>
+    <p><strong>David: Ex-Pestokil Senior Technician • 30 Years Local Experience</strong></p>
+    <div class="phone"><a href="tel:+447375303124">07375 303124</a></div>
 </header>
 
 <nav>
     <ul>
-        <li><a href="/">Home</a></li>
+        <li><a href="/">Brecon Home</a></li>
         <li><a href="/rat-catcher.html">Rat Control</a></li>
-        <li><a href="https://www.welshmolecatcher.co.uk">Mole Trapping</a></li>
+        <li><a href="/mole-catching.html">Mole Trapping</a></li>
+        <li><a href="/farm-pest-control.html">Red Tractor Audits</a></li>
         <li><a href="/rats-in-drains.html">CCTV Drains</a></li>
-        <li><a href="/farm-pest-control.html">Farm Audits</a></li>
+        <li><a href="/contact.html">Contact</a></li>
     </ul>
 </nav>
 
 <main>
     <div class="hero">
         <div class="council-tag">✅ NO CALL-OUT FEE FOR LD3 POSTCODES</div>
-        <h2>Rapid Response Pest Control in Sennybridge</h2>
-        <p>Expert pest management for Sennybridge homes, farms, and businesses. As of <strong>January 2026</strong>, new rodenticide rules affect how farms manage pests—I provide the 100% poison-free, audit-ready solutions you need for Red Tractor compliance.</p>
-        <a href="tel:+447375303124" class="big-btn">CALL DAVID: 07375 303124</a>
-        <p><em>"David provided a same-day service for a rat issue in our barn near Defynnog. Professional and thorough."</em> - Local Review</p>
+        <h2>Expert Pest Management for Sennybridge & The A40 Corridor</h2>
+        <p>Rapid response pest control for homes, farms, and local businesses. As a former <strong>Pestokil Field Technician</strong>, I bring high-level corporate expertise to the local community, specializing in solving complex rodent issues where others have failed.</p>
+        <a href="tel:+447375303124" class="big-btn">📞 CALL DAVID: 07375 303124</a>
     </div>
 
-    <div class="grid">
-        <div class="card">
-            <h3>🐀 Rat & Rodent Proofing</h3>
-            <p>We specialize in poison-free trapping and permanent structural proofing. Ideal for old stone cottages and barn conversions where traditional baiting has failed.</p>
+    <section class="feature-grid">
+        <div class="feature-card">
+            <img src="/breconimages/rat-house.jpg" alt="Rat control in Sennybridge cottage">
+            <h3>🐀 Poison-Free Rat Eradication</h3>
+            <p>Specializing in permanent solutions for stone cottages and barn conversions in <strong>Cray, Trecastle, and Heol Senni</strong>. We stop the entry, we don't just lay bait.</p>
         </div>
-        <div class="card">
-            <h3>🚜 Red Tractor Farm Audits</h3>
-            <p>Specialist agricultural pest control in <strong>Trallong and Llanspyddid</strong>. Full Integrated Pest Management (IPM) documentation for your next audit.</p>
+        <div class="feature-card">
+            <img src="/breconimages/mole-farm.jpg" alt="Mole trapping Defynnog">
+            <h3>🦔 Traditional Mole Trapping</h3>
+            <p>Professional trapping for grazing land and lawns. "No Catch, No Fee" service across the LD3 corridor. Safe for livestock and pets.</p>
         </div>
-        <div class="card">
-            <h3>🕳️ Drain Rat Investigations</h3>
-            <p>Stop rats at the source. Our CCTV drain surveys identify defects in the LD3 sewer network, followed by professional rat valve installation.</p>
+        <div class="feature-card">
+            <img src="/breconimages/rat-unit.jpg" alt="Commercial pest control Sennybridge">
+            <h3>🚜 Red Tractor & Farm Audits</h3>
+            <p>Full IPM (Integrated Pest Management) documentation. I ensure your farm is 100% audit-ready and compliant with the latest 2026 rodenticide regulations.</p>
         </div>
+    </section>
+
+    <section class="farm-section">
+        <h3>🚜 Agricultural Specialist: Defynnog, Trallong & Libanus</h3>
+        <p>The farming community in Sennybridge faces constant pressure from rodent migration. With the latest changes to environmental laws, traditional "permanent baiting" is now restricted. David provides modern, audit-ready alternatives including heavy-duty trapping programs and high-security structural proofing.</p>
+        <p>Whether it's grain stores in <strong>Llanddew</strong> or sheep sheds in <strong>Llanfrynach</strong>, we provide the documentation needed for Red Tractor and local authority inspections.</p>
+    </section>
+
+    <div class="gbp-box">
+        <h3>Highest Rated Independent in Powys</h3>
+        <div style="font-size:1.8rem; margin-bottom:10px;">★★★★★</div>
+        <p>Don't just take our word for it—see what your neighbors in Sennybridge are saying about our rapid response and thorough work.</p>
+        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">View Google Reviews →</a>
     </div>
 
     <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d157648.51465646145!2d-3.95759715!3d51.8790382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x62956f4d54622f95%3A0xc6f3f05b0a3f89e1!2sWelsh%20Town%20%26%20Country%20Pest%20Services!5e0!3m2!1sen!2suk!4v1714494000000!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39454.44525864115!2d-3.587845!3d51.944358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e300f3404595d%3A0xe54d6e903f90e6e8!2sSennybridge%2C%20Brecon!5e0!3m2!1sen!2suk!4v1710000000000!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
     <section style="background:var(--light); padding:2.5rem; border-radius:12px; margin:3rem 0; border: 1px solid #ddd;">
-        <h3 style="text-align:center; margin-top:0;">Serving the A40 & LD3 Corridor Daily</h3>
+        <h3 style="text-align:center; margin-top:0;">Serving the LD3 Area Daily</h3>
         <p style="text-align:center;">Fast response to all surrounding villages and hamlets:</p>
         <div class="village-grid">
             <div>Sennybridge</div><div>Defynnog</div><div>Libanus</div><div>Talybont</div>
@@ -136,12 +163,12 @@
     </section>
 </main>
 
-<a href="tel:+447375303124" class="floating-call">📞</a>
+<a href="tel:+447375303124" class="floating-call" aria-label="Call David Now">📞</a>
 
 <footer>
-    <p><strong>Welsh Town & Country Pest Services</strong></p>
-    <p>Sennybridge & Brecon LD3 Hub | Family Run | 30+ Years Experience</p>
-    <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" style="color:var(--gold); text-decoration:none; font-weight:bold;">View our 5-Star Reviews on Google Profile →</a></p>
+    <p><strong>Welsh Town & Country Pest Services – LD3 Hub</strong></p>
+    <p>© 2026 David Hill | Ex-Pestokil Senior Technician | Fully Insured | 24/7 Response</p>
+    <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">Read Our 5-Star Reviews on Google</a></p>
 </footer>
 
 </body>
