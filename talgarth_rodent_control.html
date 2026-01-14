@@ -10,7 +10,6 @@
     <link rel="canonical" href="https://brecon.welshtownandcountry.co.uk/talgarth_rodent_control.html">
     <link rel="icon" href="/breconimages/favicon.ico" type="image/x-icon">
 
-    <!-- BreadcrumbList Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -22,7 +21,6 @@
     }
     </script>
 
-    <!-- Enhanced PestControlService Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -53,15 +51,8 @@
         {"@type": "City", "name": "Three Cocks"},
         {"@type": "City", "name": "Glasbury"},
         {"@type": "City", "name": "Erwood"},
-        {"@type": "City", "name": "Felindre"},
-        {"@type": "City", "name": "Black Mountains"}
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
+        {"@type": "City", "name": "Felindre"}
+      ]
     }
     </script>
 
@@ -75,7 +66,7 @@
         .logo{max-height:70px; border-radius:5px;}
         .rsph-badge{max-height:65px; background:#fff; padding:3px; border-radius:4px;}
         
-        h1{font-size:2rem; margin:0; color:#fff;}
+        h1{font-size:1.8rem; margin:0; color:#fff;}
         .phone{font-size:1.8rem; font-weight:900;}
         .phone a{color:var(--gold); text-decoration:none; border:2px dashed var(--gold); padding:5px 12px; border-radius:8px;}
 
@@ -87,11 +78,11 @@
         main{max-width:1100px;margin:2rem auto;padding:0 1.5rem;}
         .hero{background:var(--light);padding:2.5rem;border-left:12px solid var(--green);border-radius:12px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,0.05);}
         .big-btn{display:inline-block;background:var(--red);color:#fff;padding:20px 50px;border-radius:50px;font-size:1.5rem;font-weight:bold;text-decoration:none;margin:2rem 0;animation:pulse 2s infinite;}
-        @keyframes pulse{0%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(211,47,47,0.7)}70%{transform:scale(1);box-shadow:0 0 0 15px rgba(211,47,47,0)}100%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(211,47,47,0)}}
+        @keyframes pulse{0%{transform:scale(0.95)}70%{transform:scale(1)}100%{transform:scale(0.95)}}
         
         .farm-box{background:var(--agri-bg);padding:30px;border:2px solid var(--green);border-radius:12px;margin:40px 0; display:flex; gap:25px; align-items:center; flex-wrap:wrap;}
         .farm-text{flex:2; min-width:300px;}
-        .farm-img{flex:1; min-width:250px; border-radius:10px; border:4px solid #fff; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+        .farm-img{flex:1; min-width:250px; border-radius:10px; border:4px solid #fff; box-shadow:0 4px 10px rgba(0,0,0,0.1); object-fit: cover; height: 300px;}
 
         .gbp-trust{background:var(--gold);padding:2rem;border-radius:12px;text-align:center;margin:3rem 0;color:#000; border:2px solid var(--dark);}
         .gbp-trust a{background:var(--dark);color:var(--gold);padding:15px 30px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:10px;font-weight:bold;}
@@ -100,20 +91,11 @@
         .hub-links a{color:var(--green);font-weight:bold;text-decoration:none;margin:0 10px}
         
         .map-container{width:100%; height:400px; border-radius:12px; overflow:hidden; border:3px solid var(--green); margin:2rem 0;}
-        
         .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;text-decoration:none;z-index:9999;box-shadow:0 4px 20px rgba(0,0,0,0.3);}
         
         footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem;}
         footer a{color:var(--gold);text-decoration:none;}
-        
-        @media(max-width:768px){
-            .header-container{justify-content:center; text-align:center;}
-            h1{font-size:1.6rem}
-            .phone{font-size:1.4rem}
-            nav a{padding:8px 10px;font-size:0.85rem;}
-        }
     </style>
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/147475275.js"></script>
 </head>
 <body>
 
@@ -123,82 +105,79 @@
             <img src="/breconimages/logo.png" alt="Welsh Town & Country Pest Services Logo" class="logo">
             <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Level 2 Certified" class="rsph-badge">
         </div>
-        <h1>Rat & Mouse Control Talgarth LD3</h1>
+        <h1>Rat & Mouse Control Talgarth</h1>
         <div class="phone"><a href="tel:+447375303124">07375 303124</a></div>
     </div>
 </header>
 
 <nav>
     <ul>
-        <li><a href="/">Brecon Home</a></li>
-        <li><a href="/rat-catcher">Rat Control</a></li>
-        <li><a href="/mole-catching">Mole Catcher</a></li>
-        <li><a href="/wasp-nest-removal">Wasp Removal</a></li>
-        <li><a href="/farm-pest-control">Farm Pests</a></li>
-        <li><a href="/rats-in-drains">Rats in Drains</a></li>
-        <li><a href="/talgarth_rodent_control.html" style="background:var(--green);color:var(--gold)">Talgarth Rodents</a></li>
+        <li><a href="/">Home Hub</a></li>
+        <li><a href="/rat-catcher.html">Rat Catcher</a></li>
+        <li><a href="/mole-catching.html">Mole Catching</a></li>
+        <li><a href="/farm-pest-control.html">Farm Compliance</a></li>
+        <li><a href="/rats-in-drains.html">CCTV Drains</a></li>
+        <li><a href="/talgarth_moles.html">Talgarth Moles</a></li>
         <li><a href="/contact.html">Contact</a></li>
     </ul>
 </nav>
 
 <main>
-    <div class="hub-links">
-        <strong>Our Network:</strong>
-        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a> |
-        <a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a>
-    </div>
-
     <section class="hero">
-        <h2>David: Ex-Pestokil Field Technician</h2>
-        <p>Expert <strong>poison-free rat & mouse trapping</strong> for farms, estates & residential properties in Talgarth LD3, Bronllys, Llyswen & the Black Mountains. We don't just "bait and leave" – we find the entry points and fix them permanently.</p>
-        <a href="tel:+447375303124" class="big-btn">📞 EMERGENCY CALL-OUT: 07375 303124</a>
+        <p style="color:var(--green); font-weight:bold; margin-bottom:0;">🎖️ LOCAL EX-PESTOKIL SENIOR TECHNICIAN</p>
+        <h2>Traditional Poison-Free Trapping in Talgarth & LD3</h2>
+        <p>Expert <strong>poison-free rat & mouse control</strong> for homes, grain stores, and estates in Talgarth, Bronllys, and Llyswen. David (Ex-Pestokil) focuses on finding the source of the problem—performing deep structural audits to seal entry points permanently.</p>
+        <a href="tel:+447375303124" class="big-btn">📞 24/7 EMERGENCY RESPONSE</a>
     </section>
 
     <div class="gbp-trust">
-        <h3>Trusted Local 5-Star Service</h3>
-        <p>Professional pest management with proven results for LD3 businesses and homeowners.</p>
-        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">Read Our Google Reviews →</a>
+        <h3>Local 5-Star Rated Service</h3>
+        <p>Trusted by Talgarth farmers and homeowners for over 10 years. We don't just "bait"—we solve the problem.</p>
+        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">View Our Google Reviews & Business Profile →</a>
     </div>
+
+    
 
     <section class="farm-box">
         <div class="farm-text">
-            <h3>🚜 Red Tractor Compliant Farm Control</h3>
-            <p>Specialist solutions for rural LD3 farms where traditional poisons aren't suitable:</p>
+            <h3>🚜 Red Tractor Compliant Solutions</h3>
+            <p>Specialist management for Talgarth farms where bird of prey safety and environmental compliance are priorities:</p>
             <ul>
-                <li><strong>100% Poison-Free:</strong> Safe for working dogs, livestock & birds of prey.</li>
-                <li><strong>Audit Ready:</strong> Full documentation and site maps for Red Tractor inspections.</li>
-                <li><strong>Grain & Feed Stores:</strong> Strategic trapping to protect your livelihoods.</li>
-                <li><strong>Estate Management:</strong> Professional rodent clearance for large rural holdings.</li>
+                <li><strong>Poison-Free Protocols:</strong> Eliminating secondary poisoning risks to working dogs and wildlife.</li>
+                <li><strong>Audit Ready:</strong> Detailed digital reporting and site maps provided for agricultural inspections.</li>
+                <li><strong>Feed Store Defense:</strong> High-impact trapping to protect livestock feed and grain integrity.</li>
+                <li><strong>Discreet & Local:</strong> Rapid response for LD3, LD2, and HR3 postcodes.</li>
             </ul>
         </div>
-        <img src="/breconimages/rat-house.jpg" alt="Rodent Entry Point Investigation" class="farm-img">
+        <img src="/breconimages/rat-house.jpg" alt="Rodent Proofing Older Properties Talgarth" class="farm-img">
     </section>
 
     <div style="display:flex; gap:20px; flex-wrap:wrap; margin:3rem 0; align-items:center;">
         <div style="flex:1; min-width:300px;">
-            <h2>Residential & Garden Rodent Proofing</h2>
-            <p>If you have scratching in your attic or sightings near your bird feeders, David provides a full property audit. We specialise in identifying the tiny gaps rodents use to enter older Talgarth properties.</p>
-            <p><strong>Service Areas:</strong> Talgarth LD3, Bronllys, Llyswen, Three Cocks, Glasbury, Erwood, Felindre and the foothills of the Black Mountains.</p>
+            <h2>Residential Rodent Proofing</h2>
+            <p>If you have scratching in the loft or sightings in your garden, a standard "baiting" visit won't solve it. David provides a full property audit to find the gaps in stone walls or defects in drainage that rodents use to gain access.</p>
+            <p><strong>Areas Covered:</strong> Talgarth, Bronllys, Llyswen, Three Cocks, Glasbury, Erwood, Felindre, and the Black Mountains.</p>
         </div>
-        <img src="/breconimages/rat-unit.jpg" alt="Commercial Pest Control Unit" style="flex:1; max-width:400px; border-radius:12px;">
+        <img src="/breconimages/rat-unit.jpg" alt="Local Pest Control Unit Talgarth" style="flex:1; max-width:400px; border-radius:12px; border:2px solid var(--green);">
     </div>
 
     <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19760.36214532654!2d-3.245641!3d51.9960!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870298a4628d657%3A0xc66c1e57608e82b7!2sTalgarth%2C%20Brecon!5e0!3m2!1sen!2suk!4v1710000000000!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19760.36214532654!2d-3.245641!3d51.9960!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870298a4628d657%3A0xc66c1e57608e82b7!2sTalgarth%2C%20Brecon!5e0!3m2!1sen!2suk!4v1710000000000!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-
-    <section style="text-align:center;margin:3rem 0;">
-        <p><strong>Same-day response – No call-out fee for Talgarth area</strong></p>
-        <a href="tel:+447375303124" class="big-btn">📞 CALL DAVID: 07375 303124</a>
-    </section>
 </main>
 
-<a href="tel:+447375303124" class="floating-call" aria-label="Call David">📞</a>
+<a href="tel:+447375303124" class="floating-call" aria-label="Call David Now">📞</a>
 
 <footer>
-    <p><strong>Welsh Town & Country Pest Services – Talgarth & Powys Hub</strong></p>
-    <p>© 2026 David | Senior Field Technician (Ex-Pestokil) | RSPH Level 2 Certified | 24/7 Response</p>
-    <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">Visit our Google Business Profile</a></p>
+    <div style="max-width:1100px; margin:0 auto;">
+        <p><strong>Welsh Town & Country Pest Services – Talgarth Hub</strong></p>
+        <p>© 2026 David | Senior Field Technician (Ex-Pestokil) | RSPH Level 2 Certified</p>
+        <div style="margin-top:20px;">
+            <a href="/talgarth_moles.html">Talgarth Mole Catching</a> | 
+            <a href="/squirrelpages/talgarth-squirrel-control.html">Talgarth Squirrel Control</a> | 
+            <a href="/rats-in-drains.html">CCTV Drain Surveys</a>
+        </div>
+    </div>
 </footer>
 
 </body>
