@@ -48,7 +48,7 @@
         nav a { color: #fff; padding: 10px 15px; text-decoration: none; font-weight: bold; }
         main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
         .hero-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; background: var(--light); padding: 3rem; border-left: 12px solid var(--green); border-radius: 12px; align-items: center; }
-        .hero-img { width: 100%; border-radius: 10px; border: 5px solid #fff; }
+        .hero-img { width: 100%; border-radius: 10px; border: 5px solid #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
         .big-btn { display: inline-block; background: var(--red); color: #fff; padding: 20px 50px; border-radius: 50px; font-size: 1.6rem; font-weight: bold; text-decoration: none; margin: 1.5rem 0; animation: pulse 2s infinite; }
         @keyframes pulse { 0% { transform: scale(0.98); } 50% { transform: scale(1.02); } 100% { transform: scale(0.98); } }
         .farm-box { background: var(--agri-bg); padding: 35px; border: 3px solid var(--green); border-radius: 15px; margin: 40px 0; }
@@ -57,6 +57,7 @@
         .hypa-links a { color: var(--green); text-decoration: none; border: 1px solid transparent; padding: 5px 10px;}
         .map-container { width: 100%; height: 450px; border-radius: 15px; overflow: hidden; border: 4px solid var(--green); margin: 3rem 0; }
         footer { background: var(--dark); color: #fff; text-align: center; padding: 4rem 1rem; }
+        .gbp-button { background: var(--gold); color: #000; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; border: 2px solid #000; margin-top: 10px;}
     </style>
 </head>
 <body>
@@ -66,29 +67,29 @@
         <div class="header-wrap">
             <div class="brand">
                 <img src="/breconimages/logo.png" alt="Welsh Town & Country Pest Services" class="logo">
-                <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Certified" class="cert-badge">
+                <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Level 2 Certified Pest Technician" class="cert-badge">
             </div>
             <a href="tel:07375303124" class="phone-box">07375 303124</a>
         </div>
     </header>
 
     <nav>
-        <a href="/">Home</a> | <a href="/rat-catcher.html">Rat Control</a> | <a href="/mole-catching.html">Mole Catcher</a>
+        <a href="/">Home</a> | <a href="/rat-catcher.html">Rat Control</a> | <a href="/mole-catching.html">Mole Catcher</a> | <a href="/farm-pest-control.html">Farm Pests</a>
     </nav>
 
     <main>
         <section class="hero-layout">
             <div class="hero-text">
                 <h1>Professional Mole Control & Traditional Mole Catcher Brecon</h1>
-                <p><strong>David: Ex-Pestokil Technician</strong>. Rapid, poison-free mole clearance for Brecon Beacons farms and gardens. Traditional trapping methods for immediate results without risk to livestock.</p>
+                <p><strong>David: Ex-Pestokil Technician</strong>. Rapid, poison-free mole clearance for Brecon Beacons farms and gardens. Traditional trapping methods for immediate results without risk to livestock or pets.</p>
                 <a href="tel:07375303124" class="big-btn">📞 CALL MOLE SPECIALIST</a>
             </div>
-            <img src="/breconimages/mole-farm.jpg" alt="Traditional Mole Control Brecon Farm" class="hero-img">
+            <img src="/breconimages/mole-farm.jpg" alt="Traditional Mole Catching in Brecon Fields" class="hero-img">
         </section>
 
         <div class="farm-box">
             <h3>🚜 Red Tractor & Farm-Safe Mole Management</h3>
-            <p>Specialist traditional trapping for silage pits and grazing land. Full audit documentation provided for Red Tractor compliance.</p>
+            <p>Specialist traditional trapping for silage pits, paddocks, and grazing land. We understand the risks of Listeriosis and soil contamination. Full audit documentation provided for Red Tractor compliance across Powys and Carmarthenshire.</p>
         </div>
 
         <section class="hypa-index">
@@ -108,13 +109,16 @@
         </div>
 
         <div style="text-align:center; margin-top:3rem;">
-            <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener noreferrer" style="color:var(--dark); font-weight:bold; text-decoration: underline;">View Our Google Business Profile</a>
+            <h3>Highly Rated Local Specialist</h3>
+            <p>Trust the experience of a senior technician with 30+ years in the field.</p>
+            <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener noreferrer" class="gbp-button">Visit My Google Business Profile ★★★★★</a>
         </div>
     </main>
 
     <footer>
         <p><strong>Welsh Town & Country Pest Services</strong></p>
-        <p>© 2026 David | RSPH Certified | Ex-Pestokil Technician</p>
+        <p>© 2026 David Hill | RSPH Level 2 Certified | Ex-Pestokil Senior Technician</p>
+        <p>Traditional Mole Catching in Brecon, Sennybridge, Talgarth, and the Tywi Valley.</p>
     </footer>
 </body>
 </html>
