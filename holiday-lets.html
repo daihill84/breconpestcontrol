@@ -14,7 +14,6 @@
     <link rel="canonical" href="https://brecon.welshtownandcountry.co.uk/holiday-lets">
     <link rel="icon" href="/breconimages/favicon.ico" type="image/x-icon">
 
-    <!-- BreadcrumbList Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -26,7 +25,6 @@
     }
     </script>
 
-    <!-- FAQPage Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -53,7 +51,7 @@
     </script>
 
     <style>
-        :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00}
+        :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00;--agri-bg:#e8f5e9}
         body{font-family:'Segoe UI',Tahoma,sans-serif;margin:0;color:#222;background:#fff;line-height:1.7;padding-bottom:80px}
         
         header{background:var(--green);color:#fff;padding:2rem;text-align:center;border-bottom:4px solid var(--gold)}
@@ -84,12 +82,15 @@
         
         .hub-links{background:var(--light);padding:1.5rem;border-radius:12px;margin:2rem 0;text-align:center;border:1px solid #ddd}
         .hub-links a{color:var(--green);font-weight:bold;text-decoration:none;margin:0 10px}
-        
-        .local-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:15px;}
-        .local-grid a{display:block;background:var(--green);color:#fff;padding:12px;border-radius:8px;font-weight:bold;text-decoration:none;transition:0.3s; text-align: center;}
-        .local-grid a:hover{background:var(--dark);transform:translateY(-3px)}
+
+        /* Village Index Styling */
+        .village-index { background: var(--agri-bg); padding: 2.5rem; border-radius: 12px; margin: 3rem 0; border: 2px solid var(--green); text-align: center; }
+        .village-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 20px; }
+        .village-grid a { background: #fff; border: 1px solid var(--green); color: var(--dark); padding: 8px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: 0.2s; }
+        .village-grid a:hover { background: var(--green); color: #fff; }
         
         .map-container{width:100%; height: 400px; border-radius:12px; overflow:hidden; border:4px solid var(--green); margin:3rem 0;}
+        iframe { width: 100%; height: 100%; border: 0; }
         
         .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;text-decoration:none;z-index:9999;box-shadow:0 4px 20px rgba(0,0,0,0.3);}
         footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem;}
@@ -107,7 +108,7 @@
             <img src="/breconimages/logo.png" alt="Welsh Town & Country Pest Services Logo" class="logo">
             <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Level 2 Certified" class="cert-badge">
         </div>
-        <h1>Holiday Let Pest Control Brecon & Powys</h1>
+        <h1>Holiday Let Pest Control Brecon & Beacons</h1>
         <div class="phone"><a href="tel:+447375303124">📞 07375 303124</a></div>
     </div>
 </header>
@@ -127,9 +128,9 @@
 
 <main>
     <div class="hub-links">
-        <strong>Our Network:</strong> 
-        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a> | 
-        <a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a>
+        <strong>Regional Hubs:</strong> 
+        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr</a> | 
+        <a href="https://neath.welshtownandcountry.co.uk/">Neath</a>
     </div>
 
     <section class="hero">
@@ -138,40 +139,43 @@
         <a href="tel:+447375303124" class="big-btn">📞 BOOK DISCRETE INSPECTION</a>
     </section>
 
-    <img src="/breconimages/rat-house.jpg" alt="Discrete pest control for holiday cottages" class="feature-img">
+    <img src="/breconimages/rat-house.jpg" alt="Discrete pest control for holiday cottages in Brecon" class="feature-img">
 
     <div class="gbp-trust">
-        <h3>5-Star Rated Service</h3>
-        <p>We work with cottage owners and management agencies across Powys.</p>
-        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">Read Our Google Reviews →</a>
+        <h3>5-Star Rated Holiday Let Specialist</h3>
+        <p>We work with cottage owners and management agencies across Powys to maintain 5-star hygiene standards.</p>
+        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">View Our Verified Reviews →</a>
     </div>
 
     <section class="farm-box">
         <h3>🛡️ Protect Your Reviews & Income</h3>
         <p>A single pest sighting can devastate your ratings. David provides proactive, unmarked service tailored specifically for the hospitality sector:</p>
         <ul>
-            <li><strong>Flexible Scheduling:</strong> Inspections performed between guest check-out/check-in.</li>
+            <li><strong>Flexible Scheduling:</strong> Inspections performed during changeover days.</li>
             <li><strong>Unmarked Response:</strong> Completely discrete vehicles for zero visibility.</li>
-            <li><strong>Cluster Fly Specialists:</strong> Effective treatments for the most common holiday let issue in the Beacons.</li>
-            <li><strong>Pet & Family Safe:</strong> Only non-toxic or safely secured methods used.</li>
+            <li><strong>Cluster Fly Specialists:</strong> Dedicated treatments for Beacons holiday properties.</li>
+            <li><strong>Pet & Family Safe:</strong> Safe, secure, and professional methods only.</li>
         </ul>
     </section>
 
-    <img src="/breconimages/rat-unit.jpg" alt="Professional pest monitoring equipment" class="feature-img">
+    <img src="/breconimages/rat-unit.jpg" alt="Professional pest monitoring for holiday rentals" class="feature-img">
 
-    <h2 style="text-align:center;">Serving All Major Holiday Hubs</h2>
-    <div class="local-grid">
-        <a href="/crickhowell-pest-control">Crickhowell NP8</a>
-        <a href="/talgarth_rodent_control.html">Talgarth LD3</a>
-        <a href="/pest-control-ystradgynlais.html">Ystradgynlais SA9</a>
-        <a href="/llandeilo-pest-control.html">Llandeilo SA19</a>
-        <a href="/pest-control-ammanford.html">Ammanford SA18</a>
-        <a href="/holiday-lets">Brecon Beacons</a>
-    </div>
+    <section class="village-index">
+        <h3>Brecon & Beacons Village Index</h3>
+        <p>Direct links to our specialized rural service pages:</p>
+        <div class="village-grid">
+            <a href="/hypapages/brecon-town-centre-ld3.html">📍 Brecon Town Centre</a>
+            <a href="/hypapages/libanus-talybont-ld3.html">📍 Libanus & Talybont</a>
+            <a href="/hypapages/sennybridge-defynnog-ld3.html">📍 Sennybridge & Defynnog</a>
+            <a href="/hypapages/ammanford-llandeilo-a40.html">📍 Ammanford-Llandeilo A40</a>
+            <a href="/pest-control-ammanford.html">📍 Ammanford Hub</a>
+            <a href="/llandeilo-pest-control.html">📍 Llandeilo</a>
+            <a href="/crickhowell-pest-control">📍 Crickhowell</a>
+        </div>
+    </section>
 
-    <img src="/breconimages/mole-farm.jpg" alt="Grounds maintenance for holiday rentals" class="feature-img">
+    <img src="/breconimages/mole-farm.jpg" alt="Mole control and grounds maintenance for rental properties" class="feature-img">
 
-    <!-- Google Map for Local Context -->
     <div class="map-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455156.15330485906!2d-4.222843842479814!3d51.847361546336245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa316942cc26fc9bf%3A0x141ca663679e0707!2sWelsh%20town%20and%20country%20pest%20services!5e1!3m2!1sen!2suk!4v1767752610315!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
@@ -186,7 +190,7 @@
 
 <footer>
     <p><strong>Welsh Town & Country Pest Services – Holiday Let Specialist</strong></p>
-    <p>© 2026 David | RSPH Level 2 | Ex-Pestokil Field Technician | Fully Insured</p>
+    <p>© 2026 David | RSPH Level 2 | Ex-Pestokil | Fully Insured</p>
     <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">Visit Our Google Business Profile</a></p>
 </footer>
 
