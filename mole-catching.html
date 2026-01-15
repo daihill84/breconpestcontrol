@@ -8,20 +8,22 @@
     <meta name="description" content="Professional mole control and traditional poison-free mole catching in Brecon LD3. David (Ex-Pestokil) offers same-day trapping for farms, gardens & paddocks. Call 07375 303124.">
     
     <meta name="geo.region" content="GB-POW">
-    <meta name="geo.placename" content="Brecon LD3">
-    
+    <meta name="geo.placename" content="Brecon">
+    <meta name="geo.position" content="51.9472;-3.3915">
+    <meta name="ICBM" content="51.9472, -3.3915">
+
     <link rel="canonical" href="https://brecon.welshtownandcountry.co.uk/mole-catching">
     <link rel="icon" href="/breconimages/favicon.ico" type="image/x-icon">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "PestControlService",
+      "@type": ["PestControlService", "LocalBusiness"],
       "name": "Welsh Town & Country Mole Control Specialists",
       "url": "https://brecon.welshtownandcountry.co.uk/mole-catching",
       "logo": "https://brecon.welshtownandcountry.co.uk/breconimages/logo.png",
       "image": "https://brecon.welshtownandcountry.co.uk/breconimages/mole-farm.jpg",
-      "description": "Ex-Pestokil specialist David provides professional mole control and traditional trapping in Brecon LD3.",
+      "description": "Ex-Pestokil specialist David provides professional mole control and traditional trapping in Brecon LD3 and surrounding agricultural areas.",
       "telephone": "+447375303124",
       "priceRange": "££",
       "address": {
@@ -31,74 +33,105 @@
         "postalCode": "LD3",
         "addressCountry": "GB"
       },
-      "serviceType": ["Mole Control", "Mole Catcher", "Mole Trapping"]
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.9472,
+        "longitude": -3.3915
+      },
+      "serviceType": ["Mole Control", "Mole Catcher", "Mole Trapping", "Agricultural Pest Control"]
     }
     </script>
 
     <style>
         :root { --green: #0b6623; --dark: #083d14; --red: #d32f2f; --light: #f8f9fa; --gold: #ffcc00; --agri-bg: #e8f5e9; }
         body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; color: #222; background: #fff; line-height: 1.7; padding-bottom: 80px;}
-        .sticky-alert { position: sticky; top: 0; background: var(--red); color: #fff; text-align: center; padding: 12px; font-weight: bold; z-index: 4000; }
+        .sticky-alert { position: sticky; top: 0; background: var(--red); color: #fff; text-align: center; padding: 12px; font-weight: bold; z-index: 4000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
         header { background: var(--green); color: #fff; padding: 1.5rem; text-align: center; border-bottom: 5px solid var(--gold); }
         .header-wrap { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
-        .logo { max-height: 80px; }
-        .cert-badge { max-height: 65px; background: #fff; padding: 5px; border-radius: 4px; }
-        .phone-box { background: var(--gold); color: #000; padding: 12px 25px; border-radius: 8px; font-weight: 900; font-size: 1.7rem; text-decoration: none; border: 2px solid var(--dark); }
-        nav { background: var(--dark); padding: 0.8rem 0; text-align: center;}
-        nav a { color: #fff; padding: 10px 15px; text-decoration: none; font-weight: bold; }
+        .logo { max-height: 85px; border-radius: 5px; }
+        .cert-badge { max-height: 75px; background: #fff; padding: 5px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .phone-box { background: var(--gold); color: #000; padding: 12px 25px; border-radius: 8px; font-weight: 900; font-size: 1.7rem; text-decoration: none; border: 2px solid var(--dark); transition: 0.3s; }
+        .phone-box:hover { background: #fff; color: var(--green); }
+        
+        nav { background: var(--dark); padding: 1rem 0; text-align: center; position: sticky; top: 50px; z-index: 3000;}
+        nav a { color: #fff; padding: 10px 20px; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: var(--gold); }
+        
         main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
-        .hero-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; background: var(--light); padding: 3rem; border-left: 12px solid var(--green); border-radius: 12px; align-items: center; }
-        .hero-img { width: 100%; border-radius: 10px; border: 5px solid #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        .big-btn { display: inline-block; background: var(--red); color: #fff; padding: 20px 50px; border-radius: 50px; font-size: 1.6rem; font-weight: bold; text-decoration: none; margin: 1.5rem 0; animation: pulse 2s infinite; }
+        .hero-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; background: var(--light); padding: 3rem; border-left: 15px solid var(--green); border-radius: 12px; align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .hero-img { width: 100%; border-radius: 10px; border: 6px solid #fff; box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+        
+        .big-btn { display: inline-block; background: var(--red); color: #fff; padding: 22px 55px; border-radius: 50px; font-size: 1.6rem; font-weight: bold; text-decoration: none; margin: 1.5rem 0; box-shadow: 0 4px 15px rgba(211,47,47,0.4); animation: pulse 2s infinite; }
         @keyframes pulse { 0% { transform: scale(0.98); } 50% { transform: scale(1.02); } 100% { transform: scale(0.98); } }
+        
         .farm-box { background: var(--agri-bg); padding: 35px; border: 3px solid var(--green); border-radius: 15px; margin: 40px 0; }
-        .hypa-index { background: var(--agri-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--green); text-align: center; }
-        .hypa-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; font-weight: bold; margin-top: 15px; }
-        .hypa-links a { color: var(--green); text-decoration: none; border: 1px solid transparent; padding: 5px 10px;}
+        .hypa-index { background: var(--light); padding: 2.5rem; border-radius: 12px; border: 2px solid var(--green); text-align: center; }
+        .hypa-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; font-weight: bold; margin-top: 15px; }
+        .hypa-links a { background: #fff; color: var(--green); text-decoration: none; border: 1px solid var(--green); padding: 8px 15px; border-radius: 5px; transition: 0.2s; }
+        .hypa-links a:hover { background: var(--green); color: #fff; }
+        
         .map-container { width: 100%; height: 450px; border-radius: 15px; overflow: hidden; border: 4px solid var(--green); margin: 3rem 0; }
         footer { background: var(--dark); color: #fff; text-align: center; padding: 4rem 1rem; }
-        .gbp-button { background: var(--gold); color: #000; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; border: 2px solid #000; margin-top: 10px;}
+        .gbp-button { background: var(--gold); color: #000; padding: 18px 40px; border-radius: 10px; text-decoration: none; font-weight: bold; display: inline-block; border: 2px solid #000; margin-top: 15px; font-size: 1.1rem;}
+
+        @media (max-width: 768px) {
+            .hero-layout { grid-template-columns: 1fr; padding: 1.5rem; text-align: center; }
+            .phone-box { font-size: 1.3rem; }
+        }
     </style>
 </head>
 <body>
-    <div class="sticky-alert">🚨 24/7 MOLE CONTROL & TRADITIONAL TRAPPING BRECON – 07375 303124 🚨</div>
+    <div class="sticky-alert">🚨 24/7 MOLE TRAPPING SPECIALIST BRECON – 07375 303124 🚨</div>
 
     <header>
         <div class="header-wrap">
             <div class="brand">
-                <img src="/breconimages/logo.png" alt="Welsh Town & Country Pest Services" class="logo">
-                <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Level 2 Certified Pest Technician" class="cert-badge">
+                <img src="/breconimages/logo.png" alt="Welsh Town & Country Pest Services Logo" class="logo">
+                <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Level 2 Certified - David" class="cert-badge">
             </div>
             <a href="tel:07375303124" class="phone-box">07375 303124</a>
         </div>
     </header>
 
     <nav>
-        <a href="/">Home</a> | <a href="/rat-catcher.html">Rat Control</a> | <a href="/mole-catching.html">Mole Catcher</a> | <a href="/farm-pest-control.html">Farm Pests</a>
+        <a href="/">Brecon Home</a> | 
+        <a href="/rat-catcher.html">Rat Control</a> | 
+        <a href="/mole-catching.html" style="color:var(--gold);">Mole Catcher</a> | 
+        <a href="/farm-pest-control.html">Farm Audits</a> |
+        <a href="/wasp-nest-removal.html">Wasps</a>
     </nav>
 
     <main>
         <section class="hero-layout">
             <div class="hero-text">
+                <div style="background:var(--dark); color:var(--gold); display:inline-block; padding:5px 12px; border-radius:4px; font-weight:bold; margin-bottom:10px;">EX-PESTOKIL SENIOR TECHNICIAN</div>
                 <h1>Professional Mole Control & Traditional Mole Catcher Brecon</h1>
-                <p><strong>David: Ex-Pestokil Technician</strong>. Rapid, poison-free mole clearance for Brecon Beacons farms and gardens. Traditional trapping methods for immediate results without risk to livestock or pets.</p>
+                <p><strong>Traditional poison-free trapping</strong> for farms, estates, and domestic lawns. David provides a rapid-response service across the Brecon Beacons, removing moles effectively without the use of dangerous gasses or chemicals.</p>
                 <a href="tel:07375303124" class="big-btn">📞 CALL MOLE SPECIALIST</a>
             </div>
-            <img src="/breconimages/mole-farm.jpg" alt="Traditional Mole Catching in Brecon Fields" class="hero-img">
+            <img src="/breconimages/mole-farm.jpg" alt="Professional mole trapping on agricultural land Brecon" class="hero-img">
         </section>
 
         <div class="farm-box">
-            <h3>🚜 Red Tractor & Farm-Safe Mole Management</h3>
-            <p>Specialist traditional trapping for silage pits, paddocks, and grazing land. We understand the risks of Listeriosis and soil contamination. Full audit documentation provided for Red Tractor compliance across Powys and Carmarthenshire.</p>
+            <h3>🚜 Silage Protection & Red Tractor Compliance</h3>
+            <p>Mole hills in grazing land are more than just an eyesore; they carry a high risk of <strong>Listeriosis</strong> through soil contamination in silage. David specializes in agricultural clearance:</p>
+            <ul>
+                <li><strong>No Chemicals:</strong> 100% safe for livestock, working dogs, and water courses.</li>
+                <li><strong>Traditional Trapping:</strong> Reliable results in all soil types (clay, stony, or peat).</li>
+                <li><strong>Audit Ready:</strong> Full documentation for farm assurance and Red Tractor audits.</li>
+            </ul>
         </div>
 
+        
+
         <section class="hypa-index">
-            <h3>Brecon & Amman Valley Village Index</h3>
+            <h3>Local Service Hubs & Village Index</h3>
+            <p>Rapid response for mole catching along the A40 and A470 corridors:</p>
             <div class="hypa-links">
-                <a href="/hypapages/brecon-town-centre-ld3.html">📍 Brecon Town Centre</a>
+                <a href="/hypapages/brecon-town-centre-ld3.html">📍 Brecon Town</a>
                 <a href="/hypapages/libanus-talybont-ld3.html">📍 Libanus & Talybont</a>
-                <a href="/hypapages/sennybridge-defynnog-ld3.html">📍 Sennybridge & Defynnog</a>
-                <a href="/hypapages/ammanford-llandeilo-a40.html">📍 Ammanford-Llandeilo A40</a>
+                <a href="/hypapages/sennybridge-defynnog-ld3.html">📍 Sennybridge</a>
+                <a href="/hypapages/ammanford-llandeilo-a40.html">📍 Tywi Valley Hub</a>
                 <a href="/pest-control-ammanford.html">📍 Ammanford</a>
                 <a href="/llandeilo-pest-control.html">📍 Llandeilo</a>
             </div>
@@ -108,17 +141,17 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d157322.0287143431!2d-3.513515456485805!3d51.96109968840212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e2467b7e22137%3A0x7796d88c9a35e7b7!2sBrecon!5e0!3m2!1sen!2suk!4v1715421234567!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div style="text-align:center; margin-top:3rem;">
-            <h3>Highly Rated Local Specialist</h3>
-            <p>Trust the experience of a senior technician with 30+ years in the field.</p>
-            <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener noreferrer" class="gbp-button">Visit My Google Business Profile ★★★★★</a>
+        <div style="text-align:center; margin-top:3rem; padding: 2rem; background: var(--agri-bg); border-radius: 12px;">
+            <h3>5-Star Rated Professional Mole Catcher</h3>
+            <p>Trust the experience of an RSPH Level 2 certified technician with decades of field experience.</p>
+            <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener noreferrer" class="gbp-button">View My Google Reviews & Profile ★★★★★</a>
         </div>
     </main>
 
     <footer>
-        <p><strong>Welsh Town & Country Pest Services</strong></p>
+        <p><strong>Welsh Town & Country Pest Services - Mole Division</strong></p>
         <p>© 2026 David Hill | RSPH Level 2 Certified | Ex-Pestokil Senior Technician</p>
-        <p>Traditional Mole Catching in Brecon, Sennybridge, Talgarth, and the Tywi Valley.</p>
+        <p>Serving Brecon, Sennybridge, Talgarth, Llangors, and the entire Brecon Beacons National Park.</p>
     </footer>
 </body>
 </html>
