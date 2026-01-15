@@ -20,21 +20,27 @@
         nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 14px; }
         nav a:hover { color: #ffcc00; }
 
-        .cta-button { display: inline-block; background: #ffcc00; color: #000; padding: 15px 25px; text-decoration: none; font-weight: bold; border-radius: 5px; margin: 20px 0; }
-        .badge-container { display: flex; align-items: center; gap: 20px; background: #f4f4f4; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #0b6623; }
-        .badge-container img { height: 80px; }
+        .cta-button { display: inline-block; background: #ffcc00; color: #000; padding: 15px 25px; text-decoration: none; font-weight: bold; border-radius: 5px; margin: 20px 0; border: 2px solid #083d14; }
+        .cta-button:hover { background: #083d14; color: #ffcc00; }
+
+        .badge-container { display: flex; align-items: center; gap: 20px; background: #f4f4f4; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 10px solid #0b6623; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .badge-container img { height: 90px; background: white; padding: 5px; border-radius: 4px; }
         
-        .map-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 30px; border: 2px solid #ddd; }
+        .map-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 30px; border: 4px solid #0b6623; border-radius: 8px; }
         .map-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
         
-        img { max-width: 100%; height: auto; border-radius: 8px; margin-top: 15px; }
+        img { max-width: 100%; height: auto; border-radius: 8px; margin-top: 15px; border: 1px solid #ddd; }
         h2 { color: #0b6623; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
         
-        .compliance-list { background: #e8f5e9; padding: 20px; border-radius: 8px; list-style-type: none; }
-        .compliance-list li::before { content: "✔️ "; margin-right: 10px; }
+        .compliance-list { background: #e8f5e9; padding: 20px; border-radius: 8px; list-style-type: none; border: 1px solid #c8e6c9; }
+        .compliance-list li::before { content: "✔️ "; margin-right: 10px; color: #0b6623; font-weight: bold; }
         
-        .internal-links { background: #eee; padding: 15px; border-radius: 8px; margin-top: 20px; font-size: 0.9em; }
-        footer { margin-top: 50px; padding-bottom: 30px; border-top: 1px solid #ccc; }
+        .internal-links { background: #eee; padding: 15px; border-radius: 8px; margin-top: 20px; font-size: 0.9em; border: 1px solid #ccc; }
+        .internal-links a { color: #0b6623; font-weight: bold; text-decoration: none; }
+        .internal-links a:hover { text-decoration: underline; }
+
+        footer { margin-top: 50px; padding-bottom: 30px; border-top: 5px solid #ffcc00; text-align: center; }
+        .gbp-link { display: block; margin: 15px 0; font-weight: bold; color: #0b6623; }
     </style>
 </head>
 <body>
@@ -54,7 +60,7 @@
     </nav>
 
     <section>
-        <img src="rat-unit.jpg" alt="Pest control unit arriving for professional rat blocker installation in Sennybridge">
+        <img src="https://brecon.welshtownandcountry.co.uk/rat-unit.jpg" alt="Pest control unit arriving for professional rat blocker installation in Sennybridge">
         <p>If you have discovered rats entering your property via the drainage system, a standard plastic flap will not suffice. In the acidic, high-moisture environment of a sewer, <strong>316-grade stainless steel</strong> is the only material that guarantees a permanent, poison-free solution.</p>
         <p>Rats can easily gnaw through plastic, lead, and even low-grade 304 steel. As a specialist in Mid-Wales infrastructure, I install marine-grade 316 blockers designed to withstand the harshest subterranean conditions.</p>
     </section>
@@ -72,18 +78,18 @@
 
     <section>
         <h2>The Installation Process (LD3, SA18, SA9)</h2>
-        <p>Serving <strong>Brecon, Llandovery, Sennybridge, and Ystradgynlais</strong>, our process ensures the integrity of your drainage system:</p>
+        <p>Serving <a href="/hypapages/brecon-town-centre-ld3.html">Brecon</a>, Llandovery, <a href="/hypapages/sennybridge-defynnog-ld3.html">Sennybridge</a>, and <a href="/hypapages/ammanford-llandeilo-a40.html">The A40 Corridor</a>, our process ensures the integrity of your drainage system:</p>
         <ol>
             <li><strong>HD CCTV Survey:</strong> We locate entry points and check for structural pipe defects.</li>
             <li><strong>Debris Clearing:</strong> Chambers are cleaned to ensure the blocker seats perfectly.</li>
             <li><strong>Precision Fitting:</strong> Tension-fit installation to the pipe outlet—no drilling required.</li>
             <li><strong>Verification:</strong> High-volume flow tests to ensure zero drainage interference.</li>
         </ol>
-        <img src="rat-house.jpg" alt="Completed 316-grade rat blocker installation in a residential inspection chamber">
+        <img src="https://brecon.welshtownandcountry.co.uk/rat-house.jpg" alt="Completed 316-grade rat blocker installation in a residential inspection chamber">
     </section>
 
     <div class="badge-container">
-        <img src="rsph-cert-badge.png" alt="RSPH Level 2 Certification Badge">
+        <img src="https://brecon.welshtownandcountry.co.uk/rsph-badge.jpg" alt="RSPH Level 2 Certification Badge">
         <div>
             <h3>Certified Expertise</h3>
             <p>Our work is <strong>Red Tractor Compliant</strong> and meets all 2026 agricultural audit standards for poison-free rodent exclusion.</p>
@@ -91,10 +97,16 @@
     </div>
 
     <div class="internal-links">
+        <p><strong>Local Specialist Pages:</strong> 
+            <a href="/hypapages/brecon-town-centre-ld3.html">Rat Control Brecon</a> | 
+            <a href="/hypapages/sennybridge-defynnog-ld3.html">Sennybridge Drainage</a> | 
+            <a href="/hypapages/libanus-talybont-ld3.html">Libanus & Talybont</a> | 
+            <a href="/hypapages/ammanford-llandeilo-a40.html">Ammanford & Llandeilo</a>
+        </p>
         <p><strong>Related Services:</strong> 
             Learn more about our <a href="rat-catcher-services.html">Poison-Free Rat Control</a>, 
-            view our <a href="mole-catching.html">Red Tractor Mole Compliance</a> services, 
-            or see our work in <a href="village-index.html">Sennybridge and Ystradgynlais</a>.
+            view our <a href="mole-catching.html">Red Tractor Mole Compliance</a>, 
+            or see our latest <a href="blog.html">Pest Advice Blog</a>.
         </p>
     </div>
 
@@ -105,6 +117,8 @@
         <p>Expert Rat & Mole Control across Mid-Wales. Call for a professional CCTV drain survey.</p>
         
         <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" class="cta-button" target="_blank">View Our 5-Star Google Business Profile</a>
+        
+        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" class="gbp-link">Official Google Business Profile (GBP)</a>
 
         <div class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d157304.7403061266!2d-3.5852538419614486!3d51.94723145465956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e2329d4697951%3A0x4464016f9479e000!2sBrecon!5e0!3m2!1sen!2suk!4v1705300000000!5m2!1sen!2suk" allowfullscreen="" loading="lazy"></iframe>
