@@ -13,12 +13,6 @@
         <changefreq>daily</changefreq>
         <priority>0.99</priority>
     </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/emergency-pest-control-brecon.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.98</priority>
-    </url>
 
     <url>
         <loc>https://brecon.welshtownandcountry.co.uk/cluster-fly-removal.html</loc>
@@ -45,29 +39,60 @@
         <priority>0.95</priority>
     </url>
     <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/bee-removal.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.94</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/humane-wildlife-removal.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.94</priority>
-    </url>
-
-    <url>
         <loc>https://brecon.welshtownandcountry.co.uk/farm-pest-control.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.98</priority>
     </url>
+
     <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/farm-audit-compliance.html</loc>
+        <loc>https://brecon.welshtownandcountry.co.uk/squirrel-control.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.95</priority>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://brecon.welshtownandcountry.co.uk/squirrelpages/bwlch-squirrel-control.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.88</priority>
+    </url>
+    <url>
+        <loc>https://brecon.welshtownandcountry.co.uk/squirrelpages/sennybridge-squirrel-control.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.88</priority>
+    </url>
+    <url>
+        <loc>https://brecon.welshtownandcountry.co.uk/squirrelpages/talgarth-squirrel-control.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.88</priority>
+    </url>
+
+    <url>
+        <loc>https://brecon.welshtownandcountry.co.uk/hypapages/ammanford-llandeilo-a40.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://brecon.welshtownandcountry.co.uk/hypapages/brecon-town-centre-ld3.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://brecon.welshtownandcountry.co.uk/hypapages/libanus-talybont-ld3.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://brecon.welshtownandcountry.co.uk/hypapages/sennybridge-defynnog-ld3.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
     </url>
 
     <url>
@@ -99,37 +124,6 @@
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.88</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/pest-control-ammanford.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.90</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/pest-control-ystradgynlais.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.90</priority>
-    </url>
-
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/hypapages/sennybridge-defynnog-ld3.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/trapp-pest-control.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/llangadog-pest-control.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
     </url>
 
     <url>
