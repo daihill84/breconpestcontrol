@@ -13,7 +13,7 @@
     <meta name="geo.position" content="51.9472;-3.3915">
     <meta name="ICBM" content="51.9472, -3.3915">
     
-    <meta name="keywords" content="pest control brecon, rat catcher brecon, mole catcher brecon, wasp nest removal brecon, David pest control, sennybridge pest control, libanus pest control, powys pest removal">
+    <meta name="keywords" content="pest control brecon, rat catcher brecon, mole catcher brecon, wasp nest removal brecon, David pest control, sennybridge pest control, libanus pest control, powys pest removal, LD3 pest control">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://brecon.welshtownandcountry.co.uk/brecon-pest-control">
 
@@ -60,7 +60,7 @@
         .header-content { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 15px; }
         .logo-row { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: center; }
         .logo{max-height:80px;width:auto; border-radius: 5px;}
-        .cert-badge { max-height: 80px; background: white; padding: 5px; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+        .cert-badge { max-height: 85px; background: white; padding: 5px; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
         
         h1{font-size:2.2rem;margin:0.5rem 0;color:#fff;line-height:1.2}
         .phone{font-size:2.2rem;font-weight:900}
@@ -75,10 +75,13 @@
         .hero{background:var(--light);padding:3rem 2rem;border-left:12px solid var(--green);text-align:center;margin:2rem 0;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.05)}
         
         .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 3rem 0; }
-        .service-card { border: 1px solid #ddd; border-radius: 12px; overflow: hidden; background: #fff; transition: 0.3s; }
+        .service-card { border: 1px solid #ddd; border-radius: 12px; overflow: hidden; background: #fff; transition: 0.3s; display: flex; flex-direction: column; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
         .service-card img { width: 100%; height: 220px; object-fit: cover; border-bottom: 4px solid var(--green); }
-        .service-card-body { padding: 1.5rem; }
+        .service-card-body { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; }
         .service-card h3 { margin-top: 0; color: var(--dark); font-size: 1.4rem; }
+        .card-link { margin-top: auto; color: var(--green); font-weight: bold; text-decoration: none; border: 1px solid var(--green); padding: 8px; text-align: center; border-radius: 5px; }
+        .card-link:hover { background: var(--green); color: #fff; }
 
         .big-btn{display:inline-block;background:var(--red);color:#fff;padding:22px 60px;border-radius:50px;font-size:1.5rem;font-weight:bold;text-decoration:none;margin:2rem 0;box-shadow:0 10px 30px rgba(211,47,47,0.3);animation:pulse 2s infinite}
         @keyframes pulse{0%{transform:scale(0.98)}70%{transform:scale(1.02)}100%{transform:scale(0.98)}}
@@ -92,7 +95,7 @@
         .village-grid a:hover { background: var(--green); color: #fff; }
 
         .map-container{width:100%; height: 450px; border-radius:12px; overflow:hidden; border:4px solid var(--green); margin:3rem 0;}
-        .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.8rem;box-shadow:0 10px 35px rgba(0,0,0,0.4);z-index:9999;text-decoration:none;animation:pulse 2s infinite}
+        .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.8rem;box-shadow:0 10px 35px rgba(0,0,0,0.4);z-index:9999;text-decoration:none;}
         
         footer{background:var(--dark);color:#fff;padding:3rem 1rem;text-align:center}
         footer a{color:var(--gold); text-decoration: none; font-weight: bold;}
@@ -106,7 +109,7 @@
     <div class="header-content">
         <div class="logo-row">
             <img src="/breconimages/logo.png" alt="Welsh Town & Country David Pest Specialist Logo" class="logo">
-            <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Level 2 Certified Technician" class="cert-badge">
+            <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Level 2 Certified Pest Control Technician" class="cert-badge">
         </div>
         <h1>Expert Pest Control Brecon & Powys</h1>
         <div class="phone"><a href="tel:+447375303124">07375 303124</a></div>
@@ -130,14 +133,15 @@
         <h2>Professional Pest Removal for Homes, Farms & Businesses</h2>
         <p>Providing fast, discreet, and effective pest control in <strong>Brecon, Sennybridge, and throughout Powys</strong>. From emergency residential rat removal to Red Tractor compliant farm pest management.</p>
         <a href="tel:+447375303124" class="big-btn">📞 Request Emergency Survey</a>
-    </section>
+    </div>
 
     <div class="service-grid">
         <div class="service-card">
-            <img src="/breconimages/rat-house.jpg" alt="Poison-free rat control in Brecon houses">
+            <img src="/breconimages/rat-house.jpg" alt="Poison-free rat control and proofing in Brecon houses">
             <div class="service-card-body">
                 <h3>Rat & Mouse Control</h3>
                 <p>Specialist rodent proofing and eradication. We use CCTV drain surveys to find how rats are entering your home and seal them out for good.</p>
+                <a href="/rat-catcher.html" class="card-link">Rodent Control Details →</a>
             </div>
         </div>
         <div class="service-card">
@@ -145,21 +149,25 @@
             <div class="service-card-body">
                 <h3>Traditional Mole Catching</h3>
                 <p>100% poison-free trapping. Safe for livestock, silage, and pets. Specialist clearance for gardens, paddocks, and commercial turf.</p>
+                <a href="/mole-catching.html" class="card-link">Mole Catcher Details →</a>
             </div>
         </div>
         <div class="service-card">
-            <img src="/breconimages/rat-unit.jpg" alt="Commercial pest control vehicle and unit">
+            <img src="/breconimages/rat-unit.jpg" alt="Professional pest control vehicle for Brecon Beacons response">
             <div class="service-card-body">
                 <h3>Commercial & Agricultural</h3>
-                <p>2026 Audit-ready support for local businesses and farmers. Discreet service in unmarked vehicles with full safety documentation.</p>
+                <p>Audit-ready support for local businesses and farmers. Discreet service in unmarked vehicles with full safety documentation for 2026.</p>
+                <a href="/farm-pest-control.html" class="card-link">Commercial Services →</a>
             </div>
         </div>
     </div>
 
+    
+
     <div class="gbp-trust">
         <h3>Local 5-Star Service Reputation</h3>
-        <p>David is the highest-rated local pest expert serving the Brecon Beacons and A40 corridor.</p>
-        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">Read Our Google Reviews & Business Profile →</a>
+        <p>David is the highest-rated local pest expert serving the Brecon Beacons and A40 corridor. Trusted by domestic and commercial clients alike.</p>
+        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">View Google Business Profile & 5-Star Reviews →</a>
     </div>
 
     <h2>Discreet, Reliable & Local</h2>
@@ -168,8 +176,8 @@
     <p>As an <strong>Ex-Pestokil Senior Field Technician</strong>, David brings decades of industry expertise with the care of a family-run service. We specialize in poison-free methods wherever possible, ensuring safety for your family, pets, and livestock.</p>
 
     <section class="village-index">
-        <h3>Regional Village Index</h3>
-        <p>Access specialized pest control hubs for your local area:</p>
+        <h3>Regional Village Hubs</h3>
+        <p>Access specialized pest control services for your specific local area:</p>
         <div class="village-grid">
             <a href="/hypapages/brecon-town-centre-ld3.html">📍 Brecon Town Centre</a>
             <a href="/hypapages/libanus-talybont-ld3.html">📍 Libanus & Talybont</a>
@@ -182,11 +190,11 @@
     </section>
 
     <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455156.15330485906!2d-4.222843842479814!3d51.847361546336245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa316942cc26fc9bf%3A0x141ca663679e0707!2sWelsh%20town%20and%20country%20pest%20services!5e1!3m2!1sen!2suk!4v1767752610315!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455156.15330485906!2d-4.222843842479814!3d51.847361546336245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa316942cc26fc9bf%3A0x141ca663679e0707!2sWelsh%20town%20and%20country%20pest%20services!5e1!3m2!1sen!2suk!4v1767752610315!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <h2 style="text-align:center;">Local Coverage Across LD3 & Beyond</h2>
-    <p style="text-align:center;">Brecon • Sennybridge • Libanus • Talgarth • Crickhowell • Llyswen • Bwlch • Hay-on-Wye • Trecastle • Defynnog • Llanfaes • Groesffordd • Llanddew</p>
+    <p style="text-align:center; font-weight: bold; color: var(--dark);">Brecon • Sennybridge • Libanus • Talgarth • Crickhowell • Llyswen • Bwlch • Hay-on-Wye • Trecastle • Defynnog • Llanfaes • Groesffordd • Llanddew</p>
 
 </main>
 
