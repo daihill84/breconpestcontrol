@@ -12,7 +12,6 @@
 
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://brecon.welshtownandcountry.co.uk/holiday-lets">
-    <link rel="icon" href="/breconimages/favicon.ico" type="image/x-icon">
 
     <script type="application/ld+json">
     {
@@ -25,31 +24,6 @@
     }
     </script>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Why do holiday lets need routine pest inspections?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "One pest sighting can lead to negative reviews and lost bookings. Regular checks between guests catch issues early, protecting your 5-star rating and income."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is your service discreet for holiday properties?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes – David uses completely unmarked vehicles and flexible scheduling to avoid any indication of pest issues to guests or neighbours."
-          }
-        }
-      ]
-    }
-    </script>
-
     <style>
         :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00;--agri-bg:#e8f5e9}
         body{font-family:'Segoe UI',Tahoma,sans-serif;margin:0;color:#222;background:#fff;line-height:1.7;padding-bottom:80px}
@@ -58,7 +32,7 @@
         .header-container { display: flex; flex-direction: column; align-items: center; gap: 15px; }
         .logo-row { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: center; }
         .logo{max-height:90px;width:auto; border-radius: 8px;}
-        .cert-badge { max-height: 75px; background: white; padding: 5px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .cert-badge { max-height: 85px; background: white; padding: 5px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border: 2px solid var(--gold); }
         
         h1{font-size:2.4rem;margin:0.5rem 0;color:#fff;}
         .phone{font-size:2rem;font-weight:900;}
@@ -70,31 +44,30 @@
         nav a:hover{background:var(--green);color:var(--gold);}
         
         main{max-width:1100px;margin:2rem auto;padding:0 1.5rem;}
-        .hero{background:var(--light);padding:2.5rem;border-left:12px solid var(--green);border-radius:12px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,0.05);}
-        .feature-img { width: 100%; border-radius: 12px; margin: 25px 0; box-shadow: 0 6px 15px rgba(0,0,0,0.1); object-fit: cover; height: 350px; }
+        .hero{background:var(--light);padding:2.5rem;border-left:12px solid var(--green);border-radius:12px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,0.05); border: 1px solid #ddd;}
+        .feature-img { width: 100%; border-radius: 12px; margin: 25px 0; box-shadow: 0 6px 15px rgba(0,0,0,0.1); object-fit: cover; height: 380px; border: 1px solid #ccc; }
 
-        .big-btn{display:inline-block;background:var(--red);color:#fff;padding:20px 50px;border-radius:50px;font-size:1.5rem;font-weight:bold;text-decoration:none;margin:2rem 0;animation:pulse 2s infinite;}
+        .big-btn{display:inline-block;background:var(--red);color:#fff;padding:20px 50px;border-radius:50px;font-size:1.5rem;font-weight:bold;text-decoration:none;margin:2rem 0;animation:pulse 2s infinite; border: 2px solid #fff;}
         @keyframes pulse{0%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(211,47,47,0.7)}70%{transform:scale(1);box-shadow:0 0 0 15px rgba(211,47,47,0)}100%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(211,47,47,0)}}
         
         .farm-box{background:#e8f5e9;padding:30px;border:2px solid var(--green);border-radius:12px;margin:40px 0;}
-        .gbp-trust{background:var(--gold);padding:2rem;border-radius:12px;text-align:center;margin:3rem 0;color:#000;}
+        .gbp-trust{background:var(--gold);padding:2rem;border-radius:12px;text-align:center;margin:3rem 0;color:#000; border: 2px solid var(--dark);}
         .gbp-trust a{background:var(--dark);color:var(--gold);padding:15px 30px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:10px;font-weight:bold;}
         
         .hub-links{background:var(--light);padding:1.5rem;border-radius:12px;margin:2rem 0;text-align:center;border:1px solid #ddd}
         .hub-links a{color:var(--green);font-weight:bold;text-decoration:none;margin:0 10px}
 
-        /* Village Index Styling */
         .village-index { background: var(--agri-bg); padding: 2.5rem; border-radius: 12px; margin: 3rem 0; border: 2px solid var(--green); text-align: center; }
         .village-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 20px; }
         .village-grid a { background: #fff; border: 1px solid var(--green); color: var(--dark); padding: 8px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: 0.2s; }
         .village-grid a:hover { background: var(--green); color: #fff; }
         
-        .map-container{width:100%; height: 400px; border-radius:12px; overflow:hidden; border:4px solid var(--green); margin:3rem 0;}
+        .map-container{width:100%; height: 450px; border-radius:12px; overflow:hidden; border:5px solid var(--green); margin:3rem 0; box-shadow: 0 10px 30px rgba(0,0,0,0.1);}
         iframe { width: 100%; height: 100%; border: 0; }
         
         .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;text-decoration:none;z-index:9999;box-shadow:0 4px 20px rgba(0,0,0,0.3);}
-        footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem;}
-        footer a{color:var(--gold);text-decoration:none;}
+        footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem; border-top: 5px solid var(--gold);}
+        footer a{color:var(--gold);text-decoration:none; font-weight: bold;}
         
         @media(max-width:768px){h1{font-size:1.9rem}.phone{font-size:1.5rem} .feature-img{height: 250px;} .logo-row{flex-direction: column;}}
     </style>
@@ -106,7 +79,7 @@
     <div class="header-container">
         <div class="logo-row">
             <img src="/breconimages/logo.png" alt="Welsh Town & Country Pest Services Logo" class="logo">
-            <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Level 2 Certified" class="cert-badge">
+            <img src="https://brecon.welshtownandcountry.co.uk/rsph-badge.jpg" alt="RSPH Level 2 Certified" class="cert-badge">
         </div>
         <h1>Holiday Let Pest Control Brecon & Beacons</h1>
         <div class="phone"><a href="tel:+447375303124">📞 07375 303124</a></div>
@@ -116,12 +89,12 @@
 <nav>
     <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/rat-catcher">Rat Control</a></li>
-        <li><a href="/mole-catching">Mole Catcher</a></li>
-        <li><a href="/wasp-nest-removal">Wasp Removal</a></li>
-        <li><a href="/farm-pest-control">Farm Pests</a></li>
-        <li><a href="/rats-in-drains">Rats in Drains</a></li>
-        <li><a href="/holiday-lets" style="background:var(--green);color:var(--gold)">Holiday Lets</a></li>
+        <li><a href="/rat-catcher.html">Rat Control</a></li>
+        <li><a href="/mole-catching.html">Mole Catcher</a></li>
+        <li><a href="/wasp-nest-removal.html">Wasp Removal</a></li>
+        <li><a href="/farm-pest-control.html">Farm Pests</a></li>
+        <li><a href="/rats-in-drains.html">CCTV Drains</a></li>
+        <li><a href="/holiday-lets.html" style="background:var(--green);color:var(--gold)">Holiday Lets</a></li>
         <li><a href="/contact.html">Contact</a></li>
     </ul>
 </nav>
@@ -135,34 +108,34 @@
 
     <section class="hero">
         <h2>David: RSPH Level 2 • Ex-Pestokil Field Technician</h2>
-        <p>Protect your Airbnb & luxury cottage reviews with <strong>discrete routine inspections</strong> across the Brecon Beacons. Unmarked visits and preventative proofing mean zero disruption to your guests.</p>
+        <p>Protect your Airbnb & luxury cottage reviews with <strong>discrete routine inspections</strong> across the Brecon Beacons. Unmarked visits and preventative proofing mean zero disruption to your guests and 100% protection for your brand.</p>
         <a href="tel:+447375303124" class="big-btn">📞 BOOK DISCRETE INSPECTION</a>
     </section>
 
-    <img src="/breconimages/rat-house.jpg" alt="Discrete pest control for holiday cottages in Brecon" class="feature-img">
+    <img src="https://brecon.welshtownandcountry.co.uk/rat-house.jpg" alt="Discrete pest control for holiday cottages in Brecon" class="feature-img">
 
     <div class="gbp-trust">
         <h3>5-Star Rated Holiday Let Specialist</h3>
         <p>We work with cottage owners and management agencies across Powys to maintain 5-star hygiene standards.</p>
-        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">View Our Verified Reviews →</a>
+        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">View Our Verified GBP Reviews →</a>
     </div>
 
     <section class="farm-box">
         <h3>🛡️ Protect Your Reviews & Income</h3>
         <p>A single pest sighting can devastate your ratings. David provides proactive, unmarked service tailored specifically for the hospitality sector:</p>
         <ul>
-            <li><strong>Flexible Scheduling:</strong> Inspections performed during changeover days.</li>
-            <li><strong>Unmarked Response:</strong> Completely discrete vehicles for zero visibility.</li>
-            <li><strong>Cluster Fly Specialists:</strong> Dedicated treatments for Beacons holiday properties.</li>
-            <li><strong>Pet & Family Safe:</strong> Safe, secure, and professional methods only.</li>
+            <li><strong>Flexible Scheduling:</strong> Inspections performed during changeover days to ensure zero guest contact.</li>
+            <li><strong>Unmarked Response:</strong> Completely discrete vehicles for zero visibility to neighbors or visitors.</li>
+            <li><strong>Cluster Fly Specialists:</strong> Dedicated attic treatments for Beacons holiday properties prone to seasonal influxes.</li>
+            <li><strong>316-Grade Proofing:</strong> Permanent drainage and structural protection to stop issues before they start.</li>
         </ul>
     </section>
 
-    <img src="/breconimages/rat-unit.jpg" alt="Professional pest monitoring for holiday rentals" class="feature-img">
+    <img src="https://brecon.welshtownandcountry.co.uk/rat-unit.jpg" alt="Professional pest monitoring for holiday rentals" class="feature-img">
 
     <section class="village-index">
         <h3>Brecon & Beacons Village Index</h3>
-        <p>Direct links to our specialized rural service pages:</p>
+        <p>Expert holiday let inspections and rapid response across these key locations:</p>
         <div class="village-grid">
             <a href="/hypapages/brecon-town-centre-ld3.html">📍 Brecon Town Centre</a>
             <a href="/hypapages/libanus-talybont-ld3.html">📍 Libanus & Talybont</a>
@@ -170,11 +143,12 @@
             <a href="/hypapages/ammanford-llandeilo-a40.html">📍 Ammanford-Llandeilo A40</a>
             <a href="/pest-control-ammanford.html">📍 Ammanford Hub</a>
             <a href="/llandeilo-pest-control.html">📍 Llandeilo</a>
-            <a href="/crickhowell-pest-control">📍 Crickhowell</a>
+            <a href="/crickhowell-pest-control.html">📍 Crickhowell</a>
+            <a href="/hypapages/ystradgynlais-sa9.html">📍 Ystradgynlais</a>
         </div>
     </section>
 
-    <img src="/breconimages/mole-farm.jpg" alt="Mole control and grounds maintenance for rental properties" class="feature-img">
+    <img src="https://brecon.welshtownandcountry.co.uk/mole-farm.jpg" alt="Mole control and grounds maintenance for rental properties" class="feature-img">
 
     <div class="map-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455156.15330485906!2d-4.222843842479814!3d51.847361546336245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa316942cc26fc9bf%3A0x141ca663679e0707!2sWelsh%20town%20and%20country%20pest%20services!5e1!3m2!1sen!2suk!4v1767752610315!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -182,7 +156,7 @@
 
     <section style="text-align:center;margin:3rem 0;">
         <p><strong>Maintain your 5-star status. No call-out fee for regular maintenance contracts.</strong></p>
-        <a href="tel:+447375303124" class="big-btn">📞 Call David: 07375 303124</a>
+        <a href="tel:+447375303124" class="big-btn">📞 CALL DAVID: 07375 303124</a>
     </section>
 </main>
 
@@ -190,8 +164,8 @@
 
 <footer>
     <p><strong>Welsh Town & Country Pest Services – Holiday Let Specialist</strong></p>
-    <p>© 2026 David | RSPH Level 2 | Ex-Pestokil | Fully Insured</p>
-    <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">Visit Our Google Business Profile</a></p>
+    <p>© 2026 David Hill | RSPH Level 2 | Field Technician | Ex-Pestokil | Fully Insured</p>
+    <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">Official Google Business Profile (GBP)</a></p>
 </footer>
 
 </body>
