@@ -24,18 +24,6 @@
         "addressRegion": "Powys",
         "postalCode": "LD3",
         "addressCountry": "GB"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 51.9465,
-        "longitude": -3.3883
-      },
-      "areaServed": ["Powys", "Carmarthenshire", "Brecon Beacons", "South Wales Valleys"],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
       }
     }
     </script>
@@ -43,34 +31,52 @@
     <style>
         :root{--green:#064016;--dark:#083d14;--red:#d32f2f;--light:#fdfdfd;--gold:#ffcc00}
         body{font-family:'Segoe UI', Tahoma, sans-serif;margin:0;color:#333;line-height:1.7;background:#fff;padding-bottom:80px}
-        header{background:var(--green);color:#fff;padding:1.5rem;border-bottom:5px solid var(--gold)}
-        .header-wrap{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
-        .brand{display:flex;align-items:center;gap:20px;}
-        .logo{max-height:80px;width:auto;border-radius:4px;}
-        .cert-badge{max-height:85px;background:#fff;padding:8px;border-radius:5px; border: 2px solid var(--gold);}
-        .phone-box{background:var(--gold);color:#000;padding:12px 25px;border-radius:8px;font-weight:900;font-size:1.7rem;text-decoration:none;border:2px solid var(--dark);transition:0.3s;}
-        .phone-box:hover{background:#fff;}
-        nav{background:var(--dark);padding:15px;text-align:center;position:sticky;top:0;z-index:1000}
-        nav a{color:#fff;margin:0 12px;text-decoration:none;font-weight:600;font-size: 0.9rem;transition:0.3s;}
+        
+        header{background:var(--green);color:#fff;padding:1rem;border-bottom:5px solid var(--gold)}
+        .header-wrap{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px;}
+        .brand{display:flex;align-items:center;gap:15px;}
+        .logo{max-height:65px;width:auto;border-radius:4px;}
+        .cert-badge{max-height:65px;background:#fff;padding:5px;border-radius:5px; border: 2px solid var(--gold);}
+        
+        .phone-box{background:var(--gold);color:#000;padding:10px 20px;border-radius:8px;font-weight:900;font-size:1.4rem;text-decoration:none;border:2px solid var(--dark); white-space:nowrap;}
+        
+        nav{background:var(--dark);padding:10px 0;position:sticky;top:0;z-index:1000; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch;}
+        nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:600;font-size: 0.9rem; display: inline-block;}
         nav a:hover{color:var(--gold)}
-        main{max-width:1200px;margin:2rem auto;padding:0 1.5rem}
-        .hero-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;background:var(--light);padding:3rem;border-left:12px solid var(--green);border-radius:12px;align-items:center;margin-bottom:3rem; border: 1px solid #eee;}
-        .hero-img-container{width:100%; border-radius:10px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.1); border:1px solid #ddd;}
-        .hero-img{width:100%; display:block; object-fit: cover;}
-        .big-btn{background:var(--red);color:#fff;padding:20px 50px;border-radius:50px;font-size:1.6rem;font-weight:900;text-decoration:none;display:inline-block;margin:1.5rem 0;animation:pulse 2s infinite;}
-        .grid-section{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin:3rem 0}
-        .card{background:#fff;padding:1.5rem;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.1);border-top:5px solid var(--green);text-align:center;transition:0.3s; border: 1px solid #eee;}
-        .card img{width:100%; height:220px; object-fit:cover; border-radius:8px; margin-bottom:15px; border-bottom: 3px solid var(--green);}
+        
+        main{max-width:1200px;margin:1.5rem auto;padding:0 1rem}
+        
+        .hero-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;background:var(--light);padding:2rem;border-left:10px solid var(--green);border-radius:12px;align-items:center;margin-bottom:2rem; border: 1px solid #eee;}
+        .hero-img-container{width:100%; border-radius:10px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.1); border:1px solid #ddd;}
+        .hero-img{width:100%; display:block; height: auto;}
+        
+        .big-btn{background:var(--red);color:#fff;padding:18px 30px;border-radius:50px;font-size:1.3rem;font-weight:900;text-decoration:none;display:inline-block;margin:1rem 0;animation:pulse 2s infinite; text-align: center;}
+        
+        .grid-section{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:2rem 0}
+        .card{background:#fff;padding:1.2rem;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.08);border-top:5px solid var(--green);text-align:center; border: 1px solid #eee;}
+        .card img{width:100%; height:200px; object-fit:cover; border-radius:8px; margin-bottom:12px;}
         .card a{color:var(--green);font-weight:bold;text-decoration:none;display:block;margin-top:10px;border:1px solid var(--green);padding:8px;border-radius:5px;}
-        .directory-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; background: #f9f9f9; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #ddd;}
-        .directory-column h4 {color: var(--green); border-bottom: 2px solid var(--gold); padding-bottom: 5px;}
+        
+        .directory-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; background: #f9f9f9; padding: 1.5rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #ddd;}
+        .directory-column h4 {color: var(--green); border-bottom: 2px solid var(--gold); padding-bottom: 5px; margin-top: 0;}
         .directory-column ul {list-style: none; padding: 0; font-size: 0.85rem;}
-        .directory-column li {margin-bottom: 4px;}
-        .map-container {width:100%;height:450px;border-radius:15px;overflow:hidden;border:5px solid var(--green);margin:3rem 0;}
-        .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;text-decoration:none;z-index:9999;box-shadow:0 4px 20px rgba(0,0,0,0.3);}
-        footer{background:var(--green);color:#fff;text-align:center;padding:3rem 1rem}
+        
+        .map-container {width:100%;height:350px;border-radius:15px;overflow:hidden;border:4px solid var(--green);margin:2rem 0;}
+        
+        .floating-call{position:fixed;bottom:15px;right:15px;background:var(--red);color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;text-decoration:none;z-index:9999;box-shadow:0 4px 15px rgba(0,0,0,0.3);}
+        
+        footer{background:var(--green);color:#fff;text-align:center;padding:2.5rem 1rem; font-size: 0.9rem;}
+        footer a{color:var(--gold); text-decoration: none;}
+
         @keyframes pulse{0%{transform:scale(0.98);}50%{transform:scale(1.02);}100%{transform:scale(0.98);}}
-        @media(max-width:768px){.hero-layout{grid-template-columns:1fr; text-align:center;}}
+        
+        @media(max-width:768px){
+            .header-wrap{justify-content: center; text-align: center;}
+            .brand{width: 100%; justify-content: center;}
+            .phone-box{width: 100%; text-align: center;}
+            .hero-layout{grid-template-columns:1fr; padding: 1.5rem; border-left-width: 6px;}
+            .big-btn{width: 100%; box-sizing: border-box; font-size: 1.1rem;}
+        }
     </style>
 </head>
 <body>
@@ -91,15 +97,14 @@
         <a href="/rats-in-drains.html">Rats in Drains</a>
         <a href="/farm-pest-control.html">Farm Pests</a>
         <a href="/wasp-nest-removal.html">Wasps</a>
-        <a href="/emergency-pest-control-brecon.html">Emergency Response</a>
         <a href="/contact.html">Contact</a>
     </nav>
 
     <main>
         <section class="hero-layout">
             <div class="hero-text">
-                <p style="color:var(--gold); font-weight:bold;">🎖️ LOCAL EX-PESTOKIL TECHNICIAN</p>
-                <h1>24/7 Pest Control Across Brecon & South Wales</h1>
+                <p style="color:var(--dark); font-weight:bold; margin-bottom: 5px;">🎖️ LOCAL TECHNICIAN</p>
+                <h1 style="margin-top: 0;">24/7 Pest Control Across Brecon & South Wales</h1>
                 <p>David offers 30+ years of expertise in <strong>poison-free rat catching</strong>, traditional mole trapping, and farm compliance. Serving all towns and villages from the Beacons to the Valleys.</p>
                 <a href="tel:07375303124" class="big-btn">24/7 EMERGENCY CALL NOW</a>
             </div>
@@ -110,78 +115,65 @@
 
         <div class="grid-section">
             <div class="card">
-                <img src="https://brecon.welshtownandcountry.co.uk/breconimages/rat-house.jpg" alt="Rat Catcher">
+                <img src="https://brecon.welshtownandcountry.co.uk/breconimages/rat-house.jpg" alt="Rat Catcher Specialist">
                 <h3>Rat Catcher Specialist</h3>
-                <p>Poison-free eradication and structural proofing. <a href="/rat-catcher.html">View Service →</a></p>
+                <p>Poison-free eradication and structural proofing for homes and business.</p>
+                <a href="/rat-catcher.html">View Service →</a>
             </div>
             <div class="card">
-                <img src="https://brecon.welshtownandcountry.co.uk/breconimages/mole-farm.jpg" alt="Mole Catcher">
+                <img src="https://brecon.welshtownandcountry.co.uk/breconimages/mole-farm.jpg" alt="Traditional Mole Catching">
                 <h3>Traditional Mole Catching</h3>
-                <p>No gas, no chemicals. Professional trapping. <a href="/mole-catching.html">View Service →</a></p>
+                <p>Traditional trapping methods with no gas or chemicals. Safe for livestock.</p>
+                <a href="/mole-catching.html">View Service →</a>
             </div>
             <div class="card">
-                <img src="https://brecon.welshtownandcountry.co.uk/breconimages/rat-unit.jpg" alt="Drains">
+                <img src="https://brecon.welshtownandcountry.co.uk/breconimages/rat-unit.jpg" alt="CCTV Drain Surveys">
                 <h3>Rats in Drains</h3>
-                <p>CCTV surveys and 316-grade steel rat blockers. <a href="/rats-in-drains.html">View Service →</a></p>
+                <p>CCTV surveys and 316-grade steel rat blockers to stop ingress at the source.</p>
+                <a href="/rats-in-drains.html">View Service →</a>
             </div>
         </div>
 
-        <hr>
-
-        <h2 style="text-align:center; color:var(--green);">Our Full Coverage Area</h2>
-        <p style="text-align:center;">We provide 24/7 service to every village and farm within these regional hubs:</p>
-
+        <h2 style="text-align:center; color:var(--green); margin-top: 3rem;">Our Full Coverage Area</h2>
+        
         <section class="directory-grid">
             <div class="directory-column">
                 <h4>Brecon & Beacons (LD3)</h4>
                 <ul>
-                    <li><strong>Brecon:</strong> Town Centre, Llanfaes, Llanddew</li>
-                    <li><strong>Villages:</strong> Battle, Aberyscir, Trallong</li>
-                    <li><strong>West:</strong> Sennybridge, Defynnog, Trecastle, Cray</li>
-                    <li><strong>South:</strong> Libanus, Storey Arms, Pontsticill</li>
-                    <li><strong>East:</strong> Talybont-on-Usk, Bwlch, Llangors</li>
-                    <li><strong>Estates:</strong> Cathedine, Llanfrynach, Llanspyddid</li>
+                    <li><strong>Brecon:</strong> Town Centre, Llanfaes</li>
+                    <li><strong>West:</strong> Sennybridge, Defynnog, Trecastle</li>
+                    <li><strong>South:</strong> Libanus, Storey Arms</li>
+                    <li><strong>East:</strong> Talybont, Bwlch, Llangors</li>
                 </ul>
             </div>
-
             <div class="directory-column">
-                <h4>A40 Corridor & Carmarthenshire</h4>
+                <h4>A40 & Carmarthenshire</h4>
                 <ul>
                     <li><strong>Llandeilo:</strong> Ffairfach, Salem, Trapp</li>
-                    <li><strong>Llangadog:</strong> Bethlehem, Capel Gwynfe</li>
-                    <li><strong>Rural:</strong> Manordeilo, Llansadwrn, Cilycwm</li>
-                    <li><strong>West:</strong> Golden Grove, Llanarthney, Dryslwyn</li>
-                    <li><strong>Myddfai:</strong> Rural estates and farms</li>
-                    <li><strong>Hubs:</strong> <a href="/hypapages/ammanford-llandeilo-a40.html">Llandeilo Hub</a></li>
+                    <li><strong>Llangadog:</strong> Bethlehem, Gwynfe</li>
+                    <li><strong>Llandovery:</strong> Myddfai & Rural Estates</li>
                 </ul>
             </div>
-
             <div class="directory-column">
-                <h4>Upper Tawe & Ammanford</h4>
+                <h4>Tawe & Amman Valley</h4>
                 <ul>
                     <li><strong>Ystradgynlais:</strong> Abercraf, Pen-y-cae</li>
-                    <li><strong>Cwmtwrch:</strong> Upper & Lower Cwmtwrch</li>
-                    <li><strong>Ammanford:</strong> Brynamman, Garnant, Betws</li>
-                    <li><strong>Villages:</strong> Glanamman, Llandybie, Tycroes</li>
-                    <li><strong>Hubs:</strong> <a href="/hypapages/sennybridge-defynnog-ld3.html">Tawe Valley Hub</a></li>
+                    <li><strong>Ammanford:</strong> Brynamman, Garnant</li>
+                    <li><strong>Llandybie:</strong> Tycroes & Glanamman</li>
                 </ul>
             </div>
-
             <div class="directory-column">
-                <h4>Valleys & East Powys</h4>
+                <h4>Valleys & Wye</h4>
                 <ul>
-                    <li><strong>Talgarth:</strong> Bronllys, Three Cocks, Llyswen</li>
-                    <li><strong>Crickhowell:</strong> Glangrwyney, Tretower</li>
-                    <li><strong>Merthyr:</strong> Dowlais, Treharris, Aberfan</li>
-                    <li><strong>Neath:</strong> Resolven, Skewen, Glynneath</li>
-                    <li><strong>Port Talbot:</strong> Baglan, Cwmafan, Tai-bach</li>
-                    <li><strong>Wye:</strong> <a href="/hypapages/libanus-talybont-ld3.html">Hay-on-Wye HR3</a></li>
+                    <li><strong>Talgarth:</strong> Bronllys, Llyswen</li>
+                    <li><strong>Merthyr:</strong> Dowlais, Treharris</li>
+                    <li><strong>Neath:</strong> Glynneath, Resolven</li>
                 </ul>
             </div>
         </section>
 
         <div class="map-container">
-            <iframe src="http://googleusercontent.com/maps.google.com/4" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158448.261274351!2d-3.565809287352825!3d51.93380064434918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e300135d96207%3A0x6b048566a0e6981b!2sBrecon!5e0!3m2!1sen!2suk!4v1705500000000!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
         <section style="text-align:center; padding:2rem; background:var(--light); border-radius:12px; border:2px solid var(--green);">
@@ -196,7 +188,8 @@
     <footer>
         <p><strong>Welsh Town & Country Pest Services</strong></p>
         <p>© 2026 David Hill | RSPH Certified | 07375 303124</p>
-        <p>Expert Pest Control for Brecon, Llandeilo, Ammanford, Ystradgynlais and the South Wales Valleys.</p>
+        <p>Expert Pest Control for Brecon, Llandeilo, Ammanford, Ystradgynlais and South Wales.</p>
+        <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank">Leave a Google Review</a></p>
     </footer>
 </body>
 </html>
