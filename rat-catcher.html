@@ -13,53 +13,54 @@
         :root { --green: #064016; --dark: #083d14; --red: #d32f2f; --light: #fdfdfd; --gold: #ffcc00; --agri-bg: #e8f5e9; }
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; color: #333; background: #fdfdfd; line-height: 1.7; padding-bottom: 80px;}
         
-        /* Responsive Image Handling */
         img { max-width: 100%; height: auto; display: block; margin: 10px auto; border-radius: 8px; }
         
         .sticky-alert { position: sticky; top: 0; background: var(--red); color: #fff; text-align: center; padding: 12px; font-weight: bold; z-index: 4000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); font-size: 0.9rem; }
-        header { background: var(--green); color: #fff; padding: 1.5rem; text-align: center; border-bottom: 5px solid var(--gold); }
-        .header-wrap { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
-        .brand { display: flex; align-items: center; gap: 15px; justify-content: center; width: 100%; }
-        .logo { max-height: 60px; }
-        .cert-badge { max-height: 70px; background: #fff; padding: 5px; border: 2px solid var(--gold); }
         
-        .phone-box { background: var(--gold); color: #000; padding: 12px 25px; border-radius: 8px; font-weight: 900; font-size: 1.5rem; text-decoration: none; border: 2px solid var(--dark); display: inline-block; margin-top: 10px; }
+        header { background: var(--green); color: #fff; padding: 1rem; border-bottom: 5px solid var(--gold); }
+        .header-wrap { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .brand { display: flex; align-items: center; gap: 12px; }
+        .logo { max-height: 60px; width: auto; }
+        .cert-badge { max-height: 65px; background: #fff; padding: 5px; border: 2px solid var(--gold); border-radius: 5px; }
+        
+        .phone-box { background: var(--gold); color: #000; padding: 10px 20px; border-radius: 8px; font-weight: 900; font-size: 1.4rem; text-decoration: none; border: 2px solid var(--dark); white-space: nowrap; }
        
-        nav { background: var(--dark); padding: 0.8rem 0; position: sticky; top: 45px; z-index: 3000; }
-        nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; }
-        nav a { color: #fff; padding: 8px 10px; font-weight: 600; text-decoration: none; font-size: 0.85rem; }
+        nav { background: var(--dark); padding: 10px 0; position: sticky; top: 45px; z-index: 3000; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; border-bottom: 2px solid var(--green); }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; }
+        nav a { color: #fff; padding: 8px 15px; font-weight: 600; text-decoration: none; font-size: 0.9rem; display: inline-block; }
         
         main { max-width: 1100px; margin: 1rem auto; padding: 0 1rem; }
         
-        .hero-layout { background: var(--light); padding: 1.5rem; border-left: 8px solid var(--green); border-radius: 12px; margin-bottom: 2rem; border: 1px solid #eee; }
+        .hero-layout { background: var(--light); padding: 1.5rem; border-left: 10px solid var(--green); border-radius: 12px; margin-bottom: 2rem; border: 1px solid #eee; display: flex; flex-direction: column; gap: 20px; }
         .hero-text h1 { font-size: 1.8rem; color: var(--green); margin-top: 0; line-height: 1.2;}
        
-        .big-btn { display: block; text-align: center; background: var(--red); color: #fff; padding: 15px; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; margin: 1.5rem 0; animation: pulse 2s infinite; }
+        .big-btn { display: block; text-align: center; background: var(--red); color: #fff; padding: 18px; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; margin: 1.5rem 0; animation: pulse 2s infinite; }
         @keyframes pulse { 0% { transform: scale(0.98); } 50% { transform: scale(1.02); } 100% { transform: scale(0.98); } }
         
-        .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 2rem; }
-        .process-card { background: #fff; border: 1px solid #ddd; padding: 1.5rem; border-radius: 12px; text-align: center; }
+        .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 2rem 0; }
+        .process-card { background: #fff; border: 1px solid #ddd; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .process-card img { height: 180px; width: 100%; object-fit: cover; }
         
-        .farm-box { background: var(--agri-bg); padding: 20px; border: 3px solid var(--green); border-radius: 15px; margin: 30px 0; }
+        .farm-box { background: var(--agri-bg); padding: 25px; border: 3px solid var(--green); border-radius: 15px; margin: 30px 0; text-align: center; }
         .village-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 15px; }
-        .village-grid a { background: #fff; border: 1px solid var(--green); color: var(--dark); padding: 6px 12px; border-radius: 6px; text-decoration: none; font-size: 0.8rem; }
+        .village-grid a { background: #fff; border: 1px solid var(--green); color: var(--dark); padding: 8px 12px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: bold; }
         
-        .map-container { width: 100%; height: 300px; border-radius: 15px; overflow: hidden; border: 3px solid var(--green); margin: 2rem 0; }
-        .floating-call { position: fixed; bottom: 20px; right: 20px; background: var(--red); color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; text-decoration: none; z-index: 9999; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .map-container { width: 100%; height: 350px; border-radius: 15px; overflow: hidden; border: 4px solid var(--green); margin: 2rem 0; }
+        .floating-call { position: fixed; bottom: 20px; right: 20px; background: var(--red); color: #fff; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; text-decoration: none; z-index: 9999; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
        
-        footer { background: var(--green); color: #fff; text-align: center; padding: 2rem 1rem; font-size: 0.9rem; }
+        footer { background: var(--green); color: #fff; text-align: center; padding: 3rem 1rem; font-size: 0.95rem; border-top: 5px solid var(--gold); }
         footer a { color: var(--gold); text-decoration: none; font-weight: bold; }
 
         @media(min-width:769px) {
-            .hero-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding: 3rem; }
+            .hero-layout { flex-direction: row; align-items: center; padding: 3rem; }
+            .hero-text { flex: 1.2; }
+            .hero-img-wrap { flex: 1; }
             .hero-text h1 { font-size: 2.6rem; }
-            .brand { justify-content: flex-start; width: auto; }
-            .map-container { height: 450px; }
         }
     </style>
 </head>
 <body>
-    <div class="sticky-alert">🚨 24/7 POISON-FREE RAT CATCHER BRECON – CALL DAVID: 07375 303124 🚨</div>
+    <div class="sticky-alert">🚨 24/7 POISON-FREE RAT CATCHER BRECON – 07375 303124 🚨</div>
     
     <header>
         <div class="header-wrap">
@@ -85,36 +86,35 @@
         <section class="hero-layout">
             <div class="hero-text">
                 <h1>#1 Rat Catcher in Brecon (LD3)</h1>
-                <p><strong>David: Ex-Pestokil Technical Fieldcraft Specialist</strong>. Solve your rodent problem with the local specialist. From <strong>traditional rat catching</strong> for historic estates to <strong>poison-free rodent control</strong>, I deliver guaranteed results.</p>
+                <p><strong>David: Ex-Pestokil Technical Fieldcraft Specialist</strong>. Solve your rodent problem with the local specialist. From traditional rat catching to modern poison-free eradication, I provide permanent results for LD3 homes and businesses.</p>
                 
                 
 
-                <p>Serving Brecon, Talgarth, and the Usk Valley. I don't just "place bait"; I find the entry point—whether it's structural masonry or a fault in your sewer system.</p>
+                <p>I don't just "place bait"; I find the entry point—whether it's structural masonry or a fault in your sewer system.</p>
                 <a href="tel:07375303124" class="big-btn">📞 24/7 EMERGENCY CALL-OUT</a>
             </div>
-            <img src="/breconimages/rat-house.jpg" alt="Professional rat proofing Brecon" class="hero-img">
+            <div class="hero-img-wrap">
+                <img src="/breconimages/rat-house.jpg" alt="Professional rat proofing Brecon" class="hero-img">
+            </div>
         </section>
 
         <section class="process-section">
-            <h2 style="text-align:center;">Professional Rodent Resolution Strategy</h2>
+            <h2 style="text-align:center;">Professional Rodent Resolution</h2>
             <div class="process-grid">
                 <div class="process-card">
                     <img src="/breconimages/rat-unit.jpg" alt="Technical Survey">
                     <h3>1. Technical Survey</h3>
-                    
                     <p>I audit your property using 30 years of fieldcraft to find where rats are nesting in walls or floor voids.</p>
                 </div>
                 <div class="process-card">
                     <img src="/breconimages/rat-house.jpg" alt="High-Impact Trapping">
-                    <h3>2. High-Impact Trapping</h3>
-                    
+                    <h3>2. Trapping & Removal</h3>
                     <p>Traditional skills combined with modern non-toxic systems. 100% safe for pets and livestock.</p>
                 </div>
                 <div class="process-card">
                     <img src="/breconimages/rat-unit.jpg" alt="Permanent Proofing">
                     <h3>3. Permanent Proofing</h3>
-                    
-                    <p>I block the source using <strong>316-grade stainless steel rat valves</strong> and professional masonry proofing.</p>
+                    <p>I block the source using 316-grade stainless steel rat valves and professional masonry proofing.</p>
                 </div>
             </div>
         </section>
@@ -123,7 +123,7 @@
             <h3>🚜 Red Tractor & Farm Rodent Control</h3>
             <p>Specialist rodent management for LD3 poultry units and livestock farms. <strong>Full compliance with 2026 CRRU and Red Tractor standards</strong>.</p>
             <img src="/breconimages/mole-farm.jpg" alt="Traditional mole and rat control farm">
-            <ul style="list-style-position: inside;">
+            <ul style="list-style-position: inside; text-align: left; display: inline-block;">
                 <li>Audit-Ready Site Management Logs</li>
                 <li>Grain & Feed Protection</li>
                 <li>Poison-Free Traditional Trapping</li>
@@ -131,7 +131,7 @@
         </div>
 
         <section class="village-index">
-            <h3>Regional Service Hubs</h3>
+            <h3 style="text-align: center;">Local Service Hubs</h3>
             <div class="village-grid">
                 <a href="/hypapages/brecon-town-centre-ld3.html">📍 Brecon</a>
                 <a href="/hypapages/sennybridge-defynnog-ld3.html">📍 Sennybridge</a>
@@ -145,18 +145,18 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158454.43714488836!2d-3.570773636750731!3d51.91845417036486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e2468f9a2e87d%3A0x6a6d639b70425c28!2sBrecon!5e0!3m2!1sen!2suk!4v1705303124000!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
-        <div style="background:var(--gold); padding:1.5rem; border-radius:12px; text-align:center; border: 3px solid var(--green);">
+        <div style="background:var(--light); padding:1.5rem; border-radius:12px; text-align:center; border: 3px solid var(--green);">
             <h3>5-Star Rated Rat Specialist</h3>
             <p>Visit my <strong>Official Google Business Profile (GBP)</strong> to read the latest reviews.</p>
-            <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" class="phone-box" style="font-size:1.1rem;">View My GBP Reviews →</a>
-        </div>
+            <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" class="phone-box" style="font-size:1.1rem; color: #000;">View My GBP Reviews →</a>
+        </section>
     </main>
 
     <a href="tel:07375303124" class="floating-call">📞</a>
     
     <footer>
         <p><strong>Welsh Town & Country Pest Services – David Ex-Pestokil</strong></p>
-        <p>© 2026 RSPH Level 2 Certified | Field Technician</p>
+        <p>© 2026 David Hill | RSPH Level 2 Certified | Field Technician</p>
         <p>Expert Rat Catcher covering Brecon, Llandeilo, Ammanford, and Ystradgynlais.</p>
         <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank">Visit Our Google Business Profile</a> | <a href="/contact.html">Contact Us</a></p>
     </footer>
