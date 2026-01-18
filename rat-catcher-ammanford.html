@@ -11,7 +11,6 @@
     <link rel="canonical" href="https://brecon.welshtownandcountry.co.uk/rat-catcher-ammanford.html">
     <link rel="icon" href="/breconimages/favicon.ico" type="image/x-icon">
 
-    <!-- Schema Markup – Full LocalBusiness + PestControlService -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -21,7 +20,7 @@
       "image": "https://brecon.welshtownandcountry.co.uk/breconimages/logo.png",
       "telephone": "+447375303124",
       "priceRange": "££",
-      "description": "Ex-Pestokil technician providing poison-free rat control, permanent rodent proofing, 316-grade rat blockers & CCTV drain surveys in Ammanford SA18, Glanamman, Brynamman, Betws, Garnant, Pantyffynnon & entire Amman Valley.",
+      "description": "Ex-Pestokil technician providing poison-free rat control, permanent rodent proofing, 316-grade rat blockers & CCTV drain surveys in Ammanford SA18.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ammanford",
@@ -33,15 +32,6 @@
         "@type": "GeoCoordinates",
         "latitude": 51.7915,
         "longitude": -3.9877
-      },
-      "areaServed": [
-        "Ammanford", "Glanamman", "Brynamman", "Betws", "Garnant", "Pantyffynnon", "Pontamman", "Hopkinstown", "Myddynfych", "Tycroes", "Cwmgors", "Gwaun-Cae-Gurwen", "Tairgwaith", "Pen-y-groes", "Saron", "Capel Hendre", "Pontyberem", "Cwmamman", "Upper Brynamman", "Lower Brynamman", "Tir-y-Dail"
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
       }
     }
     </script>
@@ -49,30 +39,48 @@
     <style>
         :root { --green: #064016; --dark: #083d14; --red: #d32f2f; --light: #fdfdfd; --gold: #ffcc00; }
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; color: #333; line-height: 1.7; background: #fdfdfd; padding-bottom: 80px; }
-        header { background: var(--green); color: white; padding: 1.5rem; border-bottom: 5px solid var(--gold); }
-        .header-wrap { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
-        .brand { display: flex; align-items: center; gap: 20px; }
-        .logo { max-height: 80px; width: auto; border-radius: 4px; }
-        .cert-badge { max-height: 90px; background: #fff; padding: 8px; border-radius: 5px; border: 2px solid var(--gold); }
-        .phone-box { background: var(--gold); color: #000; padding: 12px 25px; border-radius: 8px; font-weight: 900; font-size: 1.7rem; text-decoration: none; border: 2px solid var(--dark); transition: 0.3s; }
-        .phone-box:hover { background: #fff; }
-        nav { background: var(--dark); padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
-        nav a { color: white; margin: 0 12px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+        
+        header { background: var(--green); color: white; padding: 1rem; border-bottom: 5px solid var(--gold); }
+        .header-wrap { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .brand { display: flex; align-items: center; gap: 10px; }
+        .logo { max-height: 60px; width: auto; border-radius: 4px; }
+        .cert-badge { max-height: 65px; background: #fff; padding: 5px; border-radius: 5px; border: 1px solid var(--gold); }
+        
+        .phone-box { background: var(--gold); color: #000; padding: 10px 20px; border-radius: 8px; font-weight: 900; font-size: 1.4rem; text-decoration: none; border: 2px solid var(--dark); white-space: nowrap; }
+        
+        nav { background: var(--dark); padding: 10px 0; position: sticky; top: 0; z-index: 1000; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+        nav a { color: white; margin: 0 12px; text-decoration: none; font-weight: 600; font-size: 0.9rem; display: inline-block; }
         nav a:hover { color: var(--gold); }
-        main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
-        .hero-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; background: var(--light); padding: 3rem; border-left: 12px solid var(--green); border-radius: 12px; align-items: center; margin-bottom: 3rem; border: 1px solid #eee; }
-        .hero-img { width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 1px solid #ddd; }
-        .big-btn { display: inline-block; background: var(--red); color: #fff; padding: 20px 50px; border-radius: 50px; font-size: 1.6rem; font-weight: bold; text-decoration: none; margin: 1.5rem 0; animation: pulse 2s infinite; }
+        
+        main { max-width: 1100px; margin: 1.5rem auto; padding: 0 1rem; }
+        
+        .hero-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 30px; background: var(--light); padding: 2rem; border-left: 10px solid var(--green); border-radius: 12px; align-items: center; margin-bottom: 2rem; border: 1px solid #eee; }
+        .hero-img { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); border: 1px solid #ddd; }
+        
+        .big-btn { display: inline-block; background: var(--red); color: #fff; padding: 18px 35px; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; margin: 1rem 0; animation: pulse 2s infinite; text-align: center; }
         @keyframes pulse { 0% { transform: scale(0.98); } 50% { transform: scale(1.02); } 100% { transform: scale(0.98); } }
-        .guarantee-box { background: var(--green); color: white; padding: 2.5rem; border-radius: 15px; margin: 3rem 0; }
-        .guarantee-box h2 { color: var(--gold); }
-        .map-container { width: 100%; height: 450px; border-radius: 15px; overflow: hidden; border: 5px solid var(--green); margin: 3rem 0; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        .floating-call { position: fixed; bottom: 25px; right: 25px; background: var(--red); color: #fff; width: 75px; height: 75px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; text-decoration: none; z-index: 9999; box-shadow: 0 5px 20px rgba(0,0,0,0.4); }
-        footer { background: var(--dark); color: white; text-align: center; padding: 4rem 1rem; }
-        .local-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 2rem 0; text-align: center; }
-        .local-grid a { background: var(--dark); color: #fff; padding: 12px; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: bold; }
-        .landmark-list { margin: 1.5rem 0; padding-left: 1.5rem; font-style: italic; }
-        @media(max-width:768px) { .hero-layout { grid-template-columns: 1fr; text-align: center; } }
+        
+        .guarantee-box { background: var(--green); color: white; padding: 2rem; border-radius: 15px; margin: 2rem 0; }
+        .guarantee-box h2 { color: var(--gold); margin-top: 0; }
+        
+        .map-container { width: 100%; height: 350px; border-radius: 15px; overflow: hidden; border: 4px solid var(--green); margin: 2rem 0; }
+        .map-container iframe { width: 100%; height: 100%; border: 0; }
+        
+        .floating-call { position: fixed; bottom: 20px; right: 20px; background: var(--red); color: #fff; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; text-decoration: none; z-index: 9999; box-shadow: 0 4px 15px rgba(0,0,0,0.4); }
+        
+        footer { background: var(--dark); color: white; text-align: center; padding: 3rem 1rem; }
+        footer a { color: var(--gold); text-decoration: none; }
+        
+        .local-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 2rem 0; }
+        .local-grid a { background: var(--green); color: #fff; padding: 10px; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: bold; text-align: center; }
+        
+        @media(max-width:768px) {
+            .header-wrap { justify-content: center; text-align: center; }
+            .brand { width: 100%; justify-content: center; flex-direction: column; }
+            .phone-box { width: 100%; text-align: center; margin-top: 10px; }
+            .hero-layout { grid-template-columns: 1fr; padding: 1.5rem; }
+            .big-btn { width: 100%; box-sizing: border-box; }
+        }
     </style>
 </head>
 <body>
@@ -80,7 +88,7 @@
         <div class="header-wrap">
             <div class="brand">
                 <img src="/breconimages/logo.png" alt="Welsh Town & Country Pest Services Logo" class="logo" loading="lazy">
-                <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Level 2 Certified Pest Technician Badge" class="cert-badge" loading="lazy">
+                <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Level 2 Certified" class="cert-badge" loading="lazy">
             </div>
             <a href="tel:07375303124" class="phone-box">07375 303124</a>
         </div>
@@ -101,69 +109,48 @@
             <div>
                 <h1>#1 Rat Catcher in Ammanford SA18</h1>
                 <p><strong>Quay Street to Betws | 30+ Years Technical Fieldcraft | Discreet 24/7 Service</strong></p>
-                <p>Local specialist solving rodent issues in Ammanford town centre, takeaways on Wind Street & College Street, residential areas like Betws & Tycroes, and farms near Glanamman Industrial Estate. Poison-free, guaranteed results.</p>
-                <a href="tel:07375303124" class="big-btn">📞 24/7 EMERGENCY CALL-OUT</a>
+                <p>David (Ex-Pestokil) provides poison-free rodent control, 316-grade rat blockers, and CCTV drain surveys across the Amman Valley.</p>
+                <a href="tel:07375303124" class="big-btn">📞 24/7 EMERGENCY CALL</a>
             </div>
-            <img src="/breconimages/rat-unit.jpg" alt="Professional pest control technician arriving for rat survey in Ammanford SA18" class="hero-img" loading="lazy">
+            <img src="/breconimages/rat-unit.jpg" alt="Pest control technician Ammanford" class="hero-img" loading="lazy">
         </section>
 
         <section class="guarantee-box">
-            <h2>The Ammanford Rat-Free Guarantee & Price Promise</h2>
+            <h2>Ammanford Rat-Free Guarantee</h2>
             <ul>
-                <li><strong>Fixed Price Surveys:</strong> Clear upfront quotes – no hidden fees for SA18 residents.</li>
+                <li><strong>Fixed Price Surveys:</strong> Clear upfront quotes for SA18.</li>
                 <li><strong>Results Guarantee:</strong> Stay until your property is 100% rat-free.</li>
-                <li><strong>Poison-Free Options:</strong> Safe for pets, children, and food businesses near Ammanford Park.</li>
-                <li><strong>Discreet Service:</strong> Unmarked vehicles for privacy in town centre and near Pontamman Bridge.</li>
-                <li><strong>Rat Valve Specialists:</strong> Professional stainless steel interceptors for drainage issues along the River Amman.</li>
+                <li><strong>Poison-Free:</strong> Safe for pets and food businesses.</li>
+                <li><strong>Discreet:</strong> Unmarked vehicles for privacy.</li>
             </ul>
         </section>
 
         <section>
-            <h2>Solving Ammanford’s Drainage and Structural Rat Problems</h2>
-            <p>Victorian terraces, aging sewers, and the **River Amman** create ideal rat highways. Properties near **Quay Street**, **Wind Street**, **College Street**, **Foundry Road**, **Ammanford Town Centre**, and **Ammanford Park** often suffer recurring issues. The **Black Mountain** and **Amman Valley Railway** corridors also bring rural rodent pressure.</p>
-            <p>David identifies and proofs entry points in foundations, redundant pipes, and lofts. For farms near **Glanamman Industrial Estate** or **Brynamman Community Centre**, we offer Red Tractor-compliant biosecurity. See <a href="/farm-audit-compliance.html">Farm Compliance</a> for details.</p>
-            <img src="/breconimages/rat-house.jpg" alt="Rat proofing and structural sealing work in Ammanford residential property" class="hero-img" loading="lazy">
+            <h2>Solving Ammanford’s Drainage Rat Problems</h2>
+            <p>Aging sewers and the River Amman create ideal rat highways. We install 316-grade stainless steel blockers to stop rats at the source.</p>
+            <img src="/breconimages/rat-house.jpg" alt="Rat proofing Ammanford" class="hero-img" loading="lazy">
         </section>
 
-        <section style="background:#f4f7f4; padding:2rem; border-radius:12px; margin:3rem 0; border:1px solid #eee;">
-            <h2>Why RSPH Certification Matters in SA18</h2>
-            <p>RSPH Level 2 ensures safe, legal, and ethical control – vital for food outlets near Ammanford Library or schools. Advanced tracking and trapping protect the environment around the River Amman and Amman Valley Railway.</p>
-        </section>
-
-        <!-- Full Village & Landmark Coverage Grid -->
         <section class="hyper-local">
-            <h2 style="text-align:center;">Complete Ammanford SA18 & Amman Valley Coverage</h2>
+            <h2 style="text-align:center;">Amman Valley Coverage</h2>
             <div class="local-grid">
-                <a href="/quay-street-ammanford-pest-control.html">Ammanford Town Centre</a>
+                <a href="#">Town Centre</a>
                 <a href="#">Betws</a>
-                <a href="#">Pontamman / Pontaman</a>
-                <a href="#">Pantyffynnon</a>
                 <a href="#">Glanamman</a>
-                <a href="#">Brynamman (Upper & Lower)</a>
+                <a href="#">Brynamman</a>
                 <a href="#">Garnant</a>
-                <a href="#">Cwmgors</a>
-                <a href="#">Gwaun-Cae-Gurwen</a>
-                <a href="#">Tairgwaith</a>
-                <a href="#">Pen-y-groes</a>
-                <a href="#">Saron</a>
-                <a href="#">Capel Hendre</a>
-                <a href="#">Hopkinstown</a>
-                <a href="#">Myddynfych</a>
                 <a href="#">Tycroes</a>
-                <a href="#">Cwmamman</a>
-                <a href="#">Pontyberem</a>
-            </div>
-            <div class="landmark-list">
-                <strong>Key Landmarks Served:</strong> River Amman, Ammanford Town Centre, Amman Valley Railway, Black Mountain, Tir-y-Dail, Pontamman Bridge, Glanamman Industrial Estate, Brynamman Community Centre, Ammanford Park, Wind Street, Quay Street, College Street, Foundry Road.
+                <a href="#">Pantyffynnon</a>
+                <a href="#">Saron</a>
             </div>
         </section>
 
         <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39726.63412356543!2d-3.996!3d51.792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486ec5575510495f%3A0x86300996847c945b!2sAmmanford!5e0!3m2!1sen!2suk!4v1767752610315!5m2!1sen!2suk" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39726.63412356543!2d-3.996!3d51.792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486ec5575510495f%3A0x86300996847c945b!2sAmmanford!5e0!3m2!1sen!2suk!4v1767752610315!5m2!1sen!2suk" loading="lazy"></iframe>
         </div>
 
         <div style="text-align:center; margin:3rem 0;">
-            <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" class="phone-box" style="font-size:1.4rem;">View Google Reviews & Profile</a>
+            <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" class="phone-box" style="font-size:1.1rem;">View Google Reviews</a>
         </div>
     </main>
 
@@ -171,8 +158,8 @@
 
     <footer>
         <p><strong>Welsh Town & Country Pest Services – David Ex-Pestokil</strong></p>
-        <p>© 2026 RSPH Level 2 Certified | 07375 303124</p>
-        <p>Expert Rat Control across Ammanford (SA18), Glanamman, Brynamman, Betws, Garnant, Pantyffynnon & the entire Amman Valley.</p>
+        <p>© 2026 David Hill | RSPH Level 2 Certified | 07375 303124</p>
+        <p>Expert Rat Control across Ammanford (SA18), Glanamman, Brynamman, and the Amman Valley.</p>
     </footer>
 </body>
 </html>
