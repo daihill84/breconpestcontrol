@@ -19,148 +19,100 @@
     <link rel="canonical" href="https://brecon.welshtownandcountry.co.uk/">
     <link rel="icon" href="/breconimages/favicon.ico" type="image/x-icon">
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "PestControlService",
-      "name": "Welsh Town & Country Pest Services",
-      "url": "https://brecon.welshtownandcountry.co.uk/",
-      "logo": "https://brecon.welshtownandcountry.co.uk/breconimages/logo.png",
-      "image": "https://brecon.welshtownandcountry.co.uk/breconimages/rat-unit.jpg",
-      "telephone": "+447375303124",
-      "priceRange": "££",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Brecon",
-        "addressRegion": "Powys",
-        "postalCode": "LD3",
-        "addressCountry": "GB"
-      },
-      "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": "South Wales"
-      }
-    }
-    </script>
-
     <style>
         :root{--green:#064016;--dark:#053010;--red:#d32f2f;--light:#fdfdfd;--gold:#ffcc00;--agri-bg:#e8f5e9;}
         body{font-family:'Segoe UI',Arial,sans-serif;margin:0;color:#333;line-height:1.6;background:#fff;padding-bottom:80px}
-
-        .emergency-bar{background:var(--red);color:#fff;text-align:center;padding:12px;font-weight:bold;position:sticky;top:0;z-index:4000;border-bottom:2px solid var(--gold)}
-        .emergency-bar a{color:#fff;text-decoration:none}
-
-        header{background:var(--green);color:#fff;padding:1.5rem 1rem;text-align:center}
-        .header-brand{display:flex;justify-content:center;gap:15px;align-items:center;flex-wrap:wrap;margin-bottom:15px}
-        .logo{max-height:70px;border-radius:5px}
-        .rsph-badge{max-height:70px;background:#fff;padding:5px;border-radius:5px;border:3px solid var(--gold)}
-
-        nav{background:var(--dark);padding:15px 0;border-bottom:8px solid var(--gold);position:sticky;top:48px;z-index:3000}
-        .nav-links{display:flex;justify-content:center;gap:15px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
-        .nav-links a{color:#fff;text-decoration:none;font-weight:bold;font-size:.9rem;text-transform:uppercase}
-        .nav-links a:hover,.nav-links .active{color:var(--gold)}
-
-        main{max-width:1200px;margin:auto;padding:1.5rem 1rem}
-
-        .hero-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;padding:2rem;border-left:10px solid var(--green);border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,.05)}
-        .hero-img{width:100%;border-radius:12px}
-
-        .big-btn{background:var(--red);color:#fff;padding:18px 36px;border-radius:50px;font-weight:900;text-decoration:none;display:inline-block;font-size:1.3rem}
-
-        .grid-section{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin:2rem 0}
-        .card{background:#fff;padding:1.5rem;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,.08);border-top:5px solid var(--green);text-align:center}
-        .card img{width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:15px}
-        .card a{background:var(--green);color:#fff;padding:10px;border-radius:5px;text-decoration:none;font-weight:bold;display:block;margin-top:15px}
-
-        .directory-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px;background:var(--agri-bg);padding:2rem;border-radius:15px;margin:2rem 0;border:1px solid var(--green)}
-
-        .map-frame{width:100%;height:400px;border:4px solid var(--green);border-radius:15px;overflow:hidden;margin:2rem 0}
-
-        .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;text-decoration:none;z-index:9999}
-
-        footer{background:var(--green);color:#fff;text-align:center;padding:3rem 1rem;border-top:5px solid var(--gold)}
-
-        @media(max-width:768px){
-            .hero-layout{grid-template-columns:1fr}
-            .big-btn{width:100%;text-align:center}
-        }
+        header,footer{background:var(--green);color:#fff;text-align:center}
+        nav{background:var(--dark);padding:15px 0;border-bottom:8px solid var(--gold)}
+        .nav-links{display:flex;justify-content:center;gap:15px;list-style:none;padding:0;margin:0;flex-wrap:wrap}
+        .nav-links a{color:#fff;text-decoration:none;font-weight:bold;text-transform:uppercase;font-size:.9rem}
+        main{max-width:1200px;margin:auto;padding:1.5rem}
+        .directory-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px;background:var(--agri-bg);padding:2rem;border-radius:15px;border:1px solid var(--green)}
+        .directory-grid a{background:#fff;padding:12px;border-radius:8px;text-decoration:none;color:#064016;font-weight:bold;border-left:5px solid var(--green)}
+        .directory-grid a:hover{background:#f1f8f4}
+        .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;text-decoration:none}
     </style>
 </head>
 
 <body>
 
-<div class="emergency-bar">
-    🚨 24/7 Pest Control – <a href="tel:07375303124">07375 303124</a>
-</div>
-
 <header>
-    <div class="header-brand">
-        <img src="/breconimages/logo.png" alt="Welsh Town & Country Pest Services logo" class="logo">
-        <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Level 2 Certified Pest Controller" class="rsph-badge">
-    </div>
     <h1>Pest Control in Brecon & South Wales</h1>
-    <p>Poison-Free Rat Control • Traditional Mole Trapping • Squirrel Control</p>
+    <p>Rat Control • Mole Catching • Farm & Rural Pest Services</p>
 </header>
 
 <nav>
     <ul class="nav-links">
-        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/rat-catcher.html">Rat Catcher</a></li>
         <li><a href="/mole-catching.html">Mole Catcher</a></li>
         <li><a href="/squirrel-control.html">Squirrel Control</a></li>
-        <li><a href="/rats-in-drains.html">Rats in Drains</a></li>
-        <li><a href="/brecon-pest-control.html">Brecon Pest</a></li>
-        <li><a href="/farm-pest-control.html">Farm Pests</a></li>
+        <li><a href="/farm-pest-control.html">Farm Pest Control</a></li>
+        <li><a href="/contact.html">Contact</a></li>
     </ul>
 </nav>
 
 <main>
 
-<section class="hero-layout">
-    <div>
-        <h2>Local, Experienced Pest Control</h2>
-        <p>I provide practical, effective pest control for homes, farms and commercial properties across Brecon and South Wales. No upselling, no gimmicks – just proper fieldcraft.</p>
-        <a href="tel:07375303124" class="big-btn">Call David: 07375 303124</a>
-    </div>
-    <img src="/breconimages/rat-unit.jpg" alt="Pest control service vehicle in Brecon" class="hero-img">
+<h2>Service & Area Directory</h2>
+<p>Browse pest control services and coverage areas across Brecon, Powys and South Wales.</p>
+
+<section class="directory-grid">
+    <a href="/a40-areas.html">A40 Coverage Areas</a>
+    <a href="/ammanford-ystradgynlais-mole-catching.html">Ammanford & Ystradgynlais Mole Catching</a>
+    <a href="/ammanford_ystradgynlais_rat-catcher.html">Ammanford & Ystradgynlais Rat Catcher</a>
+    <a href="/bed-bug-removal.html">Bed Bug Removal</a>
+    <a href="/bee-removal.html">Bee Removal</a>
+    <a href="/bethlehem-pest-control.html">Bethlehem Pest Control</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/brecon-pest-control.html">Brecon Pest Control</a>
+    <a href="/brecon-rodent-control.html">Brecon Rodent Control</a>
+    <a href="/bwlch-pest-control.html">Bwlch Pest Control</a>
+    <a href="/cluster-fly-removal.html">Cluster Fly Removal</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/crickhowell-pest-control.html">Crickhowell Pest Control</a>
+    <a href="/emergency-pest-control-brecon.html">Emergency Pest Control Brecon</a>
+    <a href="/ethical-bee-removal-brecon.html">Ethical Bee Removal Brecon</a>
+    <a href="/farm-audit-compliance.html">Farm Audit & Compliance</a>
+    <a href="/farm-pest-control.html">Farm Pest Control</a>
+    <a href="/holiday-lets.html">Holiday Let Pest Control</a>
+    <a href="/humane-wildlife-removal.html">Humane Wildlife Removal</a>
+    <a href="/llandeilo-mole-catching.html">Llandeilo Mole Catching</a>
+    <a href="/llandeilo-pest-control.html">Llandeilo Pest Control</a>
+    <a href="/llandeilo-rat-catcher.html">Llandeilo Rat Catcher</a>
+    <a href="/llangadog-pest-control.html">Llangadog Pest Control</a>
+    <a href="/llangorse-pest-control.html">Llangorse Pest Control</a>
+    <a href="/llansadwrn-pest-control.html">Llansadwrn Pest Control</a>
+    <a href="/manordeilo-pest-control.html">Manordeilo Pest Control</a>
+    <a href="/mouse-removal.html">Mouse Removal</a>
+    <a href="/pest-control-ammanford.html">Pest Control Ammanford</a>
+    <a href="/pest-control-western-valleys.html">Western Valleys Pest Control</a>
+    <a href="/pest-control-ystradgynlais.html">Pest Control Ystradgynlais</a>
+    <a href="/pest-management.html">Pest Management</a>
+    <a href="/quay-street-ammanford-pest-control.html">Quay Street Ammanford Pest Control</a>
+    <a href="/rat-catcher-ammanford.html">Rat Catcher Ammanford</a>
+    <a href="/rat-catcher.html">Rat Catcher</a>
+    <a href="/rats-in-drains.html">Rats in Drains</a>
+    <a href="/sennybridge-pest-control.html">Sennybridge Pest Control</a>
+    <a href="/squirrel-control.html">Squirrel Control</a>
+    <a href="/takeaway-pest-control-tawe-valley.html">Takeaway Pest Control Tawe Valley</a>
+    <a href="/talgarth-pest-control.html">Talgarth Pest Control</a>
+    <a href="/talgarth_moles.html">Talgarth Mole Control</a>
+    <a href="/talgarth_rodent_control.html">Talgarth Rodent Control</a>
+    <a href="/tawe-valley-pest-control.html">Tawe Valley Pest Control</a>
+    <a href="/trapp-pest-control.html">Trapp Pest Control</a>
+    <a href="/wasp-nest-removal.html">Wasp Nest Removal</a>
+    <a href="/ystradgynlais-rat-catcher.html">Ystradgynlais Rat Catcher</a>
 </section>
-
-<section class="grid-section">
-    <div class="card">
-        <img src="/breconimages/rat-house.jpg" alt="Poison-free rat control in Brecon">
-        <h3>Rat Control</h3>
-        <p>Effective, poison-free rat control with proofing and drain solutions.</p>
-        <a href="/rat-catcher.html">Learn more</a>
-    </div>
-
-    <div class="card">
-        <img src="/breconimages/mole-farm.jpg" alt="Traditional mole trapping on farmland">
-        <h3>Mole Catching</h3>
-        <p>Traditional trapping methods, safe for livestock and pets.</p>
-        <a href="/mole-catching.html">Learn more</a>
-    </div>
-
-    <div class="card">
-        <img src="/breconimages/rat-house.jpg" alt="Grey squirrel control service">
-        <h3>Squirrel Control</h3>
-        <p>Legal, compliant control and loft protection.</p>
-        <a href="/squirrel-control.html">Learn more</a>
-    </div>
-</section>
-
-<div class="map-frame">
-    <iframe src="https://www.google.com/maps?q=Brecon&output=embed" loading="lazy"></iframe>
-</div>
 
 </main>
 
-<a href="tel:07375303124" class="floating-call" aria-label="Call pest control now">📞</a>
+<a href="tel:07375303124" class="floating-call">📞</a>
 
 <footer>
     <p><strong>Welsh Town & Country Pest Services</strong></p>
     <p>David Hill – RSPH Level 2 Certified Pest Controller</p>
-    <p>Brecon • Llandeilo • Ammanford • Ystradgynlais</p>
+    <p>Call: 07375 303124</p>
 </footer>
 
 </body>
