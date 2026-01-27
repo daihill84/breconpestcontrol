@@ -2,49 +2,54 @@
 <html lang="en-GB">
 <head>
 
-    <!-- Basic -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
     <title>Squirrel Control Brecon LD3 | Loft Damage & Proofing | Welsh Town & Country</title>
-    <meta name="description" content="Professional grey squirrel control in Brecon LD3. Humane trapping, loft proofing and fire-risk prevention by an RSPH Level 2 certified pest controller. Ring me today.">
+    <meta name="description" content="Professional humane grey squirrel control in Brecon LD3. Specialist trapping & permanent loft proofing near the Canal Basin, Struet & LD3 villages. Call David: 07375 303124.">
 
-    <!-- Indexing -->
     <meta name="robots" content="index, follow">
     <meta name="author" content="David Hill">
 
-    <!-- Local SEO -->
     <meta name="geo.region" content="GB-POW">
     <meta name="geo.placename" content="Brecon">
 
-    <!-- Canonical -->
     <link rel="canonical" href="https://brecon.welshtownandcountry.co.uk/squirrel-control.html">
 
-    <!-- Favicon -->
     <link rel="icon" href="/breconimages/favicon.ico" type="image/x-icon">
 
-    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "PestControlService",
-      "name": "Welsh Town & Country Pest Services",
-      "url": "https://brecon.welshtownandcountry.co.uk/squirrel-control.html",
-      "telephone": "+447375303124",
-      "image": "https://brecon.welshtownandcountry.co.uk/breconimages/rat-house.jpg",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Brecon",
-        "addressRegion": "Powys",
-        "postalCode": "LD3",
-        "addressCountry": "GB"
-      },
-      "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": "Powys"
-      }
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://brecon.welshtownandcountry.co.uk/#organization",
+          "name": "Welsh Town & Country Pest Services",
+          "url": "https://brecon.welshtownandcountry.co.uk/",
+          "logo": "https://brecon.welshtownandcountry.co.uk/breconimages/logo.png"
+        },
+        {
+          "@type": ["PestControlService", "LocalBusiness"],
+          "name": "Welsh Town & Country Pest Services",
+          "url": "https://brecon.welshtownandcountry.co.uk/squirrel-control.html",
+          "telephone": "+447375303124",
+          "image": "https://brecon.welshtownandcountry.co.uk/breconimages/squirrel-estate.jpg",
+          "priceRange": "££",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Brecon",
+            "addressRegion": "Powys",
+            "postalCode": "LD3",
+            "addressCountry": "GB"
+          },
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Powys"
+          }
+        }
+      ]
     }
     </script>
 
@@ -76,20 +81,20 @@
         .damage-card img{width:100%;height:220px;object-fit:cover;border-bottom:3px solid var(--green)}
         .damage-card-content{padding:1.5rem}
 
-        .village-index{background:var(--agri-bg);padding:2.5rem;border-radius:12px;margin:3rem 0;border:2px solid var(--green);text-align:center}
-        .village-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:20px}
-        .village-grid a{background:#fff;border:1px solid var(--green);color:var(--dark-green);padding:8px 18px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:.9rem}
-        .village-grid a:hover{background:var(--green);color:#fff}
+        .hotspot-index{background:var(--agri-bg);padding:2.5rem;border-radius:12px;margin:3rem 0;border:2px solid var(--green);text-align:center}
+        .hotspot-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:20px}
+        .hotspot-grid div{background:#fff;border:1px solid var(--green);color:var(--dark-green);padding:8px 18px;border-radius:6px;font-weight:bold;font-size:.9rem}
 
-        .legal-box{background:var(--dark-green);color:#fff;padding:30px;border-radius:12px;margin:3rem 0}
+        .legal-box{background:var(--dark-green);color:#fff;padding:30px;border-radius:12px;margin:3rem 0;border-left:10px solid var(--red)}
         .legal-box h2{color:var(--gold);margin-top:0}
 
         .gbp-trust{background:var(--gold);padding:2rem;border-radius:12px;text-align:center;margin:3rem 0;color:#000}
         .gbp-trust a{background:var(--dark-green);color:var(--gold);padding:15px 30px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:10px;font-weight:bold}
 
         .map-container{width:100%;height:420px;border-radius:15px;overflow:hidden;border:5px solid var(--green);margin:3rem 0}
+        .map-container iframe{width:100%;height:100%;border:0}
 
-        .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.3rem;text-decoration:none;z-index:9999}
+        .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.3rem;text-decoration:none;z-index:9999;box-shadow: 0 4px 10px rgba(0,0,0,0.3)}
 
         footer{background:var(--dark-green);color:#fff;text-align:center;padding:3rem 1rem}
         footer a{color:var(--gold);text-decoration:none}
@@ -109,7 +114,7 @@
     <div class="header-container">
         <div class="logo-group">
             <img src="/breconimages/logo.png" alt="Welsh Town & Country Pest Services logo" class="logo">
-            <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Level 2 pest control certification" class="rsph-badge">
+            <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Level 2 pest control certification badge" class="rsph-badge">
         </div>
         <a href="tel:07375303124" class="phone-link">07375 303124</a>
     </div>
@@ -129,60 +134,68 @@
 <section class="hero">
     <p style="font-weight:bold;color:var(--red);text-transform:uppercase;">Loft Damage & Fire Risk</p>
     <h1>Squirrel Control in Brecon (LD3)</h1>
-    <p>Grey squirrels can cause serious damage to roof timbers, insulation and electrical wiring. I provide professional squirrel control across Brecon and surrounding villages, focusing on humane trapping and permanent proofing to prevent re-entry.</p>
-    <a href="tel:07375303124" class="big-btn">Call for Squirrel Control</a>
+    <p>Grey squirrels in Brecon use the Usk Valley tree lines as highways into your roof. They cause serious damage to timbers, insulation, and wiring. I provide professional squirrel removal across Brecon and surrounding LD3 villages, focusing on <strong>instant-dispatch trapping</strong> and permanent steel proofing.</p>
+    <a href="tel:07375303124" class="big-btn">Call David for Squirrel Control</a>
 </section>
 
 <section class="damage-grid">
     <div class="damage-card">
-        <img src="/breconimages/rat-house.jpg" alt="Squirrel entry points in roof and fascia">
+        <img src="/breconimages/squirrel-estate.jpg" alt="Squirrel on the roof of a Brecon estate building">
         <div class="damage-card-content">
-            <h3>Loft Entry Proofing</h3>
-            <p>Squirrels exploit weak points in fascia boards and soffits. Entry points are securely proofed using steel mesh to prevent repeat infestations.</p>
+            <h3>Permanent Proofing</h3>
+            <p>Squirrels exploit weak fascia and soffits. Once removed, I secure entry points using professional-grade galvanized steel mesh to ensure they cannot return.</p>
         </div>
     </div>
 
     <div class="damage-card">
-        <img src="/breconimages/rat-unit.jpg" alt="Inspection of loft wiring damaged by squirrels">
+        <img src="/breconimages/squirrel-proofing.jpg" alt="Technician installing steel squirrel exclusion plates">
         <div class="damage-card-content">
             <h3>Electrical Safety</h3>
-            <p>Gnawed cables are a serious fire risk. I identify damage early and advise on necessary repairs for homes and rental properties.</p>
+            <p>Gnawed cables are a primary cause of loft fires. I identify damage early and provide heavy-duty proofing for homes, rental properties, and rural estates.</p>
         </div>
     </div>
 
     <div class="damage-card">
-        <img src="/breconimages/mole-farm.jpg" alt="Squirrel control for rural properties and estates">
+        <img src="/breconimages/mole-farm.jpg" alt="Agricultural pest control for Brecon farms and estates">
         <div class="damage-card-content">
             <h3>Rural & Estate Work</h3>
-            <p>Discreet squirrel management for farms, estates and larger properties where damage can escalate quickly.</p>
+            <p>Discreet squirrel management for farms and larger Usk Valley estates where squirrel damage to buildings and machinery can escalate quickly.</p>
         </div>
     </div>
 </section>
 
-<section class="village-index">
-    <h2>Local Squirrel Control Areas</h2>
-    <p>Village-specific services available across the Brecon Beacons:</p>
-    <div class="village-grid">
-        <a href="/squirrelpages/sennybridge-squirrel-control.html">Sennybridge</a>
-        <a href="/squirrelpages/talgarth-squirrel-control.html">Talgarth</a>
-        <a href="/squirrelpages/bwlch-squirrel-control.html">Bwlch</a>
-        <a href="/squirrelpages/crickhowell-squirrel-control.html">Crickhowell</a>
+
+
+<section class="hotspot-index">
+    <h2>Brecon & LD3 Squirrel Activity Hotspots</h2>
+    <p>I provide rapid response services in these high-risk areas where woodland meets housing:</p>
+    <div class="hotspot-grid">
+        <div>Brecon Town & Canal Basin</div>
+        <div>The Struet & Watton</div>
+        <div>Cefn yr Ystrad / Llanfaes</div>
+        <div>Cwmdu / Cantref</div>
+        <div>Talybont-on-Usk</div>
+        <div>Llangorse / Gwernyfed</div>
+        <div>Pencelli / Llanfrynach</div>
+        <div>Aberhonddu / Cradoc</div>
+        <div>Four Crosses / Glyn Tarell</div>
+        <div>Pwll-y-Wrach / Felindre</div>
     </div>
 </section>
 
 <section class="legal-box">
-    <h2>Legal Compliance</h2>
-    <p>Grey squirrels are classed as an invasive species in the UK. Once captured, they cannot be released back into the wild. All work is carried out humanely and in line with current legislation.</p>
+    <h2>Legal & Humane Commitment</h2>
+    <p>It is <strong>illegal</strong> to release a captured Grey Squirrel back into the wild. Because of this, I only use <strong>professional kill-traps</strong>. This ensures an instant dispatch and avoids the unnecessary suffering of an animal being left stressed and terrified in a cage trap for any duration.</p>
 </section>
 
 <section class="gbp-trust">
-    <h2>Local Reviews</h2>
-    <p>Trusted by homeowners and landowners across Powys.</p>
-    <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">View Google Reviews</a>
+    <h2>Local Reviews & Reviews</h2>
+    <p>Trusted by homeowners and landowners across the Brecon Beacons.</p>
+    <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">📍 View My Google Business Profile</a>
 </section>
 
 <div class="map-container">
-    <iframe src="https://www.google.com/maps?q=Brecon&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158784.851086036!2d-3.51860641328124!3d51.947231400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e246995646199%3A0xc0c648937397b98!2sBrecon!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
 </main>
@@ -193,6 +206,7 @@
     <p><strong>Welsh Town & Country Pest Services</strong></p>
     <p>David Hill – RSPH Level 2 Certified Pest Controller</p>
     <p>Brecon • Sennybridge • Talgarth • Crickhowell</p>
+    <p>© 2026 | Professional Pest Solutions | Fully Insured</p>
 </footer>
 
 </body>
