@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Rat Catcher Brecon | Welsh Town & Country Pest Services | LD3 Rodent Control</title>
-    <meta name="description" content="Welsh Town & Country Pest Services: Brecon's #1 rat catcher. David (Ex-Pestokil) provides 24/7 poison-free rodent control, 316-grade rat blockers & CCTV drain surveys in LD3, Talgarth & Crickhowell.">
+    <meta name="description" content="Welsh Town & Country Pest Services: Brecon's #1 rat catcher. David provides 24/7 poison-free rodent control, 316-grade rat blockers & CCTV drain surveys in LD3, Talgarth & Crickhowell.">
     
     <meta name="keywords" content="rat catcher Brecon, rat control LD3, rodent proofing Powys, poison free rat control, rat blockers Brecon, David Hill pest control, farm pest control Brecon, CCTV drain survey rats">
 
@@ -39,7 +39,7 @@
         .emergency-bar { background: var(--red); color: white; text-align: center; padding: 12px; font-weight: bold; position: sticky; top: 0; z-index: 4000; font-size: 1.1rem; border-bottom: 2px solid var(--gold); }
         .emergency-bar a { color: white; text-decoration: none; }
 
-        /* Branding Section - Dark Green Background */
+        /* Branding Section */
         header{background:var(--green);color:#fff;padding:1.5rem 1rem;text-align:center;}
         .header-brand { display: flex; justify-content: center; gap: 15px; align-items: center; flex-wrap: wrap; margin-bottom: 15px; }
         .logo { max-height: 70px; width: auto; border-radius: 5px; }
@@ -59,6 +59,7 @@
         
         /* Content Modules */
         .content-card { background: #fff; padding: 2rem; border-radius: 15px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; margin-bottom: 2rem; border-left: 10px solid var(--green); }
+        .policy-box { background: #fff3cd; border: 2px solid var(--gold); padding: 20px; border-radius: 12px; margin: 2rem 0; text-align: left; color: #856404; }
         .hero-img { width: 100%; max-width: 600px; height: auto; border-radius: 12px; border: 1px solid #ddd; margin: 1.5rem 0; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
 
         .big-btn { background: var(--red); color: white; padding: 18px 36px; border-radius: 50px; font-weight: 900; text-decoration: none; display: inline-block; font-size: 1.3rem; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin: 1rem 0; animation: pulse 2s infinite; }
@@ -80,7 +81,8 @@
         .floating-call { position: fixed; bottom: 20px; right: 20px; background: var(--red); color: #fff; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; text-decoration: none; z-index: 9999; box-shadow: 0 4px 15px rgba(0,0,0,0.4); }
 
         footer { background: var(--green); color: white; text-align: center; padding: 3rem 1rem; border-top: 5px solid var(--gold); }
-        .footer-img { max-width: 280px; width: 100%; height: auto; border-radius: 10px; border: 2px solid var(--gold); margin-bottom: 1.5rem; }
+        .footer-img-strip { display: flex; justify-content: center; gap: 10px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+        .footer-img { width: 150px; height: 100px; object-fit: cover; border-radius: 8px; border: 2px solid var(--gold); }
         footer a { color: var(--gold); text-decoration: none; font-weight: bold; }
 
         @media (max-width: 768px) {
@@ -99,11 +101,12 @@
     <header>
         <div class="header-brand">
             <img src="/breconimages/logo.png" alt="Welsh Town & Country Logo" class="logo">
-            <img src="/breconimages/rsph-cert-badge.png" alt="RSPH Level 2 Certified" class="rsph-badge">
+            <img src="rsph-badge.png" alt="RSPH Level 2 Certified" class="rsph-badge">
         </div>
         <div class="header-text">
+            <div style="font-size: 1.4rem; font-weight: bold; color: var(--gold); margin-bottom: 5px;">WELSH TOWN & COUNTRY</div>
             <h1>#1 Rat Catcher in Brecon (LD3)</h1>
-            <p class="header-tagline">Expert Fieldcraft | Poison-Free Specialist | 24/7 Response</p>
+            <p class="header-tagline">Expert Fieldcraft | Red Kite Safe | 24/7 Response</p>
             <div class="header-keywords">
                 RAT BLOCKERS • CCTV DRAIN SURVEYS • FARM PEST CONTROL • RSPH CERTIFIED
             </div>
@@ -114,8 +117,8 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="rat-catcher.html" class="active">Rat Control</a></li>
-            <li><a href="mole-catching.html">Mole Control</a></li>
-            <li><a href="rats-in-drains.html">CCTV Drains</a></li>
+            <li><a href="squirrel-control.html">Squirrels</a></li>
+            <li><a href="drainage-rat-control.html">CCTV Drains</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -124,26 +127,32 @@
         <section class="content-card">
             <p style="color:var(--dark); font-weight:bold; margin-bottom:0;">🎖️ LOCAL EX-PESTOKIL TECHNICIAN</p>
             <h2>Poison-Free Rodent Eradication</h2>
-            <p>David provides 30+ years of technical fieldcraft to solve rodent problems that baiting alone won't fix. Expert poison-free eradication for homes and historic estates across Brecon, Talgarth, and the Usk Valley.</p>
+            <p>Welsh Town & Country provides 30+ years of technical fieldcraft to solve rodent problems that baiting alone won't fix. Expert poison-free eradication for homes and historic estates across Brecon, Talgarth, and the Usk Valley.</p>
             
-            <img src="/breconimages/rat-house.jpg" alt="Professional rat proofing Brecon home" class="hero-img">
+            <img src="trapping-mice-brecon.jpg" alt="Professional rat trapping setup Brecon" class="hero-img">
             
             <a href="tel:07375303124" class="big-btn">📞 24/7 EMERGENCY CALL-OUT</a>
         </section>
 
+        <div class="policy-box">
+            <h3>🦅 Wildlife Safety & Bird Feeder Policy</h3>
+            <p>To protect our local Red Kites and ensure treatment success, all bird feeding must stop 24 hours before our visit. Rats will ignore traps if high-calorie bird seed is available. We prioritize trapping to avoid secondary poisoning of local birds of prey.</p>
+            <p><em>*A survey fee applies if bird feeders remain active upon arrival, as this prevents a safe and effective treatment.</em></p>
+        </div>
+
         <section class="process-grid">
             <div class="card">
-                <img src="/breconimages/rat-unit.jpg" alt="Technical Survey Unit">
+                <img src="rat-unit.jpg" alt="Technical Survey Unit">
                 <h3>Technical Survey</h3>
                 <p>We audit your property to find nesting sites in walls or floor voids. No guesswork, just results.</p>
             </div>
             <div class="card">
-                <img src="/breconimages/rat-house.jpg" alt="Non-toxic rat removal">
+                <img src="rat-house.jpg" alt="Non-toxic rat removal">
                 <h3>Trapping & Removal</h3>
-                <p>Traditional skills combined with modern non-toxic systems. 100% safe for pets and livestock.</p>
+                <p>Traditional skills combined with modern mechanical dispatch. 100% safe for pets and livestock.</p>
             </div>
             <div class="card">
-                <img src="/breconimages/rat-unit.jpg" alt="Permanent rat proofing">
+                <img src="rat-unit.jpg" alt="Permanent rat proofing">
                 <h3>Permanent Proofing</h3>
                 <p>We block the source using 316-grade stainless steel rat valves and professional masonry proofing.</p>
             </div>
@@ -151,8 +160,8 @@
 
         <div class="farm-box">
             <h3>🚜 Red Tractor & Farm Specialist</h3>
-            <p>Rodent management for LD3 poultry units and livestock farms. <strong>Compliance with 2026 CRRU and Red Tractor standards</strong>.</p>
-            <img src="/breconimages/mole-farm.jpg" alt="Traditional farm pest control mole catching" style="max-width:300px; margin:auto; border-radius:10px;">
+            <p>Rodent management for LD3 poultry units and livestock farms. <strong>Compliance with CRRU and Red Tractor standards</strong>.</p>
+            <img src="mole-farm.jpg" alt="Traditional farm pest control mole catching" style="max-width:300px; margin:auto; border-radius:10px;">
             <ul style="list-style-position: inside; text-align: left; display: inline-block; margin-top:15px;">
                 <li>Full Site Audit Logs & Compliance</li>
                 <li>Grain & Feed Protection</li>
@@ -165,14 +174,14 @@
             <div class="village-grid">
                 <a href="/hypapages/brecon-town-centre-ld3.html">📍 Brecon</a>
                 <a href="/hypapages/sennybridge-defynnog-ld3.html">📍 Sennybridge</a>
+                <a href="pest-control-merthyr.html">📍 Merthyr Hub</a>
                 <a href="/rat-catcher-ammanford.html">📍 Ammanford</a>
                 <a href="/llandeilo-rat-catcher.html">📍 Llandeilo</a>
-                <a href="/ystradgynlais-rat-catcher.html">📍 Ystradgynlais</a>
             </div>
         </section>
 
         <div class="map-frame">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156643.0853406691!2d-3.535698418049619!3d51.94215442562143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e2467d983489b%3A0xc665b6f36894c92a!2sBrecon!5e0!3m2!1sen!2suk!4v1705600000000!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19760.334032486793!2d-3.39956465!3d51.946351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e2467b7f14b33%3A0x6a0f44357c3e5360!2sBrecon!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
         <section class="gbp-box">
@@ -185,10 +194,14 @@
     <a href="tel:07375303124" class="floating-call" aria-label="Call Now">📞</a>
 
     <footer>
-        <img src="/breconimages/mole-farm.jpg" alt="Agricultural Specialist" class="footer-img">
+        <div class="footer-img-strip">
+            <img src="rat-house.jpg" alt="Rat House Work" class="footer-img">
+            <img src="rat-unit.jpg" alt="Rat Unit Setup" class="footer-img">
+            <img src="mole-farm.jpg" alt="Mole Catching Farm" class="footer-img">
+        </div>
         <p><strong>Welsh Town & Country Pest Services</strong></p>
-        <p>© 2026 | David Hill | RSPH Certified Technician | LD3 Hub</p>
-        <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank">Visit Our Google Business Profile</a> | <a href="/contact.html">Contact Us</a></p>
+        <p>© 2026 | David | RSPH Certified Technician | LD3 Hub</p>
+        <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank">Visit Our GBP</a> | <a href="/contact.html">Contact Us</a> | <a href="pest-control-merthyr.html">Merthyr Hub</a></p>
     </footer>
 
 </body>
