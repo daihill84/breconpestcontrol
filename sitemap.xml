@@ -1,142 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/brecon-pest-control.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.99</priority>
-    </url>
+  <!-- Root -->
+  <url><loc>https://brecon.welshtownandcountry.co.uk/</loc></url>
 
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/cluster-fly-removal.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.97</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/rat-catcher.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.95</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/rats-in-drains.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.95</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/mole-catching.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.95</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/farm-pest-control.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.98</priority>
-    </url>
+  <!-- Core / Legal -->
+  <url><loc>https://brecon.welshtownandcountry.co.uk/Terms.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/contact.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/blog.html</loc></url>
 
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/squirrel-control.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.90</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/squirrelpages/bwlch-squirrel-control.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.88</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/squirrelpages/sennybridge-squirrel-control.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.88</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/squirrelpages/talgarth-squirrel-control.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.88</priority>
-    </url>
+  <!-- Regional & Coverage -->
+  <url><loc>https://brecon.welshtownandcountry.co.uk/a40-areas.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/ammanford-llandeilo-a40.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/brecon-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/brecon-town-centre-ld3.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/bethlehem-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/bwlch-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/crickhowell-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/cwmamman-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/emergency-pest-control-brecon.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/libanus-talybont-ld3.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/llandovery-takeaway-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/llangadog-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/llangorse-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/llansadwrn-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/manordeilo-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/pest-control-ammanford.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/pest-control-merthyr.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/pest-control-western-valleys.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/pest-control-ystradgynlais.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/sennybridge-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/sennybridge-defynnog-ld3.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/talgarth-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/trapp-pest-control.html</loc></url>
 
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/hypapages/ammanford-llandeilo-a40.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/hypapages/brecon-town-centre-ld3.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/hypapages/libanus-talybont-ld3.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/hypapages/sennybridge-defynnog-ld3.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
-    </url>
+  <!-- Hypapages -->
+  <url><loc>https://brecon.welshtownandcountry.co.uk/hypapages/ammanford-llandeilo-a40.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/hypapages/brecon-town-centre-ld3.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/hypapages/libanus-talybont-ld3.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/hypapages/sennybridge-defynnog-ld3.html</loc></url>
 
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/talgarth-pest-control.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.90</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.90</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/bwlch-pest-control.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.88</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/crickhowell-pest-control.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.88</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/hay-on-wye-pest-control.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.88</priority>
-    </url>
+  <!-- Pest Hubs -->
+  <url><loc>https://brecon.welshtownandcountry.co.uk/pest-control-hub.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/pest-management.html</loc></url>
 
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/contact.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://brecon.welshtownandcountry.co.uk/Terms.html</loc>
-        <lastmod>2025-12-19</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.20</priority>
-    </url>
+  <!-- Rats / Rodents -->
+  <url><loc>https://brecon.welshtownandcountry.co.uk/rat-catcher.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/rat-catcher-ammanford.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/rats-in-drains.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/drainage-rat-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/brecon-rodent-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/talgarth_rodent_control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/llandeilo-rat-catcher.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/ammanford_ystradgynlais_rat-catcher.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/mouse-removal.html</loc></url>
+
+  <!-- Mole -->
+  <url><loc>https://brecon.welshtownandcountry.co.uk/mole-catching.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/llandeilo-mole-catching.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/ammanford-ystradgynlais-mole-catching.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/talgarth_moles.html</loc></url>
+
+  <!-- Squirrels -->
+  <url><loc>https://brecon.welshtownandcountry.co.uk/squirrel-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/squirrelpages/bwlch-squirrel-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/squirrelpages/crickhowell-squirrel-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/squirrelpages/sennybridge-squirrel-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/squirrelpages/talgarth-squirrel-control.html</loc></url>
+
+  <!-- Agricultural / Wildlife -->
+  <url><loc>https://brecon.welshtownandcountry.co.uk/farm-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/farm-audit-compliance.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/humane-wildlife-removal.html</loc></url>
+
+  <!-- Commercial / Specialist -->
+  <url><loc>https://brecon.welshtownandcountry.co.uk/takeaway-pest-control-tawe-valley.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/quay-street-ammanford-pest-control.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/small-unit-pest-control-brecon.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/small-unit-pest-control-ystradgynlais.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/holiday-lets.html</loc></url>
+
+  <!-- Insects -->
+  <url><loc>https://brecon.welshtownandcountry.co.uk/wasp-nest-removal.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/bee-removal.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/ethical-bee-removal-brecon.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/cluster-fly-removal.html</loc></url>
+  <url><loc>https://brecon.welshtownandcountry.co.uk/bed-bug-removal.html</loc></url>
 
 </urlset>
